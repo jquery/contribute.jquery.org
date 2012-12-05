@@ -1,0 +1,88 @@
+<script>{
+  "title": "HTML Style Guide"
+}</script>
+
+<p>This page outlines the style guide for HTML pages in all jQuery projects.
+	These rules apply to web sites, demo pages, inline examples, test pages, etc.
+	Exceptions are allowed for pages that must violate the rules by their very
+	nature, e.g., a page that tests XHTML.</p>
+
+<h2>Doctype</h2>
+<p>Always use the minimal, versionless doctype.</p>
+
+<pre><code>
+&lt;!doctype html>
+</code></pre>
+
+<h2>Language</h2>
+<p>Always define which language the page is written in.<p>
+
+<pre><code>
+&lt;head lang="en">
+</code></pre>
+
+<h2>Encoding</h2>
+<p>Always define the character encoding.
+	The encoding should be defined as early as possible.</p>
+
+<pre><code>
+&lt;meta charset="utf-8">
+</code></pre>
+
+<h2>Elements and Attributes</h2>
+<p>All element and attribute names should be lowercase.
+	Attribute values should be quoted.
+	Optional closing tags should be included.
+	Self-closing elements should not be closed.
+	Optional attributes should be omitted.
+	Always include <code>html</code>, <code>head</code>, and <code>body</code> tags.</p>
+
+<ul>
+	<li>No <code>type</code> or <code>language</code> attributes on <code>script</code> tags.</li>
+	<li>No <code>type</code> attribute on <code>link</code> or <code>style</code> tags.</li>
+</ul>
+
+<pre><code>
+&lt;script src="...">&lt;script>
+&lt;script>&lt;/script>
+&lt;link rel="stylesheet" href="...">
+&lt;style>&lt;style>
+</code></pre>
+
+<h2>Indentation</h2>
+<p>Don't indent inside <code>html</code>, <code>body</code>,
+	<code>script</code>, or <code>style</code>.
+	Indent inside <code>head</code> and all other elements.</p>
+
+<h2>Example</h2>
+<pre><code>
+&lt;!doctype html>
+&lt;html lang="en">
+&lt;head>
+	&lt;meta charset="utf-8">
+	&lt;title>Sample Page&lt;/title>
+
+	&lt;link rel="stylesheet" href="/style.css">
+	&lt;style>
+	body {
+		font-size: 100em;
+	}
+	&lt;/style>
+
+	&lt;script src="/jquery.js">&lt;/script>
+	&lt;script>
+	$(function() {
+		$( "p" ).text( $.fn.jquery );
+	});
+	&lt;/script>
+&lt;/head>
+&lt;body>
+
+&lt;p>jQuery is awesome!&lt;p>
+
+&lt;/body>
+&lt;/html>
+</code></pre>
+
+</body>
+</html>
