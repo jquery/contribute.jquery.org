@@ -1,6 +1,6 @@
-<script>{
-  "title": "HTML Style Guide"
-}</script>
+---
+title: HTML Style Guide
+---
 
 This page outlines the style guide for HTML pages in all jQuery projects.
 These rules apply to web sites, demo pages, inline examples, test pages, etc.
@@ -60,14 +60,14 @@ Don't indent inside `html`, `body`, `script`, or `style`. Indent inside `head` a
   <link rel="stylesheet" href="/style.css">
   <style>
   body {
-          font-size: 100em;
+    font-size: 100em;
   }
   </style>
 
   <script src="/jquery.js"></script>
   <script>
   $(function() {
-          $( "p" ).text( $.fn.jquery );
+    $( "p" ).text( $.fn.jquery );
   });
   </script>
 </head>
