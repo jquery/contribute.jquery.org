@@ -41,7 +41,7 @@ All element and attribute names should be lowercase. Attribute values should be 
 <script src="..."><script>
 <script></script>
 <link rel="stylesheet" href="...">
-<style><style>
+<style></style>
 ```
 
 ## Indentation
