@@ -53,6 +53,18 @@ Plugins available:
 * [jquery.transform.js](https://github.com/louisremi/jquery.transform.js)
 * [jQuery++ Animate](http://jquerypp.com/#animate)
 
+## Native Selector Bugs
+
+Frequently browsers have regressions with their implementations of
+`querySelectorAll`, which causes problems with jQuery's selectors. Thankfully
+these issues are usually fixed quickly. If they aren't that severe then we
+just bump them back to the browser vendor and let them handle it.
+If it's seriously detrimental, then we'll try our best to fix it on our end.
+
+**For further reference**:
+
+* [#9690]( http://bugs.jquery.com/ticket/9690 )
+
 ## Inline Event Handlers
 
 In general, inline event handlers are incredibly hard to work with and should
