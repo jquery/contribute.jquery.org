@@ -1,5 +1,5 @@
 ---
-title: jQuery Core Style Guide
+title: JavaScript Style Guide
 ---
 
 ## 1. Linting
