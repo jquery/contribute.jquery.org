@@ -54,26 +54,26 @@ Don't indent inside `html`, `body`, `script`, or `style`. Indent inside `head` a
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Sample Page</title>
+	<meta charset="utf-8">
+	<title>Sample Page</title>
 
-  <link rel="stylesheet" href="/style.css">
-  <style>
-  body {
-    font-size: 100em;
-  }
-  </style>
+	<link rel="stylesheet" href="/style.css">
+	<style>
+	body {
+		font-size: 100em;
+	}
+	</style>
 
-  <script src="/jquery.js"></script>
-  <script>
-  $(function() {
-    $( "p" ).text( $.fn.jquery );
-  });
-  </script>
+	<script src="/jquery.js"></script>
+	<script>
+	$(function() {
+		$( "p" ).text( $.fn.jquery );
+	});
+	</script>
 </head>
 <body>
 
-  <p>jQuery is awesome!<p>
+<p>jQuery is awesome!<p>
 
 </body>
 </html>
