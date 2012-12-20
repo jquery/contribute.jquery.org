@@ -13,10 +13,10 @@ Reference: [Object.prototype is verboten](http://erik.eae.net/archives/2005/06/0
 
 **For further reference**: [ #2721 ]( http://bugs.jquery.com/ticket/2721 )
 
-## SVG/XML/VML Bugs
+## SVG/XML/VML/Namespaced Elements Bugs
 
-We simply don't have the time to work on all the issues related to SVG/XML/VML
-documents and jQuery. If you wish to help out with this effort, help would be
+We simply don't have the time to work on all the issues related to SVG/XML/VML 
+documents, namespaced elements, and jQuery. If you wish to help out with this effort, help would be
 appreciated.
 
 **For further reference**:
@@ -25,6 +25,7 @@ appreciated.
 * [#7071](http://bugs.jquery.com/ticket/7071)
 * [#7584](http://bugs.jquery.com/ticket/7584)
 * [#9807](http://bugs.jquery.com/ticket/9807)
+* [#13092](http://bugs.jquery.com/ticket/13092)
 
 ## Warnings in Console
 
