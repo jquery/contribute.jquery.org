@@ -13,13 +13,12 @@ necessary to resolve the problem are all parts of the triage process.
 
 ## Why Triage?
 
-Bug triage is a crucial task in the process of monitoring the status of all of
-our projects. As a newcomer, triage is a natural way to find the pulse of a
+For a newcomer, triage is a natural way to find the pulse of a
 project and see what other contributors will be thinking about on any given day
 (because they're **also** helping with triage), as well as interacting with the
 team and making yourself part of the process! It's also a good way to increase
-the breadth of your expsosure to a particular project, as the process of
-verifying bugs will draw you to take in-depth looks at parts of code and
+the breadth of your exposure to a particular project; the process of
+verifying bugs will encourage in-depth looks at parts of code and
 functionality with which you weren't already familiar. And if you're hoping to
 eventually contribute code, helping with triage is a great way to identify the
 bugs that need to be fixed and observe how others go about solving similar
@@ -48,8 +47,9 @@ jQuery Core and UI both use [Trac](http://trac.edgewall.org/), an open source st
 * jQuery UI Trac - [bugs.jqueryui.com](http://bugs.jqueryui.com)
 
 Trac does not require you to have an account to report bugs, but you'll
-definitely want to [register](http://bugs.jquery.com/register) an account and
-log in with it. Having an account helps everyone in the discussion keep track
+definitely want to register an account and log in with it.
+(Separate registrations are required for the two bug trackers.)
+Having an account helps everyone in the discussion keep track
 of who else is participating, and it's very difficult to keep in touch with
 "anonymous."
 
@@ -68,7 +68,7 @@ relatively self-contained.
 
 For the most part, the rest of our projects keep track of bugs using [GitHub
 issues](https://github.com/features/projects/issues). All you have to do is
-[sign up for a GitHub account] if you don't already have one. From there on
+[sign up for a GitHub account](https://github.com/signup/free) if you don't already have one. From there on
 out, it's as simple as "watching" the repositories you want to help triage. New
 issues and comments will make their way to your notification center and inbox,
 depending on your [notification settings](https://github.com/settings/notifications).
@@ -89,7 +89,7 @@ depending on your [notification settings](https://github.com/settings/notificati
 
 #### Web Sites
 
-* [web-base-template issues](http://github.com/jquery/web-base-template/issues) - The WordPress base template that themes all our sites
+* [jquery-wp-content issues](http://github.com/jquery/jquery-wp-content/issues) - The WordPress base template that themes all our sites
 * [jquery.com issues](http://github.com/jquery/jquery.com/issues) - The content of [jquery.com](http://jquery.com) itself
 * [plugins.jquery.com issues](http://github.com/jquery/jquery.com/issues) - The jQuery Plugin Registry
 * [jqueryui.com issues](http://github.com/jquery/jqueryui.com/issues) - The content of [jquery.com](http://jqueryui.com) itself
