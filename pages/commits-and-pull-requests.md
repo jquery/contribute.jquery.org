@@ -43,7 +43,7 @@ If you **accidentally commit on master**, it's not hard to fix things up. Assumi
 $ git branch fix-spelling-error
 # 'backs up' your commit, creating a topic branch
 
-$ git reset --hard upstream/master# resets your master branch to the same state as upstream/master
+$ git reset --hard upstream/master
 # resets your master branch to the same state as upstream/master
 ```
 
