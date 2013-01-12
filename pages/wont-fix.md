@@ -88,9 +88,12 @@ of the document.
 
 ### change Event
 
-Widgets that enhance form elements programmatically manipulate their element's `value`, 
-therefore we cannot guarantee that a `change` event will fire when the element's 
+Widgets that enhance form elements manipulate their element's `value` programmatically, 
+therefore we cannot guarantee that a native `change` event will fire when the element's 
 `value` changes.
+
+These widgets do all provide a custom `change` event.  For example, the autocomplete 
+widget fires an [autocompletechange](http://api.jqueryui.com/autocomplete/#event-change) event.
 
 **For further reference**:
 
