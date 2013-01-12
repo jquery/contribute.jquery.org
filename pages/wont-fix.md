@@ -88,9 +88,9 @@ of the document.
 
 ### change Event
 
-Because they change the `value` programmatically, all widgets that are built on 
-top of form elements do not guarantee that a `change` event will fire when the 
-element's `value` changes.
+Widgets that enhance form elements programmatically manipulate their element's `value`, 
+therefore we cannot guarantee that a `change` event will fire when the element's 
+`value` changes.
 
 **For further reference**:
 
@@ -99,7 +99,7 @@ element's `value` changes.
 ### Cloning
 
 Cloning widgets is not supported by jQuery UI.  It is simply too much effort specific 
-to each widget to handle for an uncommon use case.  If you interested in adding
+to each widget to handle for an uncommon use case.  If you are interested in adding
 this functionality feel free to contact the jQuery UI team.
 
 **For further reference**:
