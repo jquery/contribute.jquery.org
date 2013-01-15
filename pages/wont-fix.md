@@ -40,7 +40,7 @@ which generate console warnings.
 * [#7535](http://bugs.jquery.com/ticket/7535)
 * [#10531](http://bugs.jquery.com/ticket/10531)
 
-## CSS Transition/Animation
+## CSS Transition/Animation/Transforms
 
 While some browsers do provide native means of doing CSS animations, most of
 that has been encapsulated into plugins. We will continue to recommend that
