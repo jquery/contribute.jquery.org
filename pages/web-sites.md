@@ -138,8 +138,8 @@ you'll need to [fork](https://help.github.com/articles/fork-a-repo) the content
 repositories you'd like to work on.  When you have changes you'd like to have
 reviewed for integration, submit a [pull
 request](http://help.github.com/send-pull-requests/). However, we recommend
-that you file issues for new "features" and significant changes before acutally
-getitng to work.For more information on maintaining your fork and strategies on
+that you file issues for new "features" and significant changes before actually
+getting to work. For more information on maintaining your fork and strategies on
 commiting, see the [Commits and Pull Requests](/commits-and-pull-requests/)
 guide.
 
@@ -222,7 +222,7 @@ The best place to get help is on [IRC](http://en.wikipedia.org/wiki/Internet_Rel
 channel on [Freenode](http://freenode.net). If you're unfamiliar with IRC, you can use the [webchat gateway](http://webchat.freenode.net/).
 
 In addition, the jQuery Content Team holds a [public, weekly
-meetings](http://jquery.org/meeting) on Freenode, at 1PM Eastern time in the #jquery-meeting channel.
+meeting](http://jquery.org/meeting) on Freenode, at 1PM Eastern time in the #jquery-meeting channel.
 
 If IRC is not your thing, but you still want or need to get in touch, please use the site's GitHub repo or send us an e-mail to `content at jquery dot org`.
 
