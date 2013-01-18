@@ -8,7 +8,7 @@ Our style guides aim to make the code bases appear as if they were written by on
 
 Long term, we would like to have all of the formatting automatically done by the build process, so that the resulting code would alway follow the style guide. We haven't reached that nirvana yet, but we have taken a few steps in that direction. For example, our projects contain an [EditorConfig file](http://editorconfig.org) that many programming editors can use to enforce the space and tab rules. Our [JSHint](http://www.jshint.com/about/) configuration checks for common style _faux pas_ such as trailing spaces on a line, or using a variable before it is defined.
 
-### [JavaScript Style Guide](style-guide/js.md)
+### [JavaScript Style Guide](/style-guide/js.md)
 
-### [HTML Markup Style Guide](style-guide/html.md)
+### [HTML Markup Style Guide](/style-guide/html.md)
 
