@@ -226,4 +226,61 @@ meeting](http://jquery.org/meeting) on Freenode, at 1PM Eastern time in the #jqu
 
 If IRC is not your thing, but you still want or need to get in touch, please use the site's GitHub repo or send us an e-mail to `content at jquery dot org`.
 
+---
+
+## Site &amp; Repository Guide
+
+* [jquery-wp-content](http://github.com/jquery/jquery-wp-content/) - The WordPress configuration and themes that serve all our sites
+
+
+* [jquery.com](http://github.com/jquery/jquery.com/) - The content of [jquery.com](http://jquery.com) itself
+* [api.jquery.com](http://github.com/jquery/api.jquery.com/) - jQuery Core API documentation
+* [plugins.jquery.com](http://github.com/jquery/jquery.com/) - The jQuery Plugin Registry
+
+
+* [jqueryui.com](http://github.com/jquery/jqueryui.com/) - The content of [jquery.com](http://jqueryui.com) itself
+* [api.jqueryui.com](http://github.com/jquery/api.jqueryui.com/) - jQuery UI API documentation
+* [download.jqueryui.com](http://github.com/jquery/download.jqueryui.com/) - The [jQuery UI Download Builder](http://download.jqueryui.com)
+
+
+* [jquerymobile.com](http://github.com/jquery/jquerymobile.com/) - The content of [jquerymobile.com](http://jquerymobile.com) itself
+* [api.jquerymobile.com](http://github.com/jquery/api.jquerymobile.com/) - jQuery Mobile API documentation
+
+
+* [qunitjs.com](http://github.com/jquery/qunitjs.com/) - The content of [qunitjs.com](http://qunitjs.com) itself
+* [api.qunitjs.com](http://github.com/jquery/api.qunitjs.com/) - QUnit API documentation
+
+
+* [sizzlejs.com](http://github.com/jquery/sizzlejs.com/) - The content of [qunitjs.com](http://qunitjs.com) itself
+
+
+* [jquery.org](http://github.com/jquery/jquery.org/) - The content of [jquery.org](http://jquery.org) itself
+* [contribute.jquery.org ](http://github.com/jquery/contribute.jquery.org/) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
+* [events.jquery.org](http://github.com/jquery/jquery.org/) - The content of our [Events and Conferences](http://events.jquery.org) site
+* [irc.jquery.org ](http://github.com/jquery/irc.jquery.org/) - The content of our [IRC log and information](http://irc.jquery.org) site
+
+### Non-conforming Sites
+
+Some of our sites are not part of the system described in this article. Some
+because they are simply not yet live, others still have some transitional work
+still in progress, and others that can't be integrated or have been deprecated.
+
+#### Not Live, Content Migration In Progress/Planned
+
+* [blog.jquery.com](http://blog.jquery.com)
+* [blog.jqueryui.com](http://blog.jqueryui.com)
+* [jquerymobile.com](http://jquerymobile.com)
+* [blog.jquerymobile.com](http://blog.jquerymobile.com)
+* [sizzlejs.com](http://sizzlejs.com)
+
+#### Will Not Be Transitioned To Content Repository, Still Needs New Theming
+
+* [forum.jquery.com](http://forum.jquery.com)
+* [bugs.jquery.com](http://bugs.jquery.com)
+* [bugs.jqueryui.com](http://bugs.jquery.com)
+
+#### Deprecated, Shutdown Imminent
+
+* [docs.jquery.com](http://docs.jquery.com)
+* [meetups.jquery.com](http://meetups.jquery.com)
 
