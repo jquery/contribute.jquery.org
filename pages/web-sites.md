@@ -35,7 +35,7 @@ comfortable solving.
 
 ---
 
-## How It Works
+## <a name="how-it-works">How It Works</a>
 
 Here's the short version: _static content is built into HTML and deployed to a
 [WordPress](http://wordpress.org) instance over
@@ -110,7 +110,7 @@ place in production.
 
  ---
 
- ## How Can I Help?
+ ## <a name="how-can-i-help" href="#how-can-i-help">How Can I Help?</a>
 
  ### Just File Issues!
 
@@ -165,7 +165,7 @@ to that site.
 
 ---
 
-## Local Development
+## <a name="local-development" href="#local-development">Local Development</a>
 
 In order to iterate on site content and design in the same way that jQuery team
 members do, we encourage anyone to set up a local WordPress instance running
@@ -228,7 +228,7 @@ If IRC is not your thing, but you still want or need to get in touch, please use
 
 ---
 
-## Site &amp; Repository Guide
+## <a name="site-repository-guide" href="#site-repository-guide">Site &amp; Repository Guide</a>
 
 * [jquery-wp-content](http://github.com/jquery/jquery-wp-content/) - The WordPress configuration and themes that serve all our sites
 
