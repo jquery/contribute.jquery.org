@@ -89,15 +89,17 @@ depending on your [notification settings](https://github.com/settings/notificati
 
 #### Web Sites
 
-* [jquery-wp-content issues](http://github.com/jquery/jquery-wp-content/issues) - The WordPress base template that themes all our sites
+* [jquery-wp-content issues](http://github.com/jquery/jquery-wp-content/issues) - The WordPress configuration and themes that serve all our sites
 * [jquery.com issues](http://github.com/jquery/jquery.com/issues) - The content of [jquery.com](http://jquery.com) itself
-* [plugins.jquery.com issues](http://github.com/jquery/jquery.com/issues) - The jQuery Plugin Registry
-* [jqueryui.com issues](http://github.com/jquery/jqueryui.com/issues) - The content of [jquery.com](http://jqueryui.com) itself
+* [plugins.jquery.com issues](http://github.com/jquery/plugins.jquery.com/issues) - The jQuery Plugin Registry
+* [jqueryui.com issues](http://github.com/jquery/jqueryui.com/issues) - The content of [jqueryui.com](http://jqueryui.com) itself
 * [download.jqueryui.com issues](http://github.com/jquery/download.jqueryui.com/issues) - The [jQuery UI Download Builder](http://download.jqueryui.com)
 * [jquerymobile.com issues](http://github.com/jquery/jquerymobile.com/issues) - The content of [jquerymobile.com](http://jquerymobile.com) itself
 * [qunitjs.com issues](http://github.com/jquery/qunitjs.com/issues) - The content of [qunitjs.com](http://qunitjs.com) itself
-* [sizzlejs.com issues](http://github.com/jquery/sizzlejs.com/issues) - The content of [qunitjs.com](http://qunitjs.com) itself
+* [sizzlejs.com issues](http://github.com/jquery/sizzlejs.com/issues) - The content of [sizzlejs.com](http://sizzlejs.com) itself
 * [jquery.org issues](http://github.com/jquery/jquery.org/issues) - The content of [jquery.org](http://jquery.org) itself
+* [contribute.jquery.org issues](http://github.com/jquery/contribute.jquery.org/issues) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
 * [events.jquery.org issues](http://github.com/jquery/jquery.org/issues) - The content of our [Events and Conferences](http://events.jquery.org) site
+* [irc.jquery.org issues](http://github.com/jquery/irc.jquery.org/issues) - The content of our [IRC log and information](http://irc.jquery.org) site
 * [bugs.jquery.com issues](http://github.com/jquery/bugs.jquery.com/issues) - Issues with jQuery Core's Trac itself
 * [bugs.jqueryui.com issues](http://github.com/jquery/bugs.jqueryui.com/issues) - Issues with jQuery UI's Trac itself
