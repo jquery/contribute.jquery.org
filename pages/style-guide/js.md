@@ -8,11 +8,11 @@ Grunt provides a JSHint task to verify some basic, practical soundness of the co
 
 ##  2. Spacing
 
-  - Indentation with tabs.
-  - No end of line whitespace.
-  - No blank line whitespace.
-  - Liberal spacing in code.
-  - `if/else/for/while/try` always have braces and always go on multiple lines.
+- Indentation with tabs.
+- No end of line whitespace.
+- No blank line whitespace.
+- Liberal spacing in code.
+- `if/else/for/while/try` always have braces and always go on multiple lines.
 
 
 
@@ -28,58 +28,58 @@ for(var i=0;i<100;i++) someIterativeFn();
 
 // Good
 if ( condition ) {
-  // expressions
+	// expressions
 }
 
 // Good
 while ( condition ) {
-  // expressions
+	// expressions
 }
 
 // Good
 var i = 0;
 
 for ( ; i < 100; i++ ) {
-  // expressions
+	// expressions
 }
 
 // Good
 var prop;
 
 for ( prop in object ) {
-  // expressions
+	// expressions
 }
 
 // Good
 if ( condition ) {
-  // expressions
+	// expressions
 } else {
-  // expressions
+	// expressions
 }
 
 // Good
 if ( condition ) {
-  // expressions
+	// expressions
 } else if ( condition ) {
-  // expressions
+	// expressions
 } else {
-  // expressions
+	// expressions
 }
 
 // Good
 try {
-  // expressions
+	// expressions
 } catch ( e ) {
-  // expressions
+	// expressions
 }
 
 // Good
 try {
-  // expressions
+	// expressions
 } catch ( e ) {
-  // expressions
+	// expressions
 } finally {
-  // expressions
+	// expressions
 }
 ```
 
@@ -90,7 +90,7 @@ Empty objects and arrays don't need filler spaces
 
 ```js
 var object = {},
-  array = [];
+	array = [];
 ```
 
 Space omission is allowed when dereferencing an array:
@@ -126,8 +126,8 @@ foo( bar(arg) );
 
 // Functions with callbacks
 foo(function() {
-  // Note there is no extra space between the first paren
-  // of the executing function call and the word "function"
+	// Note there is no extra space between the first paren
+	// of the executing function call and the word "function"
 });
 
 // Function accepting an array, no space
@@ -136,8 +136,8 @@ foo([ "alpha", "beta" ]);
 
 // Function accepting an object, no space
 foo({
-  a: "alpha",
-  b: "beta"
+	a: "alpha",
+	b: "beta"
 });
 
 // Single argument string literal, no space
@@ -168,8 +168,8 @@ var c;
 
 // Good
 var a, b, c,
-  foo = true,
-  bar = false;
+	foo = true,
+	bar = false;
 ```
 
 ## 4. Equality
@@ -194,9 +194,9 @@ undefOrNull == null;
 - null: `object === null`
 - null or undefined: `object == null`
 - undefined:
-  - Global Variables: `typeof variable === "undefined"`
-  - Local Variables: `variable === undefined`
-  - Properties: `object.prop === undefined`
+	- Global Variables: `typeof variable === "undefined"`
+	- Local Variables: `variable === undefined`
+	- Properties: `object.prop === undefined`
 
 
 ## 5. Comments
