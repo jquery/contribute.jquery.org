@@ -34,13 +34,13 @@ And what if the project decides not to include your contribution? That's ok! You
 
 ### Being a Good Citizen
 
-When you contribute to open source projects, you become part of a community. A group of like-minded individuals coming together over a common interest or skill set. Just like in any community, there are appropriate ways to conduct yourself when interacting with other members of that group. Treating others with respect is not just curtious, but it helps encourage new people that may have important contributions to feel comfortable enough to put themselves out there and take that first step toward getting involved.
+Open source projects are small communities of like-minded individuals coming together over a common interest or skill set. As with any community, there are appropriate ways to conduct yourself when interacting with other members of that group. Treating others with respect is not just courteous, but it helps encourage new people that may have important contributions to feel comfortable enough to put themselves out there and take that first step toward getting involved.
 
-Whether you're answering questions in a forum, chatting with someone at a conference or commenting on a section of someone's code, keep in mind that your words and your actions have real consequences. Treat others how you would like to be treated and keep in mind that we were all beginners at some point. When you encounter that person that doesn't follow these recommendations, and don't worry, you will, just try to follow these same recommendations. Who knows, maybe that person has the solution you've been looking for or has a great idea for something new and they just need to be heard.
+Whether you're answering questions in a forum, chatting with someone at a conference or commenting on a section of someone's code, keep in mind that your words and your actions have real consequences. Treat others how you would like to be treated and keep in mind that we were all beginners at some point. When you encounter a community member that doesn't follow or understand the [mores](http://en.wikipedia.org/wiki/Mores), just remember that someone once helped you and pass on the kindness.
 
 ## Add to Your Toolbelt
 
-Just like any other skilled laborer, an open source contributor has a few tools of the trade that they need to learn. As with other facets of contributing to open source, learning and using some of these tools may be intimidating at first but remember, you're part of a community now. More than likely, there is someone out there that had the same problems as you and is eagerly awaiting the chance to share with you how they overcame those problems and how you can too.
+As with other facets of contributing to open source, learning and using some of these tools may be intimidating at first but remember, you're part of a community now. More than likely, there is someone out there that had the same problems as you and is eagerly awaiting the chance to share with you how they overcame those problems and how you can too.
 
 ### The Command Line
 
