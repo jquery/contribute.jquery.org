@@ -2,19 +2,20 @@
 title: Getting Started Contributing to Open Source
 ---
 
-Contributing to the jQuery project, and to any FOSS project for that matter,
-can be a rewarding experience both in terms of the way you can help yourself
-and projects you are working on, as well as the countless number of others you
-may help with your contribution. Taking that first step though, can be
-intimidating. From learning new technologies, to interacting with people you
-have never met, to putting yourself and your code out for the world to see,
+Contributing to the jQuery project, and to any
+[FOSS](http://en.wikipedia.org/wiki/Free_and_open_source_software) project for
+that matter, can be a rewarding experience both in terms of the way you can
+help yourself and projects you are working on, as well as the countless number
+of others you may help with your contribution. Taking that first step though,
+can be intimidating. From learning new technologies, to interacting with people
+you have never met, to putting yourself and your code out for the world to see,
 there are many factors that may act as barriers to entry. Hopefully, this
 document will give you that push you need to get past those reservations and
 get involved.
 
 ## Dive In
 
-Usually, someone has an idea of what they want to contribute to an open source
+Often, folks have an idea of what they want to contribute to an open source
 project before they even think about how they would do it. But even if you have
 no idea what you want to contribute, there is probably some way that you can
 make your mark.
@@ -47,7 +48,7 @@ At least you think you found a bug. The best thing to do is to first try to
 narrow that issue down to as minimal of a test case as you can to make sure
 it's an issue with the project. You wouldn't want someone to tell you that you
 did something wrong if they didn't have proof that it's your fault, right? Once
-you know it's the projects issue, make sure they don't already know about it by
+you know it's the project's issue, make sure they don't already know about it by
 checking their system for bug tracking. There may already be a discussion in
 progress that you can contribute to or at least follow for a resolution. If the
 project doesn't know about this bug, then it's time to tell them about it.
@@ -104,27 +105,49 @@ you encounter a community member that doesn't follow or understand the
 [mores](http://en.wikipedia.org/wiki/Mores), just remember that someone once
 helped you and pass on the kindness.
 
-## Add to Your Toolbelt
+## (Being Willing To) Add to Your Toolbelt
 
-As with other facets of contributing to open source, learning and using some of
-these tools may be intimidating at first but remember, you're part of a
-community now. More than likely, there is someone out there that had the same
-problems as you and is eagerly awaiting the chance to share with you how they
-overcame those problems and how you can too.
+A major factor that often keeps developers from contributing to open source
+projects is a lack of comfort with the tools and workflows that are typically
+employed. The most common stumbling blocks for newcomers tend to be
+
+* the command line
+* version control
+* local development
+
+Depending on your background, these these may be normal parts of your
+everyday workflow, or they may be intimidating obstacles that send you running
+in the opposite direction every time you scan a README. Before delving into a bit
+more detail about each of these and why it's important, here are some important things 
+to keep in mind.
+
+* **It's OK to not already know.** Not be able to use the same tools you know your peers are already adept with can feel embarassing, as can having to say "I don't know." No one springs forth from the womb with a magical ability to collaborate on distributed software projects, and at some point everyone had to invest the time to learn the tools. 
+* **You don't have to know *everything* to do *anything.* ** Learning these tools is a process, and you don't have to be a master of any of them to contribute effectively. You just have to be willing to try.
+* **This will make you a better developer.** If you aren't using any of these, they can be a major boon to your productivity and introduce you techniques that can apply in other facets of your career
+* **You're part of a community now.**  There are other people out there that have had the same problems, and are ready, willing and able to share with you how they
+overcame their issues and how you can too.
+* **You can do it!** There are literally *millions* of software developers in the world who use these tools each day. If you're already writing HTML, CSS, and JavaScript, we have faith you can join them!
 
 ### The Command Line
 
-When learning many of these tools, at some point it becomes inevitable that you
-will need to become more familiar and comfortable with the command line. There
-is no doubt that many of the tools we use have very good GUI applications and
-when someone is starting out in open source, the initial thought may be to go
-that route. Eventually though, the need to become comfortable with the command
-line grows. Whether you're managing your files, editing their contents or
+If you aren't used to the command line (or shell, or terminal, or "scary black
+box", etc), then you've probably had the frustrating experience of coming
+across a project where the documentation states that "getting started with *X*
+is simple" and then proceeds to list a series of commands that you find
+confusing and anything but simple. You probably looked for a GUI way to
+complete the task, or just gave up entirely. While there are many fine GUI
+applications out there for all sorts of software development tasks, over time
+you'll find the need to become comfortable with the command line grows.
+
+Whether you're managing your files, editing their contents or
 interacting with code repositories, at some point the more granular control and
-efficient interface of the command line becomes a warm blanket you wrap
-yourself in when you sit down to work. So why not start with the command line
-and avoid the process of relearning everything when you decide that you need
-the command line? You'll be glad did.
+efficient interface of the command line can become a warm blanket you wrap
+yourself in when you sit down to work. Once you're ready to take the leap, here are a 
+few resources you may find beneficial.
+
+* [linuxcommand.org: Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php)
+* [Getting to Know the Command Line](http://www.davidbaumgold.com/tutorials/command-line/)
+* [Introduction to the Windows Command Prompt](http://www.bleepingcomputer.com/tutorials/windows-command-prompt-introduction/)
 
 ### Local Development
 
