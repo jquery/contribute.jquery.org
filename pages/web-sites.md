@@ -235,6 +235,7 @@ If IRC is not your thing, but you still want or need to get in touch, please use
 
 * [jquery.com](http://github.com/jquery/jquery.com/) - The content of [jquery.com](http://jquery.com) itself
 * [api.jquery.com](http://github.com/jquery/api.jquery.com/) - jQuery Core API documentation
+* [learn.jquery.com](https://github.com/jquery/learn.jquery.com) - Main jQuery documentation
 * [plugins.jquery.com](http://github.com/jquery/jquery.com/) - The jQuery Plugin Registry
 
 
