@@ -251,7 +251,7 @@ If IRC is not your thing, but you still want or need to get in touch, please use
 * [api.qunitjs.com](http://github.com/jquery/api.qunitjs.com/) - QUnit API documentation
 
 
-* [sizzlejs.com](http://github.com/jquery/sizzlejs.com/) - The content of [qunitjs.com](http://qunitjs.com) itself
+* [sizzlejs.com](http://github.com/jquery/sizzlejs.com/) - The content of [sizzlejs.com](http://sizzlejs.com) itself
 
 
 * [jquery.org](http://github.com/jquery/jquery.org/) - The content of [jquery.org](http://jquery.org) itself
