@@ -25,6 +25,8 @@ while(condition) iterating++;
 
 for(var i=0;i<100;i++) someIterativeFn();
 
+object[array[0]];
+
 
 // Good
 if ( condition ) {
@@ -81,6 +83,9 @@ try {
 } finally {
 	// expressions
 }
+
+// Good
+object[ array[ 0 ] ];
 ```
 
 
@@ -91,12 +96,6 @@ Empty objects and arrays don't need filler spaces
 ```js
 var object = {},
 	array = [];
-```
-
-Space omission is allowed when dereferencing an array:
-
-```js
-array[0];
 ```
 
 
@@ -121,9 +120,6 @@ Exceptions:
 // Empty function calls
 foo();
 
-// Nested calls
-foo( bar(arg) );
-
 // Functions with callbacks
 foo(function() {
 	// Note there is no extra space between the first paren
@@ -139,22 +135,13 @@ foo({
 	a: "alpha",
 	b: "beta"
 });
-
-// Single argument string literal, no space
-foo("bar");
-
-// Inner grouping parens, no space
-if ( !("foo" in obj) ) {
-
-}
-
 ```
 
 ## 3. Assignments
 
 Assignments should always have a semicolon after them.
 
-Semicolons should always be followed by an endline.
+Semicolons should always be followed by a newline.
 
 Assignments in a declaration should always be on their own line. Declarations that don't have an assignment should be listed together at the start of the declaration. For example:
 
@@ -187,9 +174,9 @@ undefOrNull == null;
 - Number: `typeof object === "number"`
 - Boolean: `typeof object === "boolean"`
 - Object: `typeof object === "object"`
-- Plain Object: `jQuery.isPlainObject(object)`
-- Function: `jQuery.isFunction(object)`
-- Array: `jQuery.isArray(object)`
+- Plain Object: `jQuery.isPlainObject( object )`
+- Function: `jQuery.isFunction( object )`
+- Array: `jQuery.isArray( object )`
 - Element: `object.nodeType`
 - null: `object === null`
 - null or undefined: `object == null`
