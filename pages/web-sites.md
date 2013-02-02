@@ -194,10 +194,12 @@ Once you get [jquery-wp-content](http://github.com/jquery/jquery-wp-content) wor
 and see a site that looks exactly like the live site, only without any actual articles. That's where
 your fork `contribute.jquery.org` content repo comes into play.
 
+1. Fork the [`contribute.jquery.org`](https://github.com/jquery/contribute.jquery.org) repository on GitHub by clicking the "Fork" button.
+1. Clone your forked repository to whereever you'd like, except *not* be inside of your WordPress and `jquery-wp-content` directories. -- `git clone https://github.com/YourUsername/contribute.jquery.org.git`
 1. Enter the directory where you cloned the repo -- `cd contribute.jquery.org`
 1. Install grunt-cli (if you haven't already) -- `npm install -g grunt-cli`
 1. Install local build dependencies -- `npm install`
-1. Copy the `config-sample.json` file to `config.json`
+1. Copy the `config-sample.json` file to `config.json` in the same directory -- `cp config-sample.json config.json`
 1. Edit `config.json` to use the username and password for your local WordPress network
 1. Build and deploy the files to your local WordPress -- `grunt deploy`
 
