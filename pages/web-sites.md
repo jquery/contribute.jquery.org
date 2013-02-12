@@ -182,12 +182,13 @@ WordPress and [jquery-wp-content](http://github.com/jquery/jquery-wp-content)
 following [the instructions in its
 README](https://github.com/jquery/web-base-template/blob/master/README.md).
 
-### Workflow
+### <a name="workflow" href="#workflow">Workflow</a>
 
-_For the sake of the rest of this example, we'll assume you wanted to work on
-the content and style of this site,
-[contribute.jquery.org](http://contribute.jquery.org). The same basic setup
-applies to all the sites._
+_These setup instructions apply to all jQuery Foundation websites with public
+content repositories. For the sake of the rest of this example, we'll assume
+you wanted to work on the content and style of
+[contribute.jquery.org](http://contribute.jquery.org). Please substitute the URL
+of whichever site you are actually working on, as appropriate._
 
 Once you get [jquery-wp-content](http://github.com/jquery/jquery-wp-content) working right, you should be able navigate to
 [local.contribute.jquery.org](http://local.contribute.jquery.org) in a browser,
