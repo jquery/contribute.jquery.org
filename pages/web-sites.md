@@ -221,8 +221,11 @@ work.
 
 If you're struggling to get any part of any site working properly, or have any questions, we're here to help.
 
-The best place to get help is on [IRC](http://en.wikipedia.org/wiki/Internet_Relay_Chat), in the #jquery-content
-channel on [Freenode](http://freenode.net). If you're unfamiliar with IRC, you can use the [webchat gateway](http://webchat.freenode.net/).
+The best place to get help is on [IRC](http://irc.jquery.org/), in the
+[#jquery-content](irc://irc.freenode.net/#jquery-content) channel on
+[Freenode](http://freenode.net). If you're unfamiliar with IRC, you can use the
+[webchat gateway](http://webchat.freenode.net/) or [learn
+more](http://irc.jquery.org/irc-help/).
 
 In addition, the jQuery Content Team holds a [public, weekly
 meeting](http://jquery.org/meeting) on Freenode, at 1PM Eastern time in the #jquery-meeting channel.
