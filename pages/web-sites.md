@@ -283,7 +283,7 @@ still in progress, and others that can't be integrated or have been deprecated.
 
 * [forum.jquery.com](http://forum.jquery.com)
 * [bugs.jquery.com](http://bugs.jquery.com)
-* [bugs.jqueryui.com](http://bugs.jquery.com)
+* [bugs.jqueryui.com](http://bugs.jqueryui.com)
 
 #### Deprecated, Shutdown Imminent
 
