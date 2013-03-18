@@ -186,7 +186,7 @@ undefOrNull == null;
 	- Properties: `object.prop === undefined`
 
 
-## 5. Comments
+## 6. Comments
 
 Single line comments go OVER the line they refer to:
 
