@@ -14,7 +14,7 @@ Grunt provides a JSHint task to verify some basic, practical soundness of the co
 - Liberal spacing in code.
 - `if/else/for/while/try` always have braces and always go on multiple lines.
 
-
+### Bad Examples
 
 ```js
 
@@ -29,7 +29,11 @@ for(var i=0;i<100;i++) someIterativeFn();
 
 // Bad
 object[array[0]];
+```
 
+### Good Examples
+
+```js
 
 // Good
 if ( condition ) {
