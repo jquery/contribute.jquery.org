@@ -21,10 +21,13 @@ Grunt provides a JSHint task to verify some basic, practical soundness of the co
 // Bad
 if(condition) doSomething();
 
+// Bad
 while(condition) iterating++;
 
+// Bad
 for(var i=0;i<100;i++) someIterativeFn();
 
+// Bad
 object[array[0]];
 
 
