@@ -12,7 +12,7 @@ Grunt provides a JSHint task to verify some basic, practical soundness of the co
 - No end of line whitespace.
 - No blank line whitespace.
 - Liberal spacing in code.
-- `if/else/for/while/try` always have braces and always go on multiple lines.
+- `if`/`else`/`for`/`while`/`try` always have braces and always go on multiple lines.
 
 ### Bad Examples
 
