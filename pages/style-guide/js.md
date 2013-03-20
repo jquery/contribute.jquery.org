@@ -207,14 +207,14 @@ For long comments, use:
 ```js
 /*
 Four score and seven—pause—minutes ago...
- */
+*/
 ```
 
 Inline comments are allowed as an exception when used to annotate special arguments in formal parameter lists:
 
 ```js
 function foo( types, selector, data, fn, /*INTERNAL*/ one ) {
- // do stuff.
+	// do stuff.
 }
 ```
 
