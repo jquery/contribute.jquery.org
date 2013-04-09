@@ -4,7 +4,48 @@ title: JavaScript Style Guide
 
 ## 1. Linting
 
-Grunt provides a JSHint task to verify some basic, practical soundness of the codebase. The options are preset.
+Use JSHint to detect errors and potential problems. Every jQuery project has a
+Grunt task for linting all JavaScript files: `grunt jshint`. The options for
+JSHint are stored in a `.jshintrc` file; many repositories will have multiple
+`.jshintrc` files based on the type of code in each directory.
+
+Each `.jshintrc` file follows a specific format. All options must be alphabetized
+and grouped:
+
+```json
+{
+	"common1": true,
+	"common2": true,
+
+	"repoSpecific1": true,
+	"repoSpecific2": true,
+
+	"globals": {
+		"repoGlobal1": true,
+		"repoGlobal2": false
+	}
+}
+```
+
+The following common options must be used in all projects:
+
+```json
+{
+	"boss": true,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"expr": true,
+	"immed": true,
+	"noarg": true,
+	"onevar": true,
+	"quotmark": "double",
+	"smarttabs": true,
+	"trailing": true,
+	"undef": true,
+	"unused": true
+}
+```
 
 ##  2. Spacing
 
