@@ -38,7 +38,7 @@ All element and attribute names should be lowercase. Attribute values should be 
 *   No `type` attribute on `link` or `style` tags.
 
 ```
-<script src="..."><script>
+<script src="..."></script>
 <script></script>
 <link rel="stylesheet" href="...">
 <style></style>
