@@ -245,7 +245,7 @@ If IRC is not your thing, but you still want or need to get in touch, please use
 * [learn.jquery.com](http://github.com/jquery/learn.jquery.com/) - The jQuery Learning Center
 
 
-* [jqueryui.com](http://github.com/jquery/jqueryui.com/) - The content of [jquery.com](http://jqueryui.com) itself
+* [jqueryui.com](http://github.com/jquery/jqueryui.com/) - The content of [jqueryui.com](http://jqueryui.com) itself
 * [api.jqueryui.com](http://github.com/jquery/api.jqueryui.com/) - jQuery UI API documentation
 * [download.jqueryui.com](http://github.com/jquery/download.jqueryui.com/) - The [jQuery UI Download Builder](http://download.jqueryui.com)
 
