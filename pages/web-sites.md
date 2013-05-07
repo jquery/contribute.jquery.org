@@ -196,7 +196,7 @@ and see a site that looks exactly like the live site, only without any actual ar
 your fork `contribute.jquery.org` content repo comes into play.
 
 1. Fork the [`contribute.jquery.org`](https://github.com/jquery/contribute.jquery.org) repository on GitHub by clicking the "Fork" button.
-1. Clone your forked repository to whereever you'd like, except *not* be inside of your WordPress and `jquery-wp-content` directories. -- `git clone https://github.com/YourUsername/contribute.jquery.org.git`
+1. Clone your forked repository to wherever you'd like, except *not* be inside of your WordPress and `jquery-wp-content` directories. -- `git clone https://github.com/YourUsername/contribute.jquery.org.git`
 1. Enter the directory where you cloned the repo -- `cd contribute.jquery.org`
 1. Install grunt-cli (if you haven't already) -- `npm install -g grunt-cli`
 1. Install local build dependencies -- `npm install`
