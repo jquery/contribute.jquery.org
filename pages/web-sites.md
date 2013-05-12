@@ -180,7 +180,7 @@ system
 Once you've got these major pieces are in place, you'll be able to get
 WordPress and [jquery-wp-content](http://github.com/jquery/jquery-wp-content)
 following [the instructions in its
-README](https://github.com/jquery/web-base-template/blob/master/README.md).
+README](https://github.com/jquery/jquery-wp-content/blob/master/README.md).
 
 ### <a name="workflow" href="#workflow">Workflow</a>
 
