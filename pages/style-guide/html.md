@@ -19,7 +19,7 @@ Always use the minimal, versionless doctype.
 Always define which language the page is written in.
 
 ```
-<head lang="en">
+<html lang="en">
 ```
 
 ## Encoding
