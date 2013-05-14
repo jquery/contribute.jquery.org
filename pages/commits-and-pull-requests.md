@@ -57,13 +57,17 @@ If your branch pertains to a particular issue, **name the branch with a referenc
 $ git checkout -b 151-remove-build-artifact
 ```
 
-In order to facilitate cleaner and easier merges, it can be useful to "branch late." Rather than branching the second you know you plan to make a change, work on your change until you're ready to commit. At that point, you can quickly [stash](http://git-scm.com/book/en/Git-Tools-Stashing) your work, pull the upstream master, and then branch and commit:
+In order to facilitate cleaner and easier merges, it can be useful to "branch late."
+Rather than branching the second you know you plan to make a change, work on your
+change until you're ready to commit. At that point, you can quickly
+[stash](http://git-scm.com/book/en/Git-Tools-Stashing) your work, pull the upstream
+master, and then branch and commit:
 
 ``` bash
 $ git stash
 $ git pull upstream master
-$ git stash pop
 $ git checkout -b 123-header-shadows
+$ git stash pop
 $ git add style.css
 $ git commit -m "Clean up header shadows. Fixes #123."
 ```
