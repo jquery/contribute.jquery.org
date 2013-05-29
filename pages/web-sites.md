@@ -266,6 +266,7 @@ If IRC is not your thing, but you still want or need to get in touch, please use
 * [events.jquery.org](http://github.com/jquery/jquery.org/) - The content of our [Events and Conferences](http://events.jquery.org) site
 * [irc.jquery.org ](http://github.com/jquery/irc.jquery.org/) - The content of our [IRC log and information](http://irc.jquery.org) site
 
+<a name="exceptions"></a>
 ### Non-conforming Sites
 
 Some of our sites are not part of the system described in this article. Some
