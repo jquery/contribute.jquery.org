@@ -49,11 +49,17 @@ The following common options must be used in all projects:
 
 ##  2. Spacing
 
+In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for the browser to read and process.
+
 - Indentation with tabs.
-- No end of line whitespace.
-- No blank line whitespace.
-- Liberal spacing in code.
+- No whitespace at the end of line or on blank lines.
+- Lines should be no longer than 80 characters.
 - `if`/`else`/`for`/`while`/`try` always have braces and always go on multiple lines.
+- Unary special-character operators (e.g., `!`, `++`) should not have space next to their operand.
+- Any `,` and `;` should not have preceding space.
+- Any `;` used as a statement terminator should be at the end of the line.
+- Any `:` following a property name in an object definition should not have preceding space.
+- The `?` and `:` in a ternary conditional should have space on both sides.
 
 ### Bad Examples
 
@@ -61,91 +67,66 @@ The following common options must be used in all projects:
 
 // Bad
 if(condition) doSomething();
+while(!condition) iterating++;
+for(var i=0;i<100;i++) object[array[i]] = someFn(i);
 
-// Bad
-while(condition) iterating++;
-
-// Bad
-for(var i=0;i<100;i++) someIterativeFn();
-
-// Bad
-object[array[0]];
 ```
 
 ### Good Examples
 
 ```js
-
-// Good
-if ( condition ) {
-	// expressions
-}
-
-// Good
-while ( condition ) {
-	// expressions
-}
-
-// Good
 var i = 0;
 
+if ( condition ) {
+	doSomething();
+} else if ( otherCondition ) {
+	somethingElse();
+} else {
+	otherThing();
+}
+
+while ( !condition ) {
+	iterating++;
+}
+
 for ( ; i < 100; i++ ) {
-	// expressions
+	object[ array[ i ] ] = someFn( i );
 }
 
-// Good
-var prop;
-
-for ( prop in object ) {
-	// expressions
-}
-
-// Good
-if ( condition ) {
-	// expressions
-} else {
-	// expressions
-}
-
-// Good
-if ( condition ) {
-	// expressions
-} else if ( condition ) {
-	// expressions
-} else {
-	// expressions
-}
-
-// Good
 try {
 	// expressions
 } catch ( e ) {
 	// expressions
 }
-
-// Good
-try {
-	// expressions
-} catch ( e ) {
-	// expressions
-} finally {
-	// expressions
-}
-
-// Good
-object[ array[ 0 ] ];
 ```
 
 
 ### Arrays and Objects
 
-Empty objects and arrays don't need filler spaces
+Empty objects and arrays don't need filler spaces:
 
 ```js
 var object = {},
 	array = [];
 ```
 
+Object declarations can be made on a single line if they are short. Otherwise they should be broken out one property per line.  Property names only need to be quoted if they are reserved words or contain special characters:
+
+```js
+// Bad
+var map = { ready: 9,
+	when: 4, "you are": 15 };
+
+// Good
+var map = { ready: 9, when: 4, "you are": 15 };
+
+// Good as well
+var map = {
+	ready: 9,
+	when: 4,
+	"you are": 15
+};
+```
 
 
 ### Function Calls
