@@ -144,10 +144,19 @@ foo( node, "property", 2 );
 Exceptions:
 
 ```js
-// Functions with callbacks
+// Function with callback, no space between parentheses and "function"/"}"
 foo(function() {
-	// Note there is no extra space between the first paren
-	// of the executing function call and the word "function"
+	// do stuff
+});
+
+// Function with arguments following a callback, no space before "function"
+foo(function() {
+	// do stuff
+}, options );
+
+// Function with arguments preceding a callback, no space after "}"
+foo( data, function() {
+	// do stuff
 });
 
 // Function accepting an array, no space
