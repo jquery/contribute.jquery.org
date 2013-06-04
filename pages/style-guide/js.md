@@ -49,17 +49,18 @@ The following common options must be used in all projects:
 
 ##  2. Spacing
 
-In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for the browser to read and process.
+In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for browsers to read and process.
 
 - Indentation with tabs.
 - No whitespace at the end of line or on blank lines.
-- Lines should be no longer than 80 characters.
+- Lines should be no longer than 80 characters, and must not exceed 100 (counting tabs as 4 spaces).
 - `if`/`else`/`for`/`while`/`try` always have braces and always go on multiple lines.
 - Unary special-character operators (e.g., `!`, `++`) should not have space next to their operand.
 - Any `,` and `;` should not have preceding space.
 - Any `;` used as a statement terminator should be at the end of the line.
 - Any `:` following a property name in an object definition should not have preceding space.
 - The `?` and `:` in a ternary conditional should have space on both sides.
+- No filler spaces in empty constructs (e.g., `{}`, `[]`, `fn()`)
 
 ### Bad Examples
 
@@ -101,14 +102,7 @@ try {
 ```
 
 
-### Arrays and Objects
-
-Empty objects and arrays don't need filler spaces:
-
-```js
-var object = {},
-	array = [];
-```
+### Objects
 
 Object declarations can be made on a single line if they are short. Otherwise they should be broken out one property per line.  Property names only need to be quoted if they are reserved words or contain special characters:
 
@@ -129,16 +123,20 @@ var map = {
 ```
 
 
-### Function Calls
+### Arrays and Function Calls
 
-Always include extra spaces around the arguments:
+Always include extra spaces around elements and arguments:
 
 ```js
+array = [ "*" ];
+
+array = [ a, b ];
+
 foo( arg );
 
 foo( "string", object );
 
-foo( options, callback );
+foo( options, object[ property ] );
 
 foo( node, "property", 2 );
 ```
@@ -146,13 +144,19 @@ foo( node, "property", 2 );
 Exceptions:
 
 ```js
-// Empty function calls
-foo();
-
-// Functions with callbacks
+// Function with callback, no space between parentheses and "function"/"}"
 foo(function() {
-	// Note there is no extra space between the first paren
-	// of the executing function call and the word "function"
+	// do stuff
+});
+
+// Function with arguments following a callback, no space before "function"
+foo(function() {
+	// do stuff
+}, options );
+
+// Function with arguments preceding a callback, no space after "}"
+foo( data, function() {
+	// do stuff
 });
 
 // Function accepting an array, no space
