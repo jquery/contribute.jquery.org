@@ -60,6 +60,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 - Any `;` used as a statement terminator should be at the end of the line.
 - Any `:` following a property name in an object definition should not have preceding space.
 - The `?` and `:` in a ternary conditional should have space on both sides.
+- No filler spaces in empty constructs (e.g., `{}`, `[]`, `fn()`)
 
 ### Bad Examples
 
@@ -103,13 +104,6 @@ try {
 
 ### Arrays and Objects
 
-Empty objects and arrays don't need filler spaces:
-
-```js
-var object = {},
-	array = [];
-```
-
 Object declarations can be made on a single line if they are short. Otherwise they should be broken out one property per line.  Property names only need to be quoted if they are reserved words or contain special characters:
 
 ```js
@@ -146,9 +140,6 @@ foo( node, "property", 2 );
 Exceptions:
 
 ```js
-// Empty function calls
-foo();
-
 // Functions with callbacks
 foo(function() {
 	// Note there is no extra space between the first paren
