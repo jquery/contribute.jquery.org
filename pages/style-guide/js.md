@@ -49,7 +49,7 @@ The following common options must be used in all projects:
 
 ##  2. Spacing
 
-In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for the browser to read and process.
+In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for browsers to read and process.
 
 - Indentation with tabs.
 - No whitespace at the end of line or on blank lines.
