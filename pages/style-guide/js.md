@@ -53,7 +53,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 
 - Indentation with tabs.
 - No whitespace at the end of line or on blank lines.
-- Lines should be no longer than 80 characters.
+- Lines should be no longer than 80 characters, and must not exceed 100 (counting tabs as 4 spaces).
 - `if`/`else`/`for`/`while`/`try` always have braces and always go on multiple lines.
 - Unary special-character operators (e.g., `!`, `++`) should not have space next to their operand.
 - Any `,` and `;` should not have preceding space.
