@@ -102,7 +102,7 @@ try {
 ```
 
 
-### Arrays and Objects
+### Objects
 
 Object declarations can be made on a single line if they are short. Otherwise they should be broken out one property per line.  Property names only need to be quoted if they are reserved words or contain special characters:
 
@@ -123,16 +123,20 @@ var map = {
 ```
 
 
-### Function Calls
+### Arrays and Function Calls
 
-Always include extra spaces around the arguments:
+Always include extra spaces around elements and arguments:
 
 ```js
+array = [ "*" ];
+
+array = [ a, b ];
+
 foo( arg );
 
 foo( "string", object );
 
-foo( options, callback );
+foo( options, object[ property ] );
 
 foo( node, "property", 2 );
 ```
