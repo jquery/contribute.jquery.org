@@ -1,42 +1,41 @@
 <script>{
-  "title": "Markup Conventions for jQuery Foundation Sites"
+	"title": "Markup Conventions for jQuery Foundation Sites"
 }</script>
 
 <p>All of the sites that are part of the jQuery Wordpress network use the following markup conventions to apply styling to elements.
-Please adhere to these conventions if you are <a href="/web-sites">working on any of our web sites</a>. This page is a live example of these conventions in action.</p>
+Please adhere to these conventions if you are <a href="/web-sites/">working on any of our web sites</a>. This page is a live example of these conventions in action.</p>
 
 <h2 class="block">Tools &amp; Libraries</h2>
 
 <p>The jQuery sites are built with a number of existing libraries and tools. The list below will attempt to catalog the most important ones:</p>
 
 <ul>
-  <li><a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a></li>
-  <li><a href="http://modernizr.com" target="_blank">Modernizr</a></li>
-  <li><a href="https://github.com/scottjehl/Respond" target="_blank">Respond JS</a></li>
-  <li><a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a></li>
-  <li><a href="http://foundation.zurb.com" target="_blank">Zurb Foundation (Grid only)</a></li>
-  <li><a href="https://typekit.com" target="_blank">TypeKit</a></li>
-  <li><a href="http://softwaremaniacs.org/soft/highlight/en/" target="_blank">Highlight.js</a></li>
+	<li><a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a></li>
+	<li><a href="http://modernizr.com" target="_blank">Modernizr</a></li>
+	<li><a href="https://github.com/scottjehl/Respond" target="_blank">Respond JS</a></li>
+	<li><a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a></li>
+	<li><a href="http://foundation.zurb.com" target="_blank">Zurb Foundation (Grid only)</a></li>
+	<li><a href="https://typekit.com" target="_blank">TypeKit</a></li>
+	<li><a href="http://softwaremaniacs.org/soft/highlight/en/" target="_blank">Highlight.js</a></li>
 </ul>
 
-<h2 class="block" id="bkg">Background &amp; Logos</h2>
+<h2 class="block">Background &amp; Logos</h2>
 
-<p>The background colors and logos are set in the <code>base.css</code> file of the parent theme and are triggered by classes on the <code>body</code>. Unless
-you're setting up a site with a new color scheme and logo you should just need to use one of the following classes.</p>
+<p>The background colors and logos are set in the <code>base.css</code> file of the parent theme and are triggered by classes on the <code>body</code>.
+Unless you're setting up a site with a new color scheme and logo, you should just need to use one of the following classes.</p>
 
 <ul>
-  <li><strong>jQuery</strong>: <code>body.jquery</code> <em class="color primary-blue">(blue)</em></li>
-  <li><strong>jQuery UI</strong>: <code>body.jquery-ui</code> <em class="color secondary-orange">(orange)</em></li>
-  <li><strong>jQuery Mobile</strong>: <code>body.jquery-mobile</code> <em class="color secondary-green">(green)</em></li>
-  <li><strong>jQuery Foundation</strong>: <code>body.jquery-foundation</code> <em class="color navy-blue">(navy)</em></li>
-  <li><strong>Sizzle JS</strong>: <code>body.sizzlejs</code> <em class="color sizzle-red">(red)</em></li>
-  <li><strong>Qunit JS</strong>: <code>body.qunitjs</code> <em class="color qunit-secondary-purple">(purple)</em></li>
+	<li><strong>jQuery</strong>: <code>body.jquery</code> <em class="color primary-blue">(blue)</em></li>
+	<li><strong>jQuery UI</strong>: <code>body.jquery-ui</code> <em class="color secondary-orange">(orange)</em></li>
+	<li><strong>jQuery Mobile</strong>: <code>body.jquery-mobile</code> <em class="color secondary-green">(green)</em></li>
+	<li><strong>jQuery Foundation</strong>: <code>body.jquery-foundation</code> <em class="color navy-blue">(navy)</em></li>
+	<li><strong>Sizzle JS</strong>: <code>body.sizzlejs</code> <em class="color sizzle-red">(red)</em></li>
+	<li><strong>Qunit JS</strong>: <code>body.qunitjs</code> <em class="color qunit-secondary-purple">(purple)</em></li>
 </ul>
 
-<p>If you are adding a site with a new logo/color scheme, please add to <code>base.css</code> Don't forget the retina version of the logo and the media query
-to toggle it based on pixel density.</p>
+<p>If you are adding a site with a new logo/color scheme, please add to <code>base.css</code>. Don't forget the retina version of the logo and the media query to toggle it based on pixel density.</p>
 
-<p>Other colors (like headers, buttons &amp; links) and layout specific to the site will be in the <code>style.css</code>of that site's theme.</p>
+<p>Other colors (like headers, buttons &amp; links) and layout styles specific to the site will be in the <code>style.css</code> of that site's theme.</p>
 
 <p>Please see the <a href="http://brand.jquery.org/colors/">Colors</a> section of the jQuery Brand Guidelines for more information about our color story.</p>
 
@@ -45,134 +44,141 @@ to toggle it based on pixel density.</p>
 <p>The jQuery sites use 4 typefaces. Please see the <a href="http://brand.jquery.org/typography/">Typography</a> section of the jQuery Brand Guidelines for more information about our font choices.</p>
 
 <div class="example">
-  <h3>Klavika</h3>
+	<h3>Klavika</h3>
 
-  <h2>Use Klavika for Headers</h2>
+	<h2>Use Klavika for headings.</h2>
 
-  <p>Also for navigation, buttons &amp; actions.</p>
-  <pre>
-<code>font-family: &quot;klavika-web&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif;</code>
-</pre>
+	<p>Also for navigation, buttons &amp; actions.</p>
+
+	<pre><code>
+font-family: &quot;klavika-web&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Helvetica Neue</h3>
+	<h3>Helvetica Neue</h3>
 
-  <p>Used for body copy throughout the site. Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are
-  really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They
-  are grand.</p>
-  <pre>
-<code>font-family: &quot;Helvetica Neue&quot;, HelveticaNeue, Helvetica, Arial, sans-serif;</code>
-</pre>
+	<p>Used Helvetica Neue for body copy.</p>
+
+	<pre><code>
+font-family: &quot;Helvetica Neue&quot;, HelveticaNeue, Helvetica, Arial, sans-serif;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Source Code Pro</h3>
+	<h3>Source Code Pro</h3>
 
-  <code>Used on code blocks</code>
+	<code>Used Source Code Pro for code blocks.</code>
 
-  <pre>
-<code>font-family: "source-code-pro", Consolas, monospace;</code>
-</pre>
+	<pre><code>
+font-family: "source-code-pro", Consolas, monospace;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Font Awesome</h3>
+	<h3>Font Awesome</h3>
 
-  <p>Font Awesome lets you add vector icons to just about anything. Use the <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">reference
-  guide</a> to choose the right classes and icons.</p>
+	<p>Font Awesome lets you add vector icons to just about anything. Use the <a href="http://fortawesome.github.com/Font-Awesome/icons/" target="_blank">reference
+	guide</a> to choose the right classes and icons.</p>
 
-  <p>This is a paragraph with an <code>&lt;i&gt;</code> element.</p>
+	<p><i class="icon-circle-arrow-right"></i> This is a paragraph with an <code>&lt;i&gt;</code> element.</p>
 
-  <ul>
-    <li class="icon-exclamation-sign">Oh No!</li>
-    <li class=" icon-barcode">A barcode</li>
-  </ul>
+	<ul>
+		<li class="icon-exclamation-sign">Oh No!</li>
+		<li class="icon-barcode">A barcode</li>
+	</ul>
 
-  <h2>Want to try it on a header?</h2>
-  <pre>
-<code>&lt;p&gt;&lt;i class=&quot;icon-circle-arrow-right&quot;&gt;&lt;/i&gt; This is...&lt;/p&gt;
+	<h2><i class="icon-lightbulb"></i> Want to try it on a header?</h2>
+	<pre><code>
+&lt;p&gt;&lt;i class=&quot;icon-circle-arrow-right&quot;&gt;&lt;/i&gt; This is...&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li class=&quot;icon-exclamation-sign&quot;&gt;Oh No!&lt;/li&gt;
-&lt;li class=&quot; icon-barcode&quot;&gt;A barcode &lt;/li&gt;
+	&lt;li class=&quot;icon-exclamation-sign&quot;&gt;Oh No!&lt;/li&gt;
+	&lt;li class=&quot;icon-barcode&quot;&gt;A barcode &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2&gt;&lt;i class=&quot;icon-plane&quot;&gt;&lt;/i&gt; Want to...&lt;/h2&gt;</code>
-</pre>
+&lt;h2&gt;&lt;i class=&quot;icon-lightbulb&quot;&gt;&lt;/i&gt; Want to...&lt;/h2&gt;
+	</code></pre>
 </div>
+
 <h2 class="block" id="foundation">Foundation</h2>
 
-<p>Please use this basic foundation for all pages.</p>
+<p>Please use this basic foundation for all pages:</p>
 
 <ul>
-  <li>The <code>#container</code> sets the background color and provides padding around the white content area.</li>
-  <li>The <code>#content-wrapper</code> creates the white content area and gives the appropriate padding.</li>
-  <li>The <code>#content</code> should be used for the main content column.</li>
-  <li>The <code>#sidebar</code> should be used for the secondary column or sidebar.</li>
+	<li>The <code>#container</code> sets the background color and provides padding around the white content area.</li>
+	<li>The <code>#content-wrapper</code> creates the white content area and gives the appropriate padding.</li>
+	<li>The <code>#content</code> should be used for the main content column.</li>
+	<li>The <code>#sidebar</code> should be used for the secondary column or sidebar.</li>
 </ul>
-<pre>
-<code>&lt;body&gt;
+
+<pre><code>
+&lt;body&gt;
+
 &lt;header&gt;
-  Header (Global Nav, Logo and Main Nav)
-&lt;/header&gt;         
-&lt;div id="container"&gt;              
-  &lt;div id="content-wrapper" class="clearfix"&gt;
-    &lt;div id="content"&gt;
-      Content goes here  
-    &lt;/div&gt;
-    &lt;div id="sidebar"&gt;
-      Sidebar Here
-    &lt;/div&gt;
-  &lt;/div&gt; &lt;!--End Content Wrapper--&gt;
-&lt;/div&gt; &lt;!--End Container--&gt;
-&lt;/body&gt; </code>
-</pre>
+	Header (Global Nav, Logo and Main Nav)
+&lt;/header&gt;
+
+&lt;div id="container"&gt;
+	&lt;div id="content-wrapper" class="clearfix row"&gt;
+		&lt;div class="content-right twelve columns"&gt;
+			&lt;div id="content"&gt;
+				main content
+			&lt;/div&gt;
+			&lt;div id="sidebar"&gt;
+				sidebar content
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+</code></pre>
 
 <h2 class="block">Layout Options</h2>
 
 <p>You can easily customize different layouts for <code>#content</code>.</p>
 
 <div class="row">
-  <div class="four columns">
-    <figure class="full noborder">
-      <img alt="Content Right" class="full noborder" src="/resources/layout-sidebar-right.gif">
+	<div class="four columns">
+		<figure class="full noborder">
+			<img src="/resources/layout-sidebar-right.gif" alt="Content Right" class="full noborder">
 
-      <figcaption>
-        <em>This is the default</em>
-      </figcaption>
-    </figure>
-  </div>
+			<figcaption>
+				<em>This is the default</em>
+			</figcaption>
+		</figure>
+	</div>
 
-  <div class="four columns">
-    <figure class="full noborder">
-      <img alt="Content Full" class="full noborder" src="/resources/layout-sidebar-none.gif">
+	<div class="four columns">
+		<figure class="full noborder">
+			<img src="/resources/layout-sidebar-none.gif" alt="Content Full" class="full noborder">
 
-      <figcaption>
-        <code>body.content-full</code>
-      </figcaption>
-    </figure>
-  </div>
+			<figcaption>
+				<code>body.content-full</code>
+			</figcaption>
+		</figure>
+	</div>
 
-  <div class="four columns">
-    <figure class="full noborder">
-      <img alt="Content Left" class="full noborder" src="/resources/layout-sidebar-left.gif">
+	<div class="four columns">
+		<figure class="full noborder">
+			<img src="/resources/layout-sidebar-left.gif" alt="Content Left" class="full noborder">
 
-      <figcaption>
-        <code>body.content-right</code>
-      </figcaption>
-    </figure>
-  </div>
+			<figcaption>
+				<code>body.content-right</code>
+			</figcaption>
+		</figure>
+	</div>
 </div>
 
 <div class="row four columns centered">
-  <figure class="full noborder">
-    <img alt="Content Full" class="full noborder" src="/resources/layout-sidebar-none-full.gif">
+	<figure class="full noborder">
+		<img src="/resources/layout-sidebar-none-full.gif" alt="Content Full" class="full noborder">
 
-    <figcaption>
-      <code>body.content-full.full-width</code>
-    </figcaption>
-  </figure>
+		<figcaption>
+			<code>body.content-full.full-width</code>
+		</figcaption>
+	</figure>
 </div>
 
 <h2 class="block" id="images">Images</h2>
@@ -180,92 +186,87 @@ to toggle it based on pixel density.</p>
 <p>Images can be floated and given captions very easily.</p>
 
 <div class="example">
-  <h3>Image Full</h3>
+	<h3>Image Full</h3>
 
-  <p><img alt="#" class="full" src="/resources/dummy-blog.jpg">Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian
-  landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours.
-  Oh, those oranges. They are grand.</p>
-  <pre>
-<code>&lt;img src=&quot;#&quot; class=&quot;full&quot;/&gt;</code>
-</pre>
+	<p><img src="/resources/dummy-blog.jpg" alt="" class="full">Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+
+	<pre><code>
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;full&quot;&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Image Floated Left</h3>
+	<h3>Image Floated Left</h3>
 
-  <p><img alt="#" class="left" src="/resources/dummy-blog.jpg" width="300">Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a
-  martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3
-  hours. Oh, those oranges. They are grand.</p>
-  <pre>
-<code>&lt;img src=&quot;#&quot; class=&quot;left&quot;/&gt;</code>
-</pre>
+	<p><img src="/resources/dummy-blog.jpg" alt="" class="left" width="300">Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+
+	<pre><code>
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;left&quot;&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Image Floated Right</h3>
+	<h3>Image Floated Right</h3>
 
-  <p><img alt="#" class="right" src="/resources/dummy-blog.jpg" width="300">Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a
-  martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3
-  hours. Oh, those oranges. They are grand.</p>
-  <pre>
-<code>&lt;img src=&quot;#&quot; class=&quot;right&quot;/&gt;</code>
-</pre>
+	<p><img src="/resources/dummy-blog.jpg" alt="" class="right" width="300">Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+
+	<pre><code>
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;right&quot;&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Image with Caption</h3>
+	<h3>Image with Caption</h3>
 
-  <figure class="left">
-    <img alt="test" class="left" src="/resources/dummy-blog.jpg" width="300">
+	<figure class="left">
+		<img alt="test" class="left" src="/resources/dummy-blog.jpg" width="300">
+		<figcaption>Hey look a figcaption!</figcaption>
+	</figure>
 
-    <figcaption>
-      Hey look a figcaption!
-    </figcaption>
-  </figure>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And
-  if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.
-  <pre>
-<code>&lt;figure class=&quot;left&quot;&gt;                 
-&lt;img class=&quot;left&quot; src=&quot;#&quot; &gt;
-&lt;figcaption&gt;Hey look a figcaption!&lt;/figcaption&gt;
-&lt;/figure&gt;</code>
-</pre>
+	Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.
+
+	<pre><code>
+&lt;figure class=&quot;left&quot;&gt;
+	&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;left&quot;&gt;
+	&lt;figcaption&gt;Hey look a figcaption!&lt;/figcaption&gt;
+&lt;/figure&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Image with Caption &amp; No Border</h3>
+	<h3>Image with Caption &amp; No Border</h3>
 
-  <figure class="left noborder">
-    <img alt="test" class="left noborder" src="/resources/dummy-blog.jpg" width="300">
+	<figure class="left noborder">
+		<img src="/resources/dummy-blog.jpg" alt="" class="left noborder" width="300">
+		<figcaption>Hey look a figcaption!</figcaption>
+	</figure>
 
-    <figcaption>
-      Hey look a figcaption!
-    </figcaption>
-  </figure>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And
-  if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.
-  <pre>
-<code>&lt;figure class=&quot;left noborder&quot;&gt;                    
-&lt;img class=&quot;left noborder&quot; src=&quot;#&quot;&gt;
-&lt;figcaption&gt;Hey look a figcaption!&lt;/figcaption&gt;
-&lt;/figure&gt;</code>
-</pre>
+	Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.
+
+	<pre><code>
+&lt;figure class=&quot;left noborder&quot;&gt;
+	&lt;img src=&quot;...&quot; alt=&quot;...&quot;  class=&quot;left noborder&quot;
+	&lt;figcaption&gt;Hey look a figcaption!&lt;/figcaption&gt;
+&lt;/figure&gt;
+	</code></pre>
 </div>
 
 <h2 class="block" id="embeds">Embeds</h2>
 
-<p>For an embedded element like a YouTube or Vimeo video, <code>iframe</code> embed, etc.. make sure you wrap in a <code>embed</code> div so that it scales
-proportionately with media queries.</p>
+<p>For an embedded element like a YouTube or Vimeo video, <code>iframe</code>, etc. make sure you wrap the element in an <code>embed</code> div so that it scales proportionately with media queries.</p>
 
 <div class="example">
-  <h3>Video Embed</h3>
+	<h3>Video Embed</h3>
 
-  <div class="embed">
-    <iframe src="http://player.vimeo.com/video/11369505" width="319" height="568" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-  </div>
-  <pre>
-<code>&lt;div class=&quot;embed&quot;&gt;
-&lt;iframe src=#&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;</code>
-</pre>
+	<div class="embed">
+		<iframe src="http://player.vimeo.com/video/11369505" width="319" height="568" frameborder="0"></iframe>
+	</div>
+
+	<pre><code>
+&lt;div class=&quot;embed&quot;&gt;
+	&lt;iframe src=&quot;...&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+	</code></pre>
 </div>
 
 <h2 class="block" id="Buttons">Buttons</h2>
@@ -273,179 +274,189 @@ proportionately with media queries.</p>
 <p>Styling buttons is as simple as adding a class of <code>button</code>. Other options include <code>dark</code> and <code>large</code>.</p>
 
 <div class="example">
-  <h3>Button Styles</h3><a class="button" href="#">Regular Button</a><br>
-  <br>
-  <a class="button dark" href="#">Dark Button</a><br>
-  <br>
-  <a class="button large" href="#">Large Button</a><br>
-  <br>
-  <pre>
-<code>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Regular Button&lt;/a&gt;
+	<h3>Button Styles</h3>
+
+	<a class="button" href="#">Regular Button</a>
+	<br><br>
+	<a class="button dark" href="#">Dark Button</a>
+	<br><br>
+	<a class="button large" href="#">Large Button</a>
+	<br><br>
+
+	<pre><code>
+&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Regular Button&lt;/a&gt;
 &lt;a class=&quot;button dark&quot; href=&quot;#&quot;&gt;Dark Button&lt;/a&gt;
-&lt;a class=&quot;button large&quot; href=&quot;#&quot;&gt;Large Button&lt;/a&gt;</code>
-</pre>
+&lt;a class=&quot;button large&quot; href=&quot;#&quot;&gt;Large Button&lt;/a&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Form Buttons</h3><input type="submit" value="Submit Button"><br>
-  <br>
-  <input class="dark" type="submit" value="Dark Submit Button"><br>
-  <br>
-  <input class="large" type="submit" value="Large Submit Button"><br>
-  <br>
-  <pre>
-<code>&lt;input type=&quot;submit&quot; value=&quot;Submit Button&quot; /&gt;
-&lt;input class=&quot;dark&quot; type=&quot;submit&quot; value=&quot;Dark Submit Button&quot; /&gt;
-&lt;input class=&quot;large&quot; type=&quot;submit&quot; value=&quot;Large Submit Button&quot; /&gt;</code>
-</pre>
+	<h3>Form Buttons</h3>
+
+	<input type="submit" value="Submit Button">
+	<br><br>
+	<input class="dark" type="submit" value="Dark Submit Button">
+	<br><br>
+	<input class="large" type="submit" value="Large Submit Button">
+	<br><br>
+
+	<pre><code>
+&lt;input type=&quot;submit&quot; value=&quot;Submit Button&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Dark Submit Button&quot; class=&quot;dark&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Large Submit Button&quot; class=&quot;large&quot;&gt;
+	</code></pre>
 </div>
 
 <h2 class="block">Default Element Styling</h2>
 
 <div class="example">
-  <h3>Headings</h3>
-  <h1>Heading One Looks Like This</h1>
-  <h2>Heading Two Looks Like This</h2>
-  <h3 class="ignore-example">Heading Three Looks Like This</h3>
-  <h4>Heading Four Looks Like This</h4>
-  <pre>
-<code>&lt;h1&gt;Heading One Looks Like This&lt;/h1&gt;
+	<h3>Headings</h3>
+	<h1>Heading One Looks Like This</h1>
+	<h2>Heading Two Looks Like This</h2>
+	<h3 class="ignore-example">Heading Three Looks Like This</h3>
+	<h4>Heading Four Looks Like This</h4>
+
+	<pre><code>
+&lt;h1&gt;Heading One Looks Like This&lt;/h1&gt;
 &lt;h2&gt;Heading Two Looks Like This&lt;/h2&gt;
 &lt;h3&gt;Heading Three Looks Like This&lt;/h3&gt;
-&lt;h4&gt;Heading Four Looks Like This&lt;/h4&gt;</code>
-</pre>
+&lt;h4&gt;Heading Four Looks Like This&lt;/h4&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Lists</h3>
+	<h3>Lists</h3>
 
-  <ul>
-    <li>Unordered List</li>
-    <li>Looks Like</li>
-    <li>This</li>
-  </ul>
+	<ul>
+		<li>Unordered List</li>
+		<li>Looks Like</li>
+		<li>This</li>
+	</ul>
 
-  <ol>
-    <li>Ordered List</li>
-    <li>Looks Like</li>
-    <li>This</li>
-  </ol>
-  <pre>
-<code>&lt;ul&gt;
-&lt;li&gt;Unordered List&lt;/li&gt;
-&lt;li&gt;Looks Like&lt;/li&gt;
-&lt;li&gt;This&lt;/li&gt;
+	<ol>
+		<li>Ordered List</li>
+		<li>Looks Like</li>
+		<li>This</li>
+	</ol>
+
+	<pre><code>
+&lt;ul&gt;
+	&lt;li&gt;Unordered List&lt;/li&gt;
+	&lt;li&gt;Looks Like&lt;/li&gt;
+	&lt;li&gt;This&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Ordered List&lt;/li&gt;
-&lt;li&gt;Looks Like&lt;/li&gt;
-&lt;li&gt;This&lt;/li&gt;
-&lt;/ol&gt;</code>
-</pre>
+	&lt;li&gt;Ordered List&lt;/li&gt;
+	&lt;li&gt;Looks Like&lt;/li&gt;
+	&lt;li&gt;This&lt;/li&gt;
+&lt;/ol&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Basic Elements</h3>
+	<h3>Basic Elements</h3>
 
-  <p>Have you ever seen an <strong>orange</strong> up close? It's really bumpy and shiny. Kind of like a <a href="#">martian landscape</a>.</p>
-  <hr>
+	<p>Have you ever seen an <strong>orange</strong> up close? It's really bumpy and shiny. Kind of like a <a href="#">martian landscape</a>.</p>
 
-  <p>Oranges are <em>really</em> hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours.
-  Oh, those <code>oranges</code>. They are grand.</p>
-  <pre>
-<code>&lt;p&gt;Have you ever seen an &lt;strong&gt;orange&lt;/strong&gt; up close? It's really bumpy and shiny. Kind of like a &lt;a href=&quot;#&quot;&gt;martian landscape&lt;/a&gt;.&lt;/p&gt; 
-&lt;hr /&gt;
-&lt;p&gt;Oranges are &lt;em&gt;really&lt;/em&gt; hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those &lt;code&gt;oranges&lt;/code&gt;. They are grand.&lt;/p&gt;</code>
-</pre>
+	<hr>
+
+	<p>Oranges are <em>really</em> hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those <code>oranges</code>. They are grand.</p>
+
+	<pre><code>
+&lt;p&gt;Have you ever seen an &lt;strong&gt;orange&lt;/strong&gt; up close? It's really bumpy and shiny. Kind of like a &lt;a href=&quot;#&quot;&gt;martian landscape&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Oranges are &lt;em&gt;really&lt;/em&gt; hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those &lt;code&gt;oranges&lt;/code&gt;. They are grand.&lt;/p&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Code Blocks</h3>
+	<h3>Code Blocks</h3>
 
-  <pre>
-<code>
+	<pre><code>
 // Example Code
 var foo = "bar";
-</code>
-</pre>
+	</code></pre>
 
-<pre>
-<code>
+	<pre><code>
 &lt;pre&gt;&lt;code&gt;
 // Example Code
 var foo = &quot;bar&quot;;
-&lt;/code&gt; &lt;/pre&gt;
-</code>
-</pre>
+&lt;/code&gt;&lt;/pre&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Blockquotes</h3>
+	<h3>Blockquotes</h3>
 
-  <blockquote>
-    <p>Go do something awesome today. You'll be glad you did.</p>
-  </blockquote>
-  <pre>
-<code>&lt;blockquote&gt;&lt;p&gt;Go do something awesome today. You'll be glad you did.&lt;/p&gt;&lt;/blockquote&gt;</code>
-</pre>
+	<blockquote>
+		<p>Go do something awesome today. You'll be glad you did.</p>
+	</blockquote>
+
+	<pre><code>
+&lt;blockquote&gt;
+	&lt;p&gt;Go do something awesome today. You'll be glad you did.&lt;/p&gt;
+&lt;/blockquote&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Header Block <code>.block</code></h3>
-  <h1 class="block">Header One Block</h1>
-  <p>This gives your header a background and padding. Great for column headings.</p>
-  <h2 class="block">Header Two Block</h2>
+	<h3>Header Block <code>.block</code></h3>
+	<h1 class="block">Header One Block</h1>
+	<p>This gives your header a background and padding. Great for column headings.</p>
+	<h2 class="block">Header Two Block</h2>
 
-  <pre>
-<code>&lt;h1 class=&quot;block&quot;&gt;Header One Block&lt;/h1&gt;
+	<pre><code>
+&lt;h1 class=&quot;block&quot;&gt;Header One Block&lt;/h1&gt;
 &lt;p&gt;This gives your header a background and padding. Great for column headings.&lt;/p&gt;
-
-&lt;h2 class=&quot;block&quot;&gt;Header Two Block&lt;/h2&gt;</code>
-</pre>
+&lt;h2 class=&quot;block&quot;&gt;Header Two Block&lt;/h2&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Centered Text - <code>.center-txt</code></h3>
-  <h1 class="center-txt">Header One Centered</h1>
-  <p class="center-txt">This is a paragraph that has been centered. It's great, huh? Use this class to center any text.</p>
+	<h3>Centered Text - <code>.center-txt</code></h3>
+	<h1 class="center-txt">Header One Centered</h1>
+	<p class="center-txt">This is a paragraph that has been centered. It's great, huh? Use this class to center any text.</p>
 
-  <pre>
-<code>&lt;h1 class=&quot;center-txt&quot;&gt;Header One Centered&lt;/h1&gt;
-&lt;p class=&quot;center-txt&quot;&gt;This is a paragraph that has been centered. It's great, huh? Use this class to center any text.&lt;/p&gt;</code>
-</pre>
+	<pre><code>
+&lt;h1 class=&quot;center-txt&quot;&gt;Header One Centered&lt;/h1&gt;
+&lt;p class=&quot;center-txt&quot;&gt;This is a paragraph that has been centered. It's great, huh? Use this class to center any text.&lt;/p&gt;
+	</code></pre>
 </div>
 
 <h2 class="block" id="banners">Banners</h2>
 
 <div class="example">
-  <h3>Secondary Banner</h3>
+	<h3>Secondary Banner</h3>
 
-  <div id="banner-secondary">
-    <h1>Banner Header Should Go Here</h1>
-  </div>
-  <pre>
-<code>&lt;h3&gt;Secondary Banner&lt;/h3&gt;
+	<div id="banner-secondary">
+		<h1>Banner Header Should Go Here</h1>
+	</div>
+
+	<pre><code>
 &lt;div id=&quot;banner-secondary&quot;&gt;
-&lt;h1&gt;Banner Header Should Go Here&lt;/h1&gt;
-&lt;/div&gt;</code>
-</pre>
+	&lt;h1&gt;Banner Header Should Go Here&lt;/h1&gt;
+&lt;/div&gt;
+	</code></pre>
 </div>
 
 <div class="example">
-  <h3>Secondary Banner Large</h3>
+	<h3>Secondary Banner Large</h3>
 
-  <div class="large-banner" id="banner-secondary">
-    <h2>Use a H1 or H2 - both work</h2>
+	<div class="large-banner" id="banner-secondary">
+		<h2>Use a H1 or H2 - both work</h2>
 
-    <p>Secondary Header Can Go Here</p>
-  </div>
-  <pre>
-<code>&lt;div id=&quot;banner-secondary&quot; class=&quot;large-banner&quot;&gt;
-&lt;h1&gt;Banner Header Should Go Here&lt;/h1&gt;
-&lt;p&gt;Secondary Header Can Go Here&lt;/p&gt;
-&lt;/div&gt;</code>
-</pre>
+		<p>Secondary Header Can Go Here</p>
+	</div>
+
+	<pre><code>
+&lt;div id=&quot;banner-secondary&quot; class=&quot;large-banner&quot;&gt;
+	&lt;h2&gt;Banner Header Should Go Here&lt;/h2&gt;
+	&lt;p&gt;Secondary Header Can Go Here&lt;/p&gt;
+&lt;/div&gt;
+	</code></pre>
 </div>
 
 <h2 id="forms" class="block">Forms</h2>
@@ -552,8 +563,6 @@ var foo = &quot;bar&quot;;
 
 <h2 id="grid" class="block">Grid</h2>
 
-<p>We are using the Zurb Foundation grid as a basis for the grid. <strong>Please only use this grid inside of the main <a href=
-"#foundation">foundation</a></strong> mentioned above (i.e. in the <code>#content</code> or <code>#sidebar</code>).</p>
+<p>We are using the Zurb Foundation grid as a basis for the grid. <strong>Please only use this grid inside of the main <a href="#foundation">foundation</a></strong> mentioned above (i.e. in the <code>#content</code> or <code>#sidebar</code>).</p>
 
-<p>We'll have a reference eventually, but for now <a href="http://foundation.zurb.com/old-docs/f3/grid.php" target="_blank">go here</a> to see how to use the
-grid.</p>
+<p>We'll have a reference eventually, but for now <a href="http://foundation.zurb.com/old-docs/f3/grid.php" target="_blank">go here</a> to see how to use the grid.</p>
