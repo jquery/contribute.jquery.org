@@ -201,7 +201,7 @@ Conditionals that need to be broken onto multiple lines should be indented one e
 
 ### Chained Method Calls
 
-Chained method calls that need to be broken onto multiple lines should have one call per line, with teh first call on a separate line from the object the methods are called on. If the method changes the context, an extra level of indentation should be used.
+Chained method calls that need to be broken onto multiple lines should have one call per line, with the first call on a separate line from the object the methods are called on. If the method changes the context, an extra level of indentation should be used.
 
 ```js
 elements
