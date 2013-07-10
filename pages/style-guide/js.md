@@ -1,8 +1,9 @@
 ---
 title: JavaScript Style Guide
+toc: true
 ---
 
-## 1. Linting
+## Linting
 
 Use JSHint to detect errors and potential problems. Every jQuery project has a
 Grunt task for linting all JavaScript files: `grunt jshint`. The options for
@@ -47,13 +48,21 @@ The following common options must be used in all projects:
 }
 ```
 
-##  2. Spacing
+## Spacing
+
+In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for browsers to read and process.
 
 - Indentation with tabs.
-- No end of line whitespace.
-- No blank line whitespace.
-- Liberal spacing in code.
+- No whitespace at the end of line or on blank lines.
+- Lines should be no longer than 80 characters, and must not exceed 100 (counting tabs as 4 spaces).
 - `if`/`else`/`for`/`while`/`try` always have braces and always go on multiple lines.
+- Unary special-character operators (e.g., `!`, `++`) should not have space next to their operand.
+- Any `,` and `;` should not have preceding space.
+- Any `;` used as a statement terminator should be at the end of the line.
+- Any `:` following a property name in an object definition should not have preceding space.
+- The `?` and `:` in a ternary conditional should have space on both sides.
+- No filler spaces in empty constructs (e.g., `{}`, `[]`, `fn()`)
+- New line at the end of each file.
 
 ### Bad Examples
 
@@ -61,103 +70,75 @@ The following common options must be used in all projects:
 
 // Bad
 if(condition) doSomething();
+while(!condition) iterating++;
+for(var i=0;i<100;i++) object[array[i]] = someFn(i);
 
-// Bad
-while(condition) iterating++;
-
-// Bad
-for(var i=0;i<100;i++) someIterativeFn();
-
-// Bad
-object[array[0]];
 ```
 
 ### Good Examples
 
 ```js
-
-// Good
-if ( condition ) {
-	// expressions
-}
-
-// Good
-while ( condition ) {
-	// expressions
-}
-
-// Good
 var i = 0;
 
+if ( condition ) {
+	doSomething();
+} else if ( otherCondition ) {
+	somethingElse();
+} else {
+	otherThing();
+}
+
+while ( !condition ) {
+	iterating++;
+}
+
 for ( ; i < 100; i++ ) {
-	// expressions
+	object[ array[ i ] ] = someFn( i );
 }
 
-// Good
-var prop;
-
-for ( prop in object ) {
-	// expressions
-}
-
-// Good
-if ( condition ) {
-	// expressions
-} else {
-	// expressions
-}
-
-// Good
-if ( condition ) {
-	// expressions
-} else if ( condition ) {
-	// expressions
-} else {
-	// expressions
-}
-
-// Good
 try {
 	// expressions
 } catch ( e ) {
 	// expressions
 }
-
-// Good
-try {
-	// expressions
-} catch ( e ) {
-	// expressions
-} finally {
-	// expressions
-}
-
-// Good
-object[ array[ 0 ] ];
 ```
 
 
-### Arrays and Objects
+### Objects
 
-Empty objects and arrays don't need filler spaces
+Object declarations can be made on a single line if they are short (remember the line length limits). Otherwise they should be broken out one property per line. Property names only need to be quoted if they are reserved words or contain special characters:
 
 ```js
-var object = {},
-	array = [];
+// Bad
+var map = { ready: 9,
+	when: 4, "you are": 15 };
+
+// Good
+var map = { ready: 9, when: 4, "you are": 15 };
+
+// Good as well
+var map = {
+	ready: 9,
+	when: 4,
+	"you are": 15
+};
 ```
 
 
+### Arrays and Function Calls
 
-### Function Calls
-
-Always include extra spaces around the arguments:
+Always include extra spaces around elements and arguments:
 
 ```js
+array = [ "*" ];
+
+array = [ a, b ];
+
 foo( arg );
 
 foo( "string", object );
 
-foo( options, callback );
+foo( options, object[ property ] );
 
 foo( node, "property", 2 );
 ```
@@ -165,27 +146,73 @@ foo( node, "property", 2 );
 Exceptions:
 
 ```js
-// Empty function calls
-foo();
-
-// Functions with callbacks
-foo(function() {
-	// Note there is no extra space between the first paren
-	// of the executing function call and the word "function"
-});
-
-// Function accepting an array, no space
-foo([ "alpha", "beta" ]);
-
-
-// Function accepting an object, no space
+// Function with a callback, object, or array as the sole argument:
+// No space on either side of the argument
 foo({
 	a: "alpha",
 	b: "beta"
 });
+
+// Function with a callback, object, or array as the first argument:
+// No space before the first argument
+foo(function() {
+	// do stuff
+}, options );
+
+// Function with a callback, object, or array as the last argument:
+// No space after after the last argument
+foo( data, function() {
+	// do stuff
+});
 ```
 
-## 3. Assignments
+
+### Multi-line Statements
+
+When a statement is too long to fit on one line, line breaks should occur after an operator.
+
+```js
+// Bad
+var html = "<p>The sum of " + a + " and " + b + " plus " + c
+	+ " is " + (a + b + c);
+
+// Good
+var html = "<p>The sum of " + a + " and " + b + " plus " + c +
+	" is " + (a + b + c);
+```
+
+Lines should be broken into logical groups if it improves readability, such as splitting each expression of a ternary operator onto its own line even if both will fit on a single line.
+
+```js
+var firstCondition( foo ) && secondCondition( bar ) ?
+	doStuff( foo, bar ) :
+	doOtherStuff( foo, bar );
+```
+
+Conditionals that need to be broken onto multiple lines should be indented one extra level to distinguish the successive lines of conditionals from the body.
+
+```js
+	if ( fistCondition() && secondCondition() &&
+			thirdCondition() ) {
+		doStuff();
+	}
+```
+
+
+### Chained Method Calls
+
+Chained method calls that need to be broken onto multiple lines should have one call per line, with teh first call on a separate line from the object the methods are called on. If the method changes the context, an extra level of indentation should be used.
+
+```js
+elements
+	.addClass( "foo" )
+	.children()
+		.html( "hello" )
+	.end()
+	.appendTo( "body" );
+```
+
+## Assignments
 
 Assignments should always have a semicolon after them.
 
@@ -207,16 +234,16 @@ var a, b, c,
 	bar = false;
 ```
 
-## 4. Equality
+## Equality
 
-Strict equality checks (===) should be used in favor of ==. The _only_ exception is when checking for `undefined` and `null` by way of `null`.
+Strict equality checks (`===`) should be used in favor of abstract equality checks (`==`). The _only_ exception is when checking for `undefined` and `null` by way of `null`.
 
 ```js
 // Check for both undefined and null values, for some important reason.
 undefOrNull == null;
 ```
 
-## 5. Type Checks
+## Type Checks
 
 - String: `typeof object === "string"`
 - Number: `typeof object === "number"`
@@ -234,16 +261,18 @@ undefOrNull == null;
 	- Properties: `object.prop === undefined`
 
 
-## 6. Comments
+## Comments
 
-Single line comments go OVER the line they refer to:
+Comments are always preceeded by a blank line.
+
+Single line comments go __over__ the line they refer to:
 
 ```js
 // We need an explicit "bar", because later in the code foo is checked.
 var foo = "bar";
 ```
 
-For long comments, use:
+For long comments (spanning several lines), use:
 
 ```js
 /*
@@ -259,7 +288,9 @@ function foo( types, selector, data, fn, /*INTERNAL*/ one ) {
 }
 ```
 
-## 7. Quotes
+Do not write API documentation in comments. API documentation lives in its own repository.
+
+## Quotes
 
 jQuery uses double quotes.
 
@@ -273,7 +304,19 @@ Strings that require inner quoting must use double outside and single inside.
 var html = "<div id='my-id'></div>";
 ```
 
-## 8. DOM Node Rules
+## Semicolons
+
+Use them. Never rely on ASI.
+
+## Naming Conventions
+
+Variable and function names should be full words, using camel case with a lowercase first letter. Names should be descriptive but not excessively so. Exceptions are allowed for iterators, such as the use of `i` to represent the index in a loop. Constructors do not need a capital first letter.
+
+## Global Variables
+
+Each project may expose at most one global variable.
+
+## DOM Node Rules
 
 `.nodeName` should always be used in favor of `.tagName`.
 
