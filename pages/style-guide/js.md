@@ -56,11 +56,11 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 - No whitespace at the end of line or on blank lines.
 - Lines should be no longer than 80 characters, and must not exceed 100 (counting tabs as 4 spaces).
 - `if`/`else`/`for`/`while`/`try` always have braces and always go on multiple lines.
-- Unary special-character operators (e.g., `!`, `++`) should not have space next to their operand.
-- Any `,` and `;` should not have preceding space.
-- Any `;` used as a statement terminator should be at the end of the line.
-- Any `:` after a property name in an object definition should not have preceding space.
-- The `?` and `:` in a ternary conditional should have space on both sides.
+- Unary special-character operators (e.g., `!`, `++`) must not have space next to their operand.
+- Any `,` and `;` must not have preceding space.
+- Any `;` used as a statement terminator must be at the end of the line.
+- Any `:` after a property name in an object definition must not have preceding space.
+- The `?` and `:` in a ternary conditional must have space on both sides.
 - No filler spaces in empty constructs (e.g., `{}`, `[]`, `fn()`)
 - New line at the end of each file.
 
@@ -106,7 +106,7 @@ try {
 
 ### Objects
 
-Object declarations can be made on a single line if they are short (remember the line length limits). Otherwise they should be broken out one property per line. Property names only need to be quoted if they are reserved words or contain special characters:
+Object declarations can be made on a single line if they are short (remember the line length limits). Objects that need to be broken onto multiple lines must have one property per line. Property names only need to be quoted if they are reserved words or contain special characters:
 
 ```js
 // Bad
@@ -169,7 +169,7 @@ foo( data, function() {
 
 ### Multi-line Statements
 
-When a statement is too long to fit on one line, line breaks should occur after an operator.
+When a statement is too long to fit on one line, line breaks must occur after an operator.
 
 ```js
 // Bad
@@ -189,7 +189,7 @@ var firstCondition( foo ) && secondCondition( bar ) ?
 	doOtherStuff( foo, bar );
 ```
 
-Conditionals that need to be broken onto multiple lines should be indented one extra level to distinguish the successive lines of conditionals from the body.
+Conditionals that need to be broken onto multiple lines must be indented one extra level to distinguish the successive lines of conditionals from the body.
 
 ```js
 	if ( fistCondition() && secondCondition() &&
@@ -201,7 +201,7 @@ Conditionals that need to be broken onto multiple lines should be indented one e
 
 ### Chained Method Calls
 
-Chained method calls that need to be broken onto multiple lines should have one call per line, with the first call on a separate line from the object the methods are called on. If the method changes the context, an extra level of indentation should be used.
+Chained method calls that need to be broken onto multiple lines must have one call per line, with the first call on a separate line from the object the methods are called on. If the method changes the context, an extra level of indentation must be used.
 
 ```js
 elements
@@ -214,11 +214,7 @@ elements
 
 ## Assignments
 
-Assignments should always have a semicolon after them.
-
-Semicolons should always be followed by a newline.
-
-Assignments in a declaration should always be on their own line. Declarations that don't have an assignment should be listed together at the start of the declaration. For example:
+Assignments in a declaration must be on their own line. Declarations that don't have an assignment must be listed together at the start of the declaration. For example:
 
 ```js
 // Bad
@@ -236,7 +232,7 @@ var a, b, c,
 
 ## Equality
 
-Strict equality checks (`===`) should be used in favor of abstract equality checks (`==`). The _only_ exception is when checking for `undefined` and `null` by way of `null`.
+Strict equality checks (`===`) must be used in favor of abstract equality checks (`==`). The _only_ exception is when checking for `undefined` and `null` by way of `null`.
 
 ```js
 // Check for both undefined and null values, for some important reason.
@@ -318,6 +314,6 @@ Each project may expose at most one global variable.
 
 ## DOM Node Rules
 
-`.nodeName` should always be used in favor of `.tagName`.
+`.nodeName` must always be used in favor of `.tagName`.
 
-`.nodeType` should be used to determine the classification of a node (not `.nodeName`).
+`.nodeType` must be used to determine the classification of a node (not `.nodeName`).
