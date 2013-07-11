@@ -59,7 +59,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 - Unary special-character operators (e.g., `!`, `++`) should not have space next to their operand.
 - Any `,` and `;` should not have preceding space.
 - Any `;` used as a statement terminator should be at the end of the line.
-- Any `:` following a property name in an object definition should not have preceding space.
+- Any `:` after a property name in an object definition should not have preceding space.
 - The `?` and `:` in a ternary conditional should have space on both sides.
 - No filler spaces in empty constructs (e.g., `{}`, `[]`, `fn()`)
 - New line at the end of each file.
@@ -97,9 +97,9 @@ for ( ; i < 100; i++ ) {
 }
 
 try {
-	// expressions
+	// Expressions
 } catch ( e ) {
-	// expressions
+	// Expressions
 }
 ```
 
@@ -156,13 +156,13 @@ foo({
 // Function with a callback, object, or array as the first argument:
 // No space before the first argument
 foo(function() {
-	// do stuff
+	// Do stuff
 }, options );
 
 // Function with a callback, object, or array as the last argument:
 // No space after after the last argument
 foo( data, function() {
-	// do stuff
+	// Do stuff
 });
 ```
 
@@ -263,7 +263,7 @@ undefOrNull == null;
 
 ## Comments
 
-Comments are always preceeded by a blank line.
+Comments are always preceeded by a blank line. Comments start with a captial first letter, but don't require a period at the end, unless you're writing full sentences. There must be a single space between the comment token and the comment text; for multi-line comments a new line may be used in place of a space.
 
 Single line comments go __over__ the line they refer to:
 
@@ -272,7 +272,7 @@ Single line comments go __over__ the line they refer to:
 var foo = "bar";
 ```
 
-For long comments (spanning several lines), use:
+Mulit-line comments may be used for long comments:
 
 ```js
 /*
@@ -283,8 +283,8 @@ Four score and seven—pause—minutes ago...
 Inline comments are allowed as an exception when used to annotate special arguments in formal parameter lists:
 
 ```js
-function foo( types, selector, data, fn, /*INTERNAL*/ one ) {
-	// do stuff.
+function foo( types, selector, data, fn, /* INTERNAL */ one ) {
+	// Do stuff
 }
 ```
 
