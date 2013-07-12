@@ -106,7 +106,7 @@ try {
 
 ### Objects
 
-Object declarations can be made on a single line if they are short (remember the line length limits). Objects that need to be broken onto multiple lines must have one property per line. Property names only need to be quoted if they are reserved words or contain special characters:
+Object declarations can be made on a single line if they are short (remember the line length limits). When an object delcration is too long to fit on one line, there must be one property per line. Property names only need to be quoted if they are reserved words or contain special characters:
 
 ```js
 // Bad
@@ -189,7 +189,7 @@ var firstCondition( foo ) && secondCondition( bar ) ?
 	doOtherStuff( foo, bar );
 ```
 
-Conditionals that need to be broken onto multiple lines must be indented one extra level to distinguish the successive lines of conditionals from the body.
+When a conditional is too long to fit on one line, successive lines must be indented one extra level to distinguish them from the body.
 
 ```js
 	if ( fistCondition() && secondCondition() &&
@@ -201,7 +201,7 @@ Conditionals that need to be broken onto multiple lines must be indented one ext
 
 ### Chained Method Calls
 
-Chained method calls that need to be broken onto multiple lines must have one call per line, with the first call on a separate line from the object the methods are called on. If the method changes the context, an extra level of indentation must be used.
+When a chain of method calls is too long to fit on one line, there must be one call per line, with the first call on a separate line from the object the methods are called on. If the method changes the context, an extra level of indentation must be used.
 
 ```js
 elements
