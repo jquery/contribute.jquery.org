@@ -61,8 +61,10 @@ Please do not submit multiple bugs in one bug report. When you do this, they nee
 ## Where to Report
 
 * jQuery Core: [http://bugs.jquery.com/](http://bugs.jquery.com/)
+* jQuery Migrate: [https://github.com/jquery/jquery-migrate/issues](https://github.com/jquery/jquery-migrate/issues)
 * jQuery UI: [http://bugs.jqueryui.com/](http://bugs.jqueryui.com/)
 * jQuery Mobile: [https://github.com/jquery/jquery-mobile/issues](https://github.com/jquery/jquery-mobile/issues)
 * jQuery Color: [https://github.com/jquery/jquery-color/issues](https://github.com/jquery/jquery-color/issues)
 * Sizzle: [https://github.com/jquery/sizzle/issues](https://github.com/jquery/sizzle/issues)
 * QUnit: [https://github.com/jquery/qunit/issues](https://github.com/jquery/qunit/issues)
+* Globalize: [https://github.com/jquery/globalize/issues](https://github.com/jquery/globalize/issues)
