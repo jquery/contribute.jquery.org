@@ -63,6 +63,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 - The `?` and `:` in a ternary conditional must have space on both sides.
 - No filler spaces in empty constructs (e.g., `{}`, `[]`, `fn()`)
 - New line at the end of each file.
+- If the entire file is wrapped in a closure, the function body is not indented.
 
 ### Bad Examples
 
