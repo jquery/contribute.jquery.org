@@ -318,3 +318,26 @@ Each project may expose at most one global variable.
 `.nodeName` must always be used in favor of `.tagName`.
 
 `.nodeType` must be used to determine the classification of a node (not `.nodeName`).
+
+## Switch Statements
+
+The usage of `switch` statements is generally discouraged, but can be useful when there are a large number of cases - especially when multiple cases can be handled by the same block, or fall-through logic (the `default` case) can be leveraged.
+
+When using `switch` statements:
+
+- Use a `break` for each case other than `default`.
+- Align `case` statements with the `switch`.
+
+```js
+switch ( event.keyCode ) {
+case $.ui.keyCode.ENTER:
+case $.ui.keyCode.SPACE:
+	x();
+	break;
+case $.ui.keyCode.ESCAPE:
+	y();
+	break;
+default:
+	z();
+}
+```
