@@ -323,18 +323,21 @@ Each project may expose at most one global variable.
 
 The usage of `switch` statements is generally discouraged, but can be useful when there are a large number of cases - especially when multiple cases can be handled by the same block, or fall-through logic (the `default` case) can be leveraged.
 
-When using `switch` statements use a `break` for each case other than `default`.
+When using `switch` statements:
+
+- Use a `break` for each case other than `default`.
+- Align `case` statements with the `switch`.
 
 ```js
 switch ( event.keyCode ) {
-	case $.ui.keyCode.ENTER:
-	case $.ui.keyCode.SPACE:
-		x();
-		break;
-	case $.ui.keyCode.ESCAPE:
-		y();
-		break;
-	default:
-		z();
+case $.ui.keyCode.ENTER:
+case $.ui.keyCode.SPACE:
+	x();
+	break;
+case $.ui.keyCode.ESCAPE:
+	y();
+	break;
+default:
+	z();
 }
 ```
