@@ -65,7 +65,7 @@ not in a CSS `background-image`) are kept in the `resources` directory.
 Whether for production, staging, or local development, the sites are served
 from a [WordPress network](http://codex.wordpress.org/Glossary#Network). Using
 a WordPress multisite setup gives us the control we need to share structure and
-style across all of the different sites, and allows us to provides us with
+style across all of the different sites, and provides us with
 dynamic features like searching and user accounts on top of the static content
 repositories. We've worked together with members of the WordPress Core Team to
 create [jquery-wp-content](http://github.com/jquery/jquery-wp-content), which
