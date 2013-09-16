@@ -107,7 +107,7 @@ try {
 
 ### Objects
 
-Object declarations can be made on a single line if they are short (remember the line length limits). When an object delcration is too long to fit on one line, there must be one property per line. Property names only need to be quoted if they are reserved words or contain special characters:
+Object declarations can be made on a single line if they are short (remember the line length limits). When an object declaration is too long to fit on one line, there must be one property per line. Property names only need to be quoted if they are reserved words or contain special characters:
 
 ```js
 // Bad
@@ -260,7 +260,7 @@ undefOrNull == null;
 
 ## Comments
 
-Comments are always preceeded by a blank line. Comments start with a captial first letter, but don't require a period at the end, unless you're writing full sentences. There must be a single space between the comment token and the comment text; for multi-line comments a new line may be used in place of a space.
+Comments are always preceded by a blank line. Comments start with a capital first letter, but don't require a period at the end, unless you're writing full sentences. There must be a single space between the comment token and the comment text; for multi-line comments a new line may be used in place of a space.
 
 Single line comments go __over__ the line they refer to:
 
