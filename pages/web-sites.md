@@ -108,7 +108,6 @@ production, we need only [tag](http://git-scm.com/book/en/Git-Basics-Tagging) th
 repo with a valid [semver](http://semver.org/), and the same process takes
 place in production.
 
-To create a tag, use `npm version [major | minor | patch]`.
 
 For api.jqueryui.com and api.jquerymobile.com, the major and minor versions
 have to match the code version the site documents. Use `patch` to update the
@@ -119,6 +118,11 @@ For other sites:
 * `patch` for trivial changes, like typos
 * `minor` for bigger changes, like new pages
 * `major` for redesigns.
+
+To create a tag, use `npm version [major | minor | patch]`.
+
+Afterwards, make sure to push both version change commit and the tag:
+`git push --tags origin master`
 
  ---
 
