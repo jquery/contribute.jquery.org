@@ -9,7 +9,7 @@ and decentralized -- all qualities that should be part of working on design and
 documentation as well.
 * **Wikis and CMSes are fraught with problems for community projects.** Both
 are targets for spammers, which leads to tight control over user
-accounts, compounding the problem that and only a small circle of people around
+accounts, compounding the problem that there is only a small circle of people around
 the project maintainers with the ability to work on content and design. Even if
 you desperately want to start contributing to a project, it can take a while
 before you encounter the right people and gain the trust to get set up with
@@ -193,7 +193,7 @@ system
 * [node.js](http://nodejs.org) >= 0.8.x
 * Local PHP/MySQL environment, e.g., [MAMP](http://www.mamp.info/en/index.html), [XAMPP](http://www.apachefriends.org/en/xampp.html)
 
-Once you've got these major pieces are in place, you'll be able to get
+Once you've got these major pieces in place, you'll be able to get
 WordPress and [jquery-wp-content](http://github.com/jquery/jquery-wp-content)
 following [the instructions in its
 README](https://github.com/jquery/jquery-wp-content/blob/master/README.md).
@@ -202,7 +202,7 @@ README](https://github.com/jquery/jquery-wp-content/blob/master/README.md).
 
 _These setup instructions apply to all jQuery Foundation websites with public
 content repositories. For the sake of the rest of this example, we'll assume
-you wanted to work on the content and style of
+you want to work on the content and style of
 [contribute.jquery.org](http://contribute.jquery.org). Please substitute the URL
 of whichever site you are actually working on, as appropriate._
 
