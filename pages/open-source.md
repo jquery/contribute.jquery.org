@@ -115,7 +115,7 @@ employed. The most common stumbling blocks for newcomers tend to be
 * version control
 * local development
 
-Depending on your background, these these may be normal parts of your
+Depending on your background, these may be normal parts of your
 everyday workflow, or they may be intimidating obstacles that send you running
 in the opposite direction every time you scan a README. Before delving into a bit
 more detail about each of these and why it's important, here are some important things 
