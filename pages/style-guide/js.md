@@ -48,7 +48,7 @@ The following common options must be used in all projects:
 }
 ```
 
-_If the project supports browsers which do not implement ES5, then the `es3` option must be included with the common options._
+_If the project supports browsers which do not implement ES5, then the `es3` option must be included with the repo-specific options._
 
 ## Spacing
 
