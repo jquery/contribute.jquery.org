@@ -48,6 +48,8 @@ The following common options must be used in all projects:
 }
 ```
 
+_If the project supports browsers which do not implement ES5, then the `es3` option must be included with the common options._
+
 ## Spacing
 
 In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for browsers to read and process.
