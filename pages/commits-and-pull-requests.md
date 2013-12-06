@@ -1,5 +1,6 @@
 ---
 title: Commits and Pull Requests
+toc: true
 ---
 
 We use git and GitHub's [Pull
@@ -51,7 +52,7 @@ $ git reset --hard upstream/master
 
 Since you should never be committing on master, all your commits will need to be on branches. You can create branches on the command line, or you can [create branches on GitHub](https://github.com/blog/1377-create-and-delete-branches).
 
-If your branch pertains to a particular issue, **name the branch with a reference to the ticket number**. For example:
+If your branch pertains to a particular issue, **name the branch with a reference to the issue number**. For example:
 
 ``` bash
 $ git checkout -b 151-remove-build-artifact
@@ -96,11 +97,38 @@ them before committing.
 
 ## Commit Guidelines
 
-Different projects may have slightly different or detailed commit guidelines. Please refer to the project's CONTRIBUTING.md file for all requirements. The following list can be considered to be shared across all projects.
+Commits should be atomic. If three separate issues are being fixed (unless they are all fixed by one change) they need to be done as three separate commits. This also applies to whitespace changes, these should be done on their own commit. Whitespace commits should not include code/content changes. Accordingly, code change commits should not include whitespace changes.
 
-* Commits should be atomic. If three separate issues are being fixed (unless they are all fixed by one change) they need to be done as three separate commits.
-* All whitespace changes should be done on their own commit. Whitespace commits should not include code/content changes. Code change commits should not include whitespace changes.
-* Commit messages should describe what changed, and reference the ticket/issue number if the commit closes or is associated with a particular ticket.
+Commit messages should describe what changed, and reference the issue number if the commit closes or is associated with a particular issue. Commit messages for all jQuery projects should look like this:
+
+```
+Component: Short Description
+
+Optional Long Description
+
+Fixes #xxx
+Closes gh-yyy
+Ref #zzz
+```
+
+Every commit must have a subject (the first line). Everything else is optional.
+
+### Subject
+
+This is the first line. It consists of a component, like "Event" or "Autocomplete". This line must be 72 characters or less. There should be no full stop (period) at the end.
+
+
+### Long description
+
+There are two line breaks between the subject and the long description. The description can have any length and formatting, like lists, but it must be hard-wrapped at 80 characters.
+
+### References
+
+References to issues or pull requests go after the long description, each one on their own line. A reference like "Fixes #xxx" or "Closes gh-xxx" will usually tell the issue tracker or GitHub to close the issue or pull request, while also adding a reference to the commit in the ticket.
+
+If a commit is supposed to reference an issue without closing it, use "ref #xxx".
+
+When referencing an issue on another GitHub project, use "\[user\]/\[repo\]#xxx" for the issue reference, for example: "Closes jquery/jquery-ui#175".
 
 ## Your Pull Request
 
@@ -114,6 +142,6 @@ You should think of your pull request as a request for a code review. The
 project maintainers may accept it immediately, or ask questions and point out
 tweaks that need to be made, or reject it outright. (There's a reason it's
 called a pull request, not a pull demand.) The commits may be taken as-is, or
-the maintainer may see fit to fix up or [squash merge] the changes.
+the maintainer may see fit to fix up or squash merge the changes.
 
 If you push new commits to the branch from which you initiated the pull request, the pull request will automatically be updated.
