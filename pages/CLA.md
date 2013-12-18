@@ -49,11 +49,23 @@ IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE,
 NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.
 
 Please complete the following information and press Submit below to indicate
-your agreement.
+your agreement. All fields are required.
 
-<h2 id="signelectronically">Sign Electronically</h2>
+<h2>Sign Electronically</h2>
 
-<iframe
-  src="http://spreadsheets.google.com/embeddedform?formkey=dFJucXdGZXlRdVh2SUVUb2hsb0FBYkE6MQ"
-  width="760" height="1000" frameborder="0" marginheight="0"
-  marginwidth="0">Loading...</iframe>
+<form method="POST" action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFJucXdGZXlRdVh2SUVUb2hsb0FBYkE6MQ&theme=0AX42CRMsmRFbUy1kN2NjY2Y0Mi1iYWFmLTQxMWMtYjM0NC04NmZmYTIwZDRkMGQ&embedded=true&ifq" class="top-labels">
+	<label for="fullname">Full name
+		<input type="text" id="fullname" name="entry.2.single" required>
+	</label>
+
+	<label for="email">Email address
+		<input type="email" id="email" name="entry.4.single" required pattern=".+@.+\..+">
+	</label>
+
+	<label for="agree">Confirmation
+		<div class="field-description">Please type "I AGREE" below to indicate you agree to these terms. Your full name and email address will be publicly available.</div>
+		<input type="text" id="agree" name="entry.7.single" required pattern="I AGREE">
+	</label>
+
+	<input type="submit" name="submit" value="Submit">
+</form>
