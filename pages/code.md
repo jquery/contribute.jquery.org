@@ -8,7 +8,7 @@ New contributors sometimes make the mistake of starting with a pull request with
 
 By following the steps below, you'll have a better chance at getting your contribution accepted.
 
-**Establish the need for a fix or a feature.** Each project has its own bug/issue tracker where the team keeps its lists of things that need to be done. If there is already an open issue, post on it volunteering to do the coding. If there isn't an issue, create one. For more information, see [How to Report Bugs](http://dev.contribute.jquery.org/bug-reports/).
+**Establish the need for a fix or a feature.** Each project has its own bug/issue tracker where the team keeps its lists of things that need to be done. If there is already an open issue, post on it volunteering to do the coding. If there isn't an issue, create one. For more information, see [How to Report Bugs](http://contribute.jquery.org/bug-reports/).
 
 **Discuss the ticket with the team.** Team members may have advice on the best way to tackle the problem. Once you have agreement on a general plan of attack, have the team member assign the ticket to you. This discussion can happen in the appropriate issue tracker or in [IRC](http://irc.jquery.org/).
 
