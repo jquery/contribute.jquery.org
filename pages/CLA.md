@@ -51,7 +51,7 @@ NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.
 Please complete the following information and press Submit below to indicate
 your agreement. All fields are required.
 
-<h2>Sign Electronically</h2>
+## Sign Electronically
 
 <form method="POST" action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFJucXdGZXlRdVh2SUVUb2hsb0FBYkE6MQ&theme=0AX42CRMsmRFbUy1kN2NjY2Y0Mi1iYWFmLTQxMWMtYjM0NC04NmZmYTIwZDRkMGQ&embedded=true&ifq" class="top-labels">
 	<label for="fullname">Full name
