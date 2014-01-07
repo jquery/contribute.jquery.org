@@ -55,7 +55,7 @@ ever to publish your plugin and get it in front of users.
 All of the jQuery projects have open source documentation, so it's just as easy
 to contribute to documentation as it is to contribute to code. Fixing small
 mistakes such as typos and grammatical errors can be a great way to introduce
-yourself with the workflow for contributing to open source projects. There are
-plenty of ways to improve documentation for jQuery projects, ranging from API
-documentation to tutorials to improving the contribution site itself! Read more
-about [how to contribute to documentation](http://contribute.jquery.org/documentation/).
+yourself to the workflow for contributing to open source projects. There are
+plenty of ways to improve documentation for jQuery projects, ranging from editing
+API documentation to writing tutorials to improving the contribution site itself!
+Read more about [how to contribute to documentation](http://contribute.jquery.org/documentation/).
