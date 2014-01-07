@@ -271,7 +271,7 @@ Single line comments go __over__ the line they refer to:
 var foo = "bar";
 ```
 
-Mulit-line comments may be used for long comments:
+Multi-line comments may be used for long comments:
 
 ```js
 /*
