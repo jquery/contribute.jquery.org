@@ -58,4 +58,4 @@ mistakes such as typos and grammatical errors can be a great way to introduce
 yourself with the workflow for contributing to open source projects. There are
 plenty of ways to improve documentation for jQuery projects, ranging from API
 documentation to tutorials to improving the contribution site itself! Read more
-about [how to contribute to web sites](http://contribute.jquery.org/web-sites/).
+about [how to contribute to documentation](http://contribute.jquery.org/documentation/).
