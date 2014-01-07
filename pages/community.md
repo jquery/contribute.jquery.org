@@ -12,20 +12,20 @@ definition!
 
 ---
 
-## [Support](/support/)
+## Support
 
 Working on Q&amp;A is [awesome for a number of reasons](/support/), one of which
 is the simple act of helping others, and sharing in the camaraderie that
-comes with being a developer. Over time, the nicknames and handles of strangers
-may come to be familiar mentors, mentees, and friends.
+comes with being part of an open source project. Over time, the nicknames and
+handles of strangers may come to be familiar mentors, mentees, and friends.
 
 ## Attend Conferences and Meetups
 
 Whether at our own [jQuery Conferences](http://events.jquery.org), other
 JavaScript and web events, or local meetups, getting out from behind your
-monitor and into the same room with other developers can be a great way to
-expand your horizons and refine your skills. At the same time, they're also an
-opportunity to have conversations that breed inspiration, and forge
+monitor and into the same room with other community members can be a great way to
+expand your horizons and refine your skills. At the same time, these events are
+also an opportunity to have conversations that breed inspiration, and forge
 relationships that foster collaboration.
 
 ## *Speak At* Conferences and Meetups
@@ -48,4 +48,14 @@ popular, and plugins are the ideal way to add new functionality to jQuery.
 in a plugin first, to test the implementation and show the demand for the
 feature.) So if you've built something useful, don't keep it to yourself! With
 the new [jQuery Plugin Registry](http://plugins.jquery.com), it's easier than
-ever before to publish your plugin and get it in front of users.
+ever to publish your plugin and get it in front of users.
+
+## Write and Share Documentation
+
+All of the jQuery projects have open source documentation, so it's just as easy
+to contribute to documentation as it is to contribute to code. Fixing small
+mistakes such as typos and grammatical errors can be a great way to introduce
+yourself to the workflow for contributing to open source projects. There are
+plenty of ways to improve documentation for jQuery projects, ranging from editing
+API documentation to writing tutorials to improving the contribution site itself!
+Read more about [how to contribute to documentation](http://contribute.jquery.org/documentation/).
