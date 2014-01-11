@@ -70,7 +70,7 @@ $ git pull upstream master
 $ git checkout -b 123-header-shadows
 $ git stash pop
 $ git add style.css
-$ git commit -m "Clean up header shadows. Fixes #123."
+$ git commit
 ```
 
 ## Preparing To Commit
