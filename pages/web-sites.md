@@ -35,7 +35,7 @@ comfortable solving.
 
 ---
 
-## <a name="how-it-works">How It Works</a>
+## How It Works
 
 Here's the short version: _static content is built into HTML and deployed to a
 [WordPress](http://wordpress.org) instance over
@@ -126,7 +126,7 @@ Afterwards, make sure to push both version change commit and the tag:
 
  ---
 
- ## <a name="how-can-i-help" href="#how-can-i-help">How Can I Help?</a>
+ ## How Can I Help?
 
  ### Just File Issues!
 
@@ -181,7 +181,7 @@ to that site.
 
 ---
 
-## <a name="local-development" href="#local-development">Local Development</a>
+## Local Development
 
 In order to iterate on site content and design in the same way that jQuery team
 members do, we encourage anyone to set up a local WordPress instance running
@@ -198,7 +198,7 @@ WordPress and [jquery-wp-content](http://github.com/jquery/jquery-wp-content)
 following [the instructions in its
 README](https://github.com/jquery/jquery-wp-content/blob/master/README.md).
 
-### <a name="workflow" href="#workflow">Workflow</a>
+### Workflow
 
 _These setup instructions apply to all jQuery Foundation websites with public
 content repositories. For the sake of the rest of this example, we'll assume
@@ -250,7 +250,7 @@ If IRC is not your thing, but you still want or need to get in touch, please use
 
 ---
 
-## <a name="site-repository-guide" href="#site-repository-guide">Site &amp; Repository Guide</a>
+## Site & Repository Guide
 
 * [jquery-wp-content](http://github.com/jquery/jquery-wp-content/) - The WordPress configuration and themes that serve all our sites
 
