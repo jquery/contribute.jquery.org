@@ -184,19 +184,8 @@ to that site.
 ## Local Development
 
 In order to iterate on site content and design in the same way that jQuery team
-members do, we encourage anyone to set up a local WordPress instance running
-[jquery-wp-content](http://github.com/jquery/jquery-wp-content).
-
-Before you get started, you'll need to have the following technologies installed on your
-system
-
-* [node.js](http://nodejs.org) >= 0.8.x
-* Local PHP/MySQL environment, e.g., [MAMP](http://www.mamp.info/en/index.html), [XAMPP](http://www.apachefriends.org/en/xampp.html)
-
-Once you've got these major pieces in place, you'll be able to get
-WordPress and [jquery-wp-content](http://github.com/jquery/jquery-wp-content)
-following [the instructions in its
-README](https://github.com/jquery/jquery-wp-content/blob/master/README.md).
+members do, we encourage you to setup a local WordPress instance using
+[jquery-wp-content](http://github.com/jquery/jquery-wp-content) as described in its [README](https://github.com/jquery/jquery-wp-content/#jquery-wp-content).
 
 ### Workflow
 
@@ -206,22 +195,22 @@ you want to work on the content and style of
 [contribute.jquery.org](http://contribute.jquery.org). Please substitute the URL
 of whichever site you are actually working on, as appropriate._
 
-Once you get [jquery-wp-content](http://github.com/jquery/jquery-wp-content) working right, you should be able navigate to
-[local.contribute.jquery.org](http://local.contribute.jquery.org) in a browser,
-and see a site that looks exactly like the live site, only without any actual articles. That's where
-your fork `contribute.jquery.org` content repo comes into play.
+Once you get [jquery-wp-content](http://github.com/jquery/jquery-wp-content) working, you should be able navigate to
+a site in your browser that looks exactly like the live site, only without any content. If you setup
+[jquery-wp-content](http://github.com/jquery/jquery-wp-content) using Vagrant, then the URL would be [http://vagrant.contribute.jquery.org](http://vagrant.contribute.jquery.org).
+
+Now we need to populate your local WordPress with the content from the [`contribute.jquery.org`](https://github.com/jquery/contribute.jquery.org) repo.
 
 1. Fork the [`contribute.jquery.org`](https://github.com/jquery/contribute.jquery.org) repository on GitHub by clicking the "Fork" button.
-1. Clone your forked repository to wherever you'd like, except *not* be inside of your WordPress and `jquery-wp-content` directories. -- `git clone https://github.com/YourUsername/contribute.jquery.org.git`
+1. Clone your forked repository to wherever you'd like, but *not* inside of your WordPress and `jquery-wp-content` directories. -- `git clone https://github.com/YourUsername/contribute.jquery.org.git`
 1. Enter the directory where you cloned the repo -- `cd contribute.jquery.org`
 1. Install grunt-cli (if you haven't already) -- `npm install -g grunt-cli`
 1. Install local build dependencies -- `npm install`
 1. Copy the `config-sample.json` file to `config.json` in the same directory -- `cp config-sample.json config.json`
-1. Edit `config.json` to use the username and password for your local WordPress network
+1. Edit `config.json` to use the URL, username, and password for your local WordPress network. If you're using the Vagrant setup, then the URL is `http://vagrant.contribute.jquery.org`.
 1. Build and deploy the files to your local WordPress -- `grunt deploy`
 
-At this point, if you refresh your `local.contribute.jquery.org`, your local
-instance should be populated with all of the site content.
+At this point your local WordPress should be populated with the [`contribute.jquery.org`](https://github.com/jquery/contribute.jquery.org) content.
 
 When working on content locally, you may find it useful to use the `grunt watch` task,
 which will re-deploy the site every time you edit any of the content files.
