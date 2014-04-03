@@ -262,24 +262,22 @@ undefOrNull == null;
 
 ## Comments
 
-Comments are always preceded by a blank line. Comments start with a capital first letter, but don't require a period at the end, unless you're writing full sentences. There must be a single space between the comment token and the comment text; for multi-line comments a new line may be used in place of a space.
+Comments are always preceded by a blank line. Comments start with a capital first letter, but don't require a period at the end, unless you're writing full sentences. There must be a single space between the comment token and the comment text.
 
 Single line comments go __over__ the line they refer to:
 
 ```js
 // We need an explicit "bar", because later in the code foo is checked.
 var foo = "bar";
+
+// Even long comments that span
+// multiple lines use the single
+// line comment form.
 ```
 
-Multi-line comments may be used for long comments:
+Multi-line comments are only used for file and function headers.
 
-```js
-/*
-Four score and seven—pause—minutes ago...
-*/
-```
-
-Inline comments are allowed as an exception when used to annotate special arguments in formal parameter lists:
+Inline comments are allowed as an exception when used to annotate special arguments in formal parameter lists or when needed to support a specific development tool:
 
 ```js
 function foo( types, selector, data, fn, /* INTERNAL */ one ) {
