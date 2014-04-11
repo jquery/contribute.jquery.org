@@ -13,6 +13,10 @@ there are many factors that may act as barriers to entry. Hopefully, this
 document will give you that push you need to get past those reservations and
 get involved.
 
+<div class="note">
+	You may also be interested in [GitHub's guide on contributing to open source](https://guides.github.com/overviews/os-contributing/).
+</div>
+
 ## Dive In
 
 Often, folks have an idea of what they want to contribute to an open source
