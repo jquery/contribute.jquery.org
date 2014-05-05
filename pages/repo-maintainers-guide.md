@@ -12,6 +12,8 @@ Github stores the refs for each pull request on the main repo.  Assuming you hav
 git config --global --add alias.pru '!f() { git fetch -fu upstream refs/pull/$1/head:pr/$1; git checkout pr/$1 } ; f'
 ```
 
+Gnarf has put together a few variants of this alias in [gnarf/.dotfiles](https://github.com/gnarf/.dotfiles/blob/c9aa77a83f381ce138350442613d4a14cb549671/.gitconfig#L24-L27)
+
 Once you have installed this alias, you can fetch a pull request based on number like so:
 
 ```shell
@@ -27,22 +29,16 @@ Regardless of how simple the patch may be, **never use GitHub's pull request int
 ## Verifying author info and CLA
 
 Check that the commit has full name and a valid email address (via `git log`).
-Check the author has signed the CLA. If they haven't, ask them so sign it.
+Check the author has signed the CLA. If they haven't, ask them to sign it.
 This step should eventually be automated.  
 
 ## How to test a pull request 
 
-To test the branch that will be pulled, you should start by checking out the branch locally.
+After using the `pru` alias above, the branch will be automatically checked out for you.  You should run `grunt`, the unit tests in the browser, etc, and make sure things work correctly.
 
-```shell
-git checkout pr/55
-```
+### How we merge
 
-Run the unit tests, `grunt`, test in the browser, etc, and make sure things work correctly.
-
-### How we "merge"
-
-We do not use merge commits in the jQuery repositories.  We prefer to rebase pulls onto master "squashed".
+We do not use merge commits in the jQuery repositories. Instead we use git's tools `commit --ammend`, `rebase`, or `cherry-pick` to update commits to allow fast-forward merges.
 
 In order to accomplish this, you can check out the pull request branch, and then rebase it on master.
 
@@ -65,7 +61,7 @@ If there is a problem with the merge, you can always reset master back to the pr
 git reset --hard origin/master
 ```
 
-## How to fix a single commit
+## Fixing commits
 
 Sometimes there will be a pull request with a single commit that looks good, but the commit message doesn't conform to our Commit Message Style Guide, or just some whitespace that looks bad. In this case, `rebase -i` as described above, gives you the chance to `reword` a commit and alter the message.  If you have already commited, you can use `git commit --amend` to edit the commit message, or the content (i.e. a small whitespace error) without changing it's date or author information.
 
@@ -77,11 +73,9 @@ git commit -a --amend
 
 That'll give you a chance to edit the message, and will commit all changes you made.  After making the change you want, you can push.
 
-## How to fix multiple commits
+Often pull requests contain one initial commit and then multiple fixup commits, based on code reviews. Or you have multiple valid commits, but individual changes or commit messages are bad. In this case, an interactive rebase is yet again your friend.
 
-Often pull requests contain one initial commit and then multiple fixup commits, based on code reviews. Or you have multiple valid commits, but individual changes or commit messages are bad. In this case, an interactive rebase is your friend.
-
-To start, get the commits you want to land in a local branch. For that, fetching the pull request as decribed above is the key.
+To start, get the commits you want to land in a local branch. For that, fetching the pull request as decribed above is the key:
 
 ```shell
 git pru 55
@@ -90,7 +84,7 @@ git rebase master -i
 
 Interactive rebase, triggered by that last line, will open your editor to let you choose what to do with each commit. Read the instructions included there or the entry for `git help rebase` for further info.
 
-You can now merge the `temp-branch` into master as done above and push then delete the `temp-branch`.
+You can now merge the `pr/55` into master as done above and push then delete the `pr/55` brach.
 
 Much like `cherry-pick`, this rebase will change the SHAs so you will need to manually close the pull request with a reference to the final commit.
 
