@@ -6,7 +6,7 @@ This page is a collection of tips and tricks for dealing with pull requests and 
 
 ## Fetching Pull Requests
 
-Github stores the refs for each pull request on the main repo.  Assuming you have the `jquery` repo set as your `upstream` remote you can use this git alias to make life a little easier (it's long, you'll need to scroll to get the whole command):
+Github stores the refs for each pull request on the main repo. Assuming you have the `jquery` repo set as your `upstream` remote you can use this git alias to make life a little easier (it's long, you'll need to scroll to get the whole command):
 
 ```shell
 git config --global --add alias.pru '!f() { git fetch -fu upstream refs/pull/$1/head:pr/$1; git checkout pr/$1 } ; f'
@@ -30,11 +30,11 @@ Regardless of how simple the patch may be, **never use GitHub's pull request int
 
 Check that the commit has full name and a valid email address (via `git log`).
 Check the author has signed the CLA. If they haven't, ask them to sign it.
-This step should eventually be automated.  
+This step should eventually be automated. 
 
 ## How to test a pull request 
 
-After using the `pru` alias above, the branch will be automatically checked out for you.  You should run `grunt`, the unit tests in the browser, etc, and make sure things work correctly.
+After using the `pru` alias above, the branch will be automatically checked out for you. You should run `grunt`, the unit tests in the browser, etc, and make sure things work correctly.
 
 ### How we merge
 
@@ -47,7 +47,7 @@ git checkout pr/55
 git rebase -i master
 ```
 
-Using the interactive rebase option, you can squash and/or fixup the commits required to land the pull request as a single commit.  You might need to edit the commit message, etc and an interactive rebase gives you an option to do this early.  After rebasing the branch, you can use a "fast-forward" merge to land it on your local master and push it.  If you uses github's `Closes gh-####` syntax in the commit message, it will automatically close the pull request and add a comment on it pointing at the commit.
+Using the interactive rebase option, you can squash and/or fixup the commits required to land the pull request as a single commit. You might need to edit the commit message, etc and an interactive rebase gives you an option to do this early. After rebasing the branch, you can use a "fast-forward" merge to land it on your local master and push it. If you uses github's `Closes gh-####` syntax in the commit message, it will automatically close the pull request and add a comment on it pointing at the commit.
 
 ```shell
 git checkout master
@@ -63,7 +63,7 @@ git reset --hard origin/master
 
 ## Fixing commits
 
-Sometimes there will be a pull request with a single commit that looks good, but the commit message doesn't conform to our Commit Message Style Guide, or just some whitespace that looks bad. In this case, `rebase -i` as described above, gives you the chance to `reword` a commit and alter the message.  If you have already commited, you can use `git commit --amend` to edit the commit message, or the content (i.e. a small whitespace error) without changing it's date or author information.
+Sometimes there will be a pull request with a single commit that looks good, but the commit message doesn't conform to our Commit Message Style Guide, or just some whitespace that looks bad. In this case, `rebase -i` as described above, gives you the chance to `reword` a commit and alter the message. If you have already commited, you can use `git commit --amend` to edit the commit message, or the content (i.e. a small whitespace error) without changing it's date or author information.
 
 So assuming you fixed the code and now want to commit, use this:
 
@@ -71,7 +71,7 @@ So assuming you fixed the code and now want to commit, use this:
 git commit -a --amend
 ```
 
-That'll give you a chance to edit the message, and will commit all changes you made.  After making the change you want, you can push.
+That'll give you a chance to edit the message, and will commit all changes you made. After making the change you want, you can push.
 
 Often pull requests contain one initial commit and then multiple fixup commits, based on code reviews. Or you have multiple valid commits, but individual changes or commit messages are bad. In this case, an interactive rebase is yet again your friend.
 
