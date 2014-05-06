@@ -63,7 +63,7 @@ git reset --hard origin/master
 
 ## Fixing commits
 
-Sometimes there will be a pull request with a single commit that looks good, but the commit message doesn't conform to our Commit Message Style Guide, or it just has some whitespace that looks bad. You can use `rebase -i`, as described above, to `reword` a commit and alter the message. If you have already commited, you can use `git commit --amend` to edit the commit message or the content (e.g. a small whitespace error) without changing its date or author information.
+Sometimes there will be a pull request with a single commit that looks good, but the commit message doesn't conform to our Commit Message Style Guide, or it just has some whitespace that looks bad. You can use `rebase -i`, as described above, to `reword` a commit and alter the message or `edit` a commit and make a whitespace change. If you have already commited, you can use `git commit --amend` to edit the commit message or the content (e.g. a small whitespace error) without changing its date or author information.
 
 So assuming you fixed the code and now want to commit, use this:
 
