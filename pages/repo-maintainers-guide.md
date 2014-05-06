@@ -47,7 +47,7 @@ git checkout pr/55
 git rebase -i master
 ```
 
-Using the interactive rebase option, you can squash and/or fixup the commits required to land the pull request as a single commit. You might need to edit the commit message, etc and an interactive rebase gives you an option to do this early. After rebasing the branch, you can use a "fast-forward" merge to land it on your local master and push it. If you uses github's `Closes gh-####` syntax in the commit message, it will automatically close the pull request and add a comment on it pointing at the commit.
+Using the interactive rebase option, you can squash and/or fixup the commits required to land the pull request as a single commit. If you need to edit the commit message, for example, an interactive rebase gives you an option to do it early. After rebasing the branch, you can use a "fast-forward" merge to land it on your local master and push it. If you use github's `Closes gh-####` syntax in the commit message, it will automatically close the pull request and add a comment on it pointing at the commit.
 
 ```shell
 git checkout master
@@ -63,7 +63,7 @@ git reset --hard origin/master
 
 ## Fixing commits
 
-Sometimes there will be a pull request with a single commit that looks good, but the commit message doesn't conform to our Commit Message Style Guide, or just some whitespace that looks bad. In this case, `rebase -i` as described above, gives you the chance to `reword` a commit and alter the message. If you have already commited, you can use `git commit --amend` to edit the commit message, or the content (i.e. a small whitespace error) without changing it's date or author information.
+Sometimes there will be a pull request with a single commit that looks good, but the commit message doesn't conform to our Commit Message Style Guide, or it just has some whitespace that looks bad. You can use `rebase -i`, as described above, to `reword` a commit and alter the message. If you have already commited, you can use `git commit --amend` to edit the commit message or the content (e.g. a small whitespace error) without changing its date or author information.
 
 So assuming you fixed the code and now want to commit, use this:
 
@@ -84,7 +84,7 @@ git rebase master -i
 
 Interactive rebase, triggered by that last line, will open your editor to let you choose what to do with each commit. Read the instructions included there or the entry for `git help rebase` for further info.
 
-You can now merge the `pr/55` into master as done above and push then delete the `pr/55` brach.
+You can now merge the `pr/55` into master as done above and push; then delete the `pr/55` branch.
 
 Much like `cherry-pick`, this rebase will change the SHAs so you will need to manually close the pull request with a reference to the final commit.
 
