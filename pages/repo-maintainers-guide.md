@@ -2,17 +2,17 @@
 title: jQuery Repository Maintainers Guide
 ---
 
-This page is a collection of tips and tricks for dealing with pull requests and managing the jQuery git repositories on github.
+This page is a collection of tips and tricks for dealing with pull requests and managing the jQuery git repositories on GitHub.
 
-## Fetching Pull Requests
+## Fetch the Pull Request
 
-Github stores the refs for each pull request on the main repo. Assuming you have the `jquery` repo set as your `upstream` remote you can use this git alias to make life a little easier (it's long, you'll need to scroll to get the whole command):
+Github stores the refs for each pull request on the main repo. Assuming you have the `jquery` repo set as your `upstream` remote, you can use the following git alias to make life a little easier (it's long, you'll need to scroll to get the whole command):
 
 ```shell
 git config --global --add alias.pru '!f() { git fetch -fu upstream refs/pull/$1/head:pr/$1; git checkout pr/$1 } ; f'
 ```
 
-Gnarf has put together a few variants of this alias in [gnarf/.dotfiles](https://github.com/gnarf/.dotfiles/blob/c9aa77a83f381ce138350442613d4a14cb549671/.gitconfig#L24-L27)
+Gnarf has put together a few variants of this alias in [gnarf/.dotfiles](https://github.com/gnarf/.dotfiles/blob/c9aa77a83f381ce138350442613d4a14cb549671/.gitconfig#L24-L27).
 
 Once you have installed this alias, you can fetch a pull request based on number like so:
 
@@ -22,23 +22,29 @@ git pru 55
 
 This will create a local branch called `pr/55` which will be automatically checked out.
 
-There are other alternatives, look at the instructions GitHub provides on the Pull Request page (usually hidden in a popup triggered by the info-icon next to the "Merge pull request" button.
+*Note: Because `pru` will automatically check out the new branch, make sure that your master branch is up to date first.*
+
+If you prefer to run the individual commands manually, take a look at the instructions GitHub provides on the Pull Request page (usually hidden in a popup triggered by the info-icon next to the "Merge pull request" button) for step by step instructions.
 
 Regardless of how simple the patch may be, **never use GitHub's pull request interface to merge**. The merge button will always create a merge commit, which creates a messy history.
 
-## Verifying author info and CLA
+## Verify the Author Info and CLA
 
-Check that the commit has full name and a valid email address (via `git log`).
-Check the author has signed the CLA. If they haven't, ask them to sign it.
-This step should eventually be automated. 
+Check that the commit has the author's full name and a valid email address. This can be done via `git log` once you have a local copy of the branch, or you can tack on `.patch` to the pull request URL and look at the email headers.
 
-## How to test a pull request 
+Verify that the author has signed the CLA and that the CLA signature matches the commit info. The email address must be an exact match, but the name can be a loose match. For example, if the CLA is signed as William Doe and the commit has Will Doe or Bill Doe, it is acceptable. Partial names and nick names are not acceptable.
 
-After using the `pru` alias above, the branch will be automatically checked out for you. You should run `grunt`, the unit tests in the browser, etc, and make sure things work correctly.
+If the author hasn't signed the CLA, ask them to do so. If there is a mismatch between the CLA and the commit info, ask them to either change their git info or re-sign the CLA.
 
-### How we merge
+*This step will eventually be automated as a Travis task.*
 
-We do not use merge commits in the jQuery repositories. Instead we use git's tools `commit --ammend`, `rebase`, or `cherry-pick` to update commits to allow fast-forward merges.
+## Test the Pull Request
+
+Once you have a local checkout of the branch, you should run the appropriate tests for the project. This generally includes running `grunt`, unit tests in the browser, etc., though Travis should also be able to provide this information for you.
+
+### Merging a Pull Request
+
+We do not use merge commits in the jQuery repositories. Instead we rebase, amend, or cherry pick commits to create a clean, linear history.
 
 In order to accomplish this, you can check out the pull request branch, and then rebase it on master.
 
@@ -47,7 +53,11 @@ git checkout pr/55
 git rebase -i master
 ```
 
-Using the interactive rebase option, you can squash and/or fixup the commits required to land the pull request as a single commit. If you need to edit the commit message, for example, an interactive rebase gives you an option to do it early. After rebasing the branch, you can use a "fast-forward" merge to land it on your local master and push it. If you use github's `Closes gh-####` syntax in the commit message, it will automatically close the pull request and add a comment on it pointing at the commit.
+Using the interactive rebase option, you will be able to squash commits and add references to the PR. For most PRs, you'll want to reduce them to a single commit. If there are multiple changes that deserve their own commits, it's fine to leave them; make the same decisions you would about how to split up commits if you were making these changes yourself.
+
+Every commit that is kept will need to be marked for a `reword` to include references to the pull request. The last commit should always include `Closes gh-XXX` where XXX is the pull request number. If there are multiple commits, the other commits should include `Ref gh-XXX`. See the [commit guidelines](http://contribute.jquery.org/commits-and-pull-requests/#commit-guidelines) for more information on including metadata in commit messages.
+
+Once the branch has been rebased, you can merge it into master using the `--ff-only` option to ensure that everything worked properly and this will result in a clean history.
 
 ```shell
 git checkout master
@@ -63,42 +73,19 @@ git reset --hard origin/master
 
 ## Fixing commits
 
-Sometimes there will be a pull request with a single commit that looks good, but the commit message doesn't conform to our Commit Message Style Guide, or it just has some whitespace that looks bad. You can use `rebase -i`, as described above, to `reword` a commit and alter the message or `edit` a commit and make a whitespace change. If you have already commited, you can use `git commit --amend` to edit the commit message or the content (e.g. a small whitespace error) without changing its date or author information.
+Sometimes commits in pull requests need to have slight tweaks. If the commit message doesn't conform to our [commit guidelines](http://contribute.jquery.org/commits-and-pull-requests/#commit-guidelines), mark the commit using the `reword` option during the rebase. If you need to fix code style issues or whitespace, use the `edit` option.
 
-So assuming you fixed the code and now want to commit, use this:
-
-```shell
-git commit -a --amend
-```
-
-That'll give you a chance to edit the message, and will commit all changes you made. After making the change you want, you can push.
-
-Often pull requests contain one initial commit and then multiple fixup commits, based on code reviews. Or you have multiple valid commits, but individual changes or commit messages are bad. In this case, an interactive rebase is yet again your friend.
-
-To start, get the commits you want to land in a local branch. For that, fetching the pull request as decribed above is the key:
-
-```shell
-git pru 55
-git rebase master -i
-```
-
-Interactive rebase, triggered by that last line, will open your editor to let you choose what to do with each commit. Read the instructions included there or the entry for `git help rebase` for further info.
-
-You can now merge the `pr/55` into master as done above and push; then delete the `pr/55` branch.
-
-Much like `cherry-pick`, this rebase will change the SHAs so you will need to manually close the pull request with a reference to the final commit.
+It is important to limit code changes to style fixes and very minor edits like changing the order of a conditional or similar modificiations. If the actual logic needs to be changed or there is a large amount of style issues, ask the author to make the changes themselves. Alternatively, you can make the changes in a separate commit, but this should be avoided if it will result in sloppy commits landing in the main repo.
 
 ## Backporting Fixes
 
-If you rebase (or cherry-pick) a fix into master that should be included in the next 1.x.y release, you'll need to copy the fix over to the 1-x-stable branch.
+Some projects maintain multiple versions at a time. If a commit lands in master and you need to include it in a stable branch, first try to cherry-pick the commit. For example, if you needed to copy commit `aabbccdd` to `1-10-stable`, you would run the following commands:
 
 ```shell
-# git cherry-pick -x <sha>
-git cherry-pick -x 710d762
-``` 
+git checkout 1-10-stable
+git cherry-pick -x aabbccdd
+```
 
-The `-x` flag tells git to include a reference to the original commit in the new commit message.
+The `-x` flag tells git to include a reference to the original commit in the new commit message. This is important for tracking what has and has not been copied over.
 
-This copies the changes from the commit in the master branch into the 1-x-stable branch, creating a new commit. Because this is a new commit, we use the -x option so that we can easily associate changes in the 1-x-stable branch with the original fix in the master branch.
-
-Now that you've cherry-picked the commit into the 1-x-stable branch, all you need to do is push the commit to GitHub.
+If the cherry-pick fails, look at the diff and determine if it makes sense to try to fix the conflicts or if you should just start fresh (or not even backport the change). If the cherry-pick worked, all you need to do is push the commit to GitHub.
