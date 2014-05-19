@@ -1,53 +1,30 @@
 ---
-title: jQuery Foundation Contributor License Agreement
+title: Individual Contributor License Agreement v2.0
 ---
 
-The document below clarifies the terms under which You, the person listed
-below, may make "Contributions" (software, bug fixes, configuration changes,
-documentation, or any other materials) to the project. This license protects
-You, the jQuery Foundation and licensees; it does not change your rights to use
-your own Contributions for any other purpose.  Please complete the following
-information about You and the Contributions. If you have questions about these
-terms, please contact us at legal@jquery.com.
+Thank you for Your interest in the jQuery Foundation. This document clarifies the terms under which You, the person listed below, may make Contributions — which may include without limitation, software, bug fixes, configuration changes, documentation, or any other materials — to any of the projects owned or managed by the jQuery Foundation.
 
-### You and the jQuery Foundation agree:
+Please complete the following information about You and the Contributions. If You have questions about these terms, please contact us at legal@jquery.com.
 
-**You grant to the jQuery Foundation a non-exclusive, irrevocable, worldwide,
-royalty-free, sublicenseable, transferable license** under all of Your relevant
-intellectual property rights (including copyright, patent, and any other
-rights), to use, copy, prepare derivative works of, distribute and publicly
-perform and display the Contributions on any licensing terms, including without
-limitation: (a) open source licenses like the MIT license; and (b) binary,
-proprietary, or commercial licenses. Except for the licenses granted herein,
-You reserve all right, title, and interest in and to the Contribution.
+You accept and agree to the following terms and conditions for Your present and future Contributions submitted to the jQuery Foundation. Except for the license granted herein to the jQuery Foundation, You reserve all right, title, and interest in and to Your Contributions.
 
-**You are able to grant us these rights.** You represent that You are legally
-entitled to grant the above license. *If Your employer has rights to
-intellectual property that You create*, You represent that You have received
-permission to make the Contributions on behalf of that employer, or that Your
-employer has waived such rights for the Contributions.
+### Licenses
 
-**The Contributions are your original work.** You represent that the
-Contributions are Your original works of authorship, and to Your knowledge, no
-other person claims, or has the right to claim, any right in any invention or
-patent related to the Contributions. You also represent that You are not
-legally obligated, whether by entering into an agreement or otherwise, in any
-way that conflicts with the terms of this license. For example, if you have
-signed an agreement requiring you to assign the intellectual property rights in
-the Contributions to an employer or customer, that would conflict with the
-terms of this license.
+jQuery Foundation projects (code, documentation, and any other materials) are released under the terms of the [MIT license](http://en.wikipedia.org/wiki/MIT_License), with the following exception:
 
-**We determine the code that is in our project.** You understand that the
-decision to include the Contribution in any project or source repository is
-entirely that of the jQuery Foundation, and this agreement does not guarantee
-that the Contributions will be included in any product.
+All sample code as defined in the project's LICENSE.txt file is licensed under the terms of [CC0](http://en.wikipedia.org/wiki/CC0#Zero_.2F_Public_domain). Any change to existing sample code or contribution of new code denoted as sample code as defined in the project's LICENSE.txt file is licensed under the terms of CC0.
 
-**No Implied Warranties.** The jQuery Foundation acknowledges that, except as
-explicitly described in this Agreement, the Contribution is provided on an "AS
-IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR
-IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE,
-NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.
+### You certify that:
 
+(a) Your Contributions are created in whole or in part by You and You have the right to submit it under the designated license; or
+
+(b) Your Contributions are based upon previous work that, to the best of your knowledge, is covered under an appropriate open source license and You have the right under that license to submit that work with modifications, whether created in whole or in part by You, under the designated license; or
+
+(c) Your Contributions are provided directly to You by some other person who certified (a) or (b) and You have not modified them.
+
+(d) You understand and agree that the jQuery Foundation projects and Your Contributions are public and that a record of the Contributions (including all metadata and personal information You submit with them) is maintained indefinitely and may be redistributed consistent with the jQuery Foundation's policies and the requirements of the MIT license where they are relevant.
+
+(e) You are granting Your Contributions to the jQuery Foundation under the terms of either the MIT open source license or the CC0 as applicable.
 Please complete the following information and press Submit below to indicate
 your agreement. All fields are required.
 
