@@ -32,7 +32,7 @@ Regardless of how simple the patch may be, **never use GitHub's pull request int
 
 Check that the commit has the author's full name and a valid email address. This can be done via `git log` once you have a local copy of the branch, or you can tack on `.patch` to the pull request URL and look at the email headers.
 
-Verify that the author has signed the CLA and that the CLA signature matches the commit info. The email address must be an exact match, but the name can be a loose match. For example, if the CLA is signed as William Doe and the commit has Will Doe or Bill Doe, it is acceptable. Partial names and nick names are not acceptable.
+Verify that the author has signed the CLA and that the CLA signature matches the commit info. The email address must be an exact match, but the name can be a loose match. For example, if the CLA is signed as William Doe and the commit has Will Doe or Bill Doe, it is acceptable. Partial names and nicknames are not acceptable.
 
 If the author hasn't signed the CLA, ask them to do so. If there is a mismatch between the CLA and the commit info, ask them to either change their git info or re-sign the CLA.
 
@@ -44,7 +44,7 @@ Once you have a local checkout of the branch, you should run the appropriate tes
 
 ### Merging a Pull Request
 
-We do not use merge commits in the jQuery repositories. Instead we rebase, amend, or cherry pick commits to create a clean, linear history.
+We do not use merge commits in the jQuery repositories. Instead we rebase, amend, or cherry-pick commits to create a clean, linear history.
 
 In order to accomplish this, you can check out the pull request branch, and then rebase it on master.
 
