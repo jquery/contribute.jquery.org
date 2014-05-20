@@ -65,7 +65,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 - The `?` and `:` in a ternary conditional must have space on both sides.
 - No filler spaces in empty constructs (e.g., `{}`, `[]`, `fn()`)
 - New line at the end of each file.
-- If the entire file is wrapped in a closure, the function body is not indented.
+- If the entire file is wrapped in a closure, the function body is not indented. See [full file closures](#full-file-closures) for examples.
 
 ### Bad Examples
 
@@ -213,6 +213,54 @@ elements
 		.html( "hello" )
 	.end()
 	.appendTo( "body" );
+```
+
+### Full File Closures
+
+When an entire file is wrapped in a closure, the body of the closure is not indented.
+
+```js
+(function( $ ) {
+
+// this doesn't get indented
+
+})( jQuery );
+```
+
+The same applies to AMD wrappers.
+
+```js
+define([
+	"foo",
+	"bar",
+	"baz"
+], function( foo, bar, baz ) {
+
+// this doesn't get indented
+
+});
+```
+
+For UMD, the factory is indented to visually differentiate it from the body.
+
+```js
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+
+		// AMD. Register as an anonymous module.
+		define([
+			"jquery"
+		], factory );
+	} else {
+
+		// Browser globals
+		factory( jQuery );
+	}
+}(function( $ ) {
+
+// this doesn't get indented
+
+}));
 ```
 
 ## Assignments
