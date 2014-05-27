@@ -12,7 +12,7 @@ You accept and agree to the following terms and conditions for Your present and 
 
 jQuery Foundation projects (code, documentation, and any other materials) are released under the terms of the [MIT license](http://en.wikipedia.org/wiki/MIT_License), with the following exception:
 
-All sample code as defined in the project's LICENSE.txt file is licensed under the terms of [CC0](http://en.wikipedia.org/wiki/CC0#Zero_.2F_Public_domain). Any change to existing sample code or contribution of new code denoted as sample code as defined in the project's LICENSE.txt file is licensed under the terms of CC0.
+Copyright and related rights for sample code as defined in the project's LICENSE.txt file are waived via [CC0](http://en.wikipedia.org/wiki/CC0#Zero_.2F_Public_domain). Rights to any change to existing sample code or contribution of new code denoted as sample code as defined in the project's LICENSE.txt file are waived via CC0.
 
 ### You certify that:
 
