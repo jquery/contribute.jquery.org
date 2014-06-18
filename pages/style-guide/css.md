@@ -14,10 +14,10 @@ that is optimized for browsers to read and process.
 - Indentation with tabs.
 - No whitespace at the end of line or on blank lines.
 - Use a space after a property name’s colon.
-- Put a space before `{` in rule delectations.
+- Put a space before `{` in rule declaration.
 - Place closing braces of declaration blocks on a new line.
 - Put line breaks between rulesets to make the CSS readable.
-- When listing multiple elements associated with the same rule declarations,
+- When listing multiple elements associated with the same rule declaration,
  place each element on it's own line.
 - Do not nest CSS elements with tabs.
 - CSS rulesets should be indented by one tab.
