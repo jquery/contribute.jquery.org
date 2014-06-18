@@ -12,3 +12,4 @@ Long term, we would like to have all of the formatting automatically done by the
 
 ### [HTML Markup Style Guide](/style-guide/html/)
 
+### [CSS Style Guide](/style-guide/css/)
