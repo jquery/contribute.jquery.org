@@ -7,7 +7,9 @@ This page outlines the style guide for CSS across all jQuery projects.
 
 ## Spacing
 
-In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for browsers to read and process.
+In general, the jQuery style guide encourages liberal spacing for
+improved human readability. The minification process creates a file
+that is optimized for browsers to read and process.
 
 - Indentation with tabs.
 - No whitespace at the end of line or on blank lines.
@@ -27,10 +29,11 @@ In general, the jQuery style guide encourages liberal spacing for improved human
  - Avoid cascading elements more than 3 elements.
  - Use `/* */` for comments instead of `//`.
  - Avoid uppercase letters. Instead of camel-case, separate out css classes with `-`.
+   For example, use `.ui-block-e` instead of `.uiBlockE` when declaring classes.
  - use shorthand properties when possible.
 
  ```css
- 		margin: 0 10em 5em 10em
+ 		margin: 0 10em 5em 10em;
  ```
    instead of
  ```css
@@ -42,4 +45,4 @@ In general, the jQuery style guide encourages liberal spacing for improved human
  - Use classes to identify elements instead of ids.
 
 
- - Above all, use valid CSS when possible
+Above all, use valid CSS when possible
