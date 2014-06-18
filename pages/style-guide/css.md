@@ -84,7 +84,7 @@ body.badCSS {
 }
 
 body section .DESCRIPTION p {
-  margin-top:.5em;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 p {
-  margin:.5em 0;
+  margin: .5em 0;
 }
 
 .submit-button{
