@@ -17,12 +17,12 @@ that is optimized for browsers to read and process.
 - Put a space before `{` in rule declaration.
 - Place closing braces of declaration blocks on a new line.
 - Put line breaks between rulesets to make the CSS readable.
-- When listing multiple elements associated with the same rule
-declaration, place each element on it's own line.
+- When listing multiple selectors associated with the same CSS rule,
+place each selector on it's own line.
 - Do not nest CSS selectors with tabs.
-- CSS rulesets should be indented by one tab.
+- The only time you should tab in selectors is within a media query.
+- CSS rules' properties should be indented by one tab.
 - No spaces within `()` for urls.
-- The only time you tab in selectors is within a media query.
 
 ```css
 /* Bad CSS */
