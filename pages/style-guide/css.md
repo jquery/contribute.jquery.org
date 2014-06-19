@@ -133,7 +133,6 @@ multiple lines, use the comment notation on each line.
 
 ```css
 /* Bad Example */
-
 .cssButton,
 .css_button,
 #cssButton,
