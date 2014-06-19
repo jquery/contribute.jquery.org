@@ -60,7 +60,7 @@ font-weight:strong;
 ```
 
 ## Formatting
- - Use hex color codes `#000000` unless using `rgba()`.
+ - Use hex color codes `#5c8fb3` unless using `rgba()`.
  - When possible, use shorthand hex values.
  - Use lower case letters when declaring hex codes.
  - Use `em` over `px`, unless unavoidable.
