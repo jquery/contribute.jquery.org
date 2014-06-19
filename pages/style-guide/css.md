@@ -17,8 +17,8 @@ that is optimized for browsers to read and process.
 - Put a space before `{` in rule declaration.
 - Place closing braces of declaration blocks on a new line.
 - Put line breaks between rulesets to make the CSS readable.
-- When listing multiple selectors associated with the same rule declaration,
- place each selector on it's own line.
+- When listing multiple elements associated with the same rule
+declaration, place each element on it's own line.
 - Do not nest CSS selectors with tabs.
 - CSS rulesets should be indented by one tab.
 - No spaces within `()` for urls.
@@ -67,62 +67,91 @@ font-weight:strong;
  - Avoid specifying units for 0 values.
  - Avoid cascading selectors that are more than 3 selectors long.
  - Avoid unnecessary cascading selectors.
- - Use `/* */` for comments.
- - Have when comments, have the comment notation (`/* */`) be on the
- same line as the rest of the comment. If you have multiple lines of comment,
- use the comment notation on each line.
+ - Use shorthand properties when possible.
+ - Omit leading zeros in decimal values.
+ - Use double quotation marks instead of single quotes.
+ - Don't use `@import` in production. It is slower, adds extra page
+ requests, and can cause other unforeseen problems.
+ - Always have a semi-colon at the end of each ruleset.
+
+
+```css
+/* Bad CSS Example */
+table.badCSS thead tr th{
+  color: #FFFFFF;
+  background: pink url('images/polka-dots.png');
+  font-size: 12px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+
+/* Good CSS Example*/
+
+.goodTable thead th{
+  color: #fff;
+  background: #ffc0cb url("images/polka-dots.png");
+  font-size: 1em;
+  padding: .5em 0;
+}
+
+
+```
+
+
+## Comments
+- Use `/* */` for comments.
+- When using comments, have the comment notation (`/* */`) be on the
+same line as the rest of the comment. If writing a comment that takes up
+multiple lines, use the comment notation on each line.
+- Have a space between first word and comment opening.
+- Have a blank line before each comment.
+
+```css
+/*
+  Bad Comment Example
+  Do not do this, please.
+*/
+
+
+/* Good comment Example */
+/* An example of a good comment */
+
+
+```
+
+
+## Class Names
+
  - Avoid the use of uppercase letters. Instead of camelCase,
  separate out css classes with dashes (`-`).
  - Do not use underscores (`_`) in class names.
  - Avoid excessive and arbitrary shorthand notation for classes.
  `.btn` is useful for button, but `.s` doesn't mean anything.
- - Use shorthand properties when possible.
- - Omit leading zeros in decimal values.
- - Use double quotation marks instead of single quotes.
  - Use classes to identify selectors instead of ids.
- - Don't use `@import` in production. It is slower, adds extra page
- requests, and can cause other unforeseen problems.
- - Always have a semi-colon at the end of each ruleset.
+
 
 ```css
-/*
-  Bad CSS
-  comments
-*/
-body.badCSS {
-  color: #FFFFFF;
-  background: pink;
-  font-size: 12px;
+/* Bad Example */
+
+.cssButton,
+.css_button,
+#cssButton,
+.b {
+
 }
 
-body section .DESCRIPTION p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
 
-#submitButton {
-  background: url('images/next.png');
-}
+/* Good Example */
+.css-btn{
 
-/* Good CSS */
-/* comments */
-
-body {
-  color: #fff;
-  background: #f57ce5;
-  font-size: 1.5em;
-}
-
-p {
-  margin: .5em 0;
-}
-
-.submit-button{
-  background: url("images/next.png");
 }
 
 
 ```
+
+
+
 
 
 Above all, use valid CSS when possible
