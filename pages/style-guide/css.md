@@ -17,12 +17,12 @@ that is optimized for browsers to read and process.
 - Put a space before `{` in rule declaration.
 - Place closing braces of declaration blocks on a new line.
 - Put line breaks between rulesets to make the CSS readable.
-- When listing multiple elements associated with the same rule declaration,
- place each element on it's own line.
-- Do not nest CSS elements with tabs.
+- When listing multiple selectors associated with the same rule declaration,
+ place each selector on it's own line.
+- Do not nest CSS selectors with tabs.
 - CSS rulesets should be indented by one tab.
 - No spaces within `()` for urls.
-- The only time you tab in elements is within a media query.
+- The only time you tab in selectors is within a media query.
 
 ```css
 /* Bad CSS */
@@ -64,18 +64,26 @@ font-weight:strong;
  - Use lower case letters when declaring hex codes.
  - Use `em` over `px`, unless unavoidable.
  - Avoid specifying units for 0 values.
- - Avoid cascading elements more than 3 elements.
- - Avoid unnecessary cascading elements.
+ - Avoid cascading selectors that are more than 3 selectors long.
+ - Avoid unnecessary cascading selectors.
  - Use `/* */` for comments.
- - Avoid uppercase letters. Instead of camel-case, separate out css classes with `-`.
+ - Have when comments, have the comment notation (`/* */`) be on the
+ same line as the rest of the comment. If you have multiple lines of comment,
+ use the comment notation on each line.
+ - Avoid the use of uppercase letters. Instead of camelCase,
+ separate out css classes with dashes (`-`).
+ - Do not use underscores (`_`) in class names.
  - Use shorthand properties when possible.
  - Omit leading zeros in decimal values.
  - Use double quotation marks instead of single quotes.
- - Use classes to identify elements instead of ids.
+ - Use classes to identify selectors instead of ids.
+ - Don't use `@import` in production. It is slower, adds extra page
+ requests, and can cause other unforeseen problems
 
 ```css
 /*
   Bad CSS
+  comments
 */
 body.badCSS {
   color: #FFFFFF;
@@ -93,6 +101,7 @@ body section .DESCRIPTION p {
 }
 
 /* Good CSS */
+/* comments */
 
 body {
   color: #ffffff;
