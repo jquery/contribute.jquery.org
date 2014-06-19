@@ -61,6 +61,7 @@ font-weight:strong;
 
 ## Formatting
  - Use hex color codes `#000000` unless using `rgba()`.
+ - When possible, use shorthand hex values.
  - Use lower case letters when declaring hex codes.
  - Use `em` over `px`, unless unavoidable.
  - Avoid specifying units for 0 values.
@@ -73,12 +74,15 @@ font-weight:strong;
  - Avoid the use of uppercase letters. Instead of camelCase,
  separate out css classes with dashes (`-`).
  - Do not use underscores (`_`) in class names.
+ - Avoid excessive and arbitrary shorthand notation for classes.
+ `.btn` is useful for button, but `.s` doesn't mean anything.
  - Use shorthand properties when possible.
  - Omit leading zeros in decimal values.
  - Use double quotation marks instead of single quotes.
  - Use classes to identify selectors instead of ids.
  - Don't use `@import` in production. It is slower, adds extra page
- requests, and can cause other unforeseen problems
+ requests, and can cause other unforeseen problems.
+ - Always have a semi-colon at the end of each ruleset.
 
 ```css
 /*
@@ -104,7 +108,7 @@ body section .DESCRIPTION p {
 /* comments */
 
 body {
-  color: #ffffff;
+  color: #fff;
   background: #f57ce5;
   font-size: 1.5em;
 }
