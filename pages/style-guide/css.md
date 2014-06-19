@@ -42,7 +42,7 @@ font-weight:strong;
 /* Good CSS */
 .good-spacing,
 .good-example {
-  color: #222222;
+  color: #222;
   background: url("../good.png");
 }
 
