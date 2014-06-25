@@ -25,9 +25,10 @@ place each selector on it's own line.
 - No spaces within `()` for urls.
 
 ```css
+
 /* Bad CSS */
 
-   .bad-spacing,.bad-example{color:#222222;background:url( ".../bad.png" );}
+   .bad-spacing,.bad-example{color:#222222;background:url( "../bad.png" );}
 
      .bad-spacing{font-style:italic}
 
@@ -56,7 +57,6 @@ font-weight:strong;
   }
 }
 
-
 ```
 
 ## Formatting
@@ -70,12 +70,15 @@ font-weight:strong;
  - Use shorthand properties when possible.
  - Omit leading zeros in decimal values.
  - Use double quotation marks instead of single quotes.
- - Don't use `@import` in production. It is slower, adds extra page
- requests, and can cause other unforeseen problems.
  - Always have a semi-colon at the end of each ruleset.
+ - Don't use `@import` in distribution files. It is slower, adds extra page
+ requests, and can cause other unforeseen problems.
+ - Do not use more than 31 `@imports` in a single css file, it will break IE.
+ - Do not nest `@imports`.  You will no longer be able to guarantee their order.
 
 
 ```css
+
 /* Bad CSS Example */
 table.badCSS thead tr th{
   color: #FFFFFF;
@@ -85,7 +88,6 @@ table.badCSS thead tr th{
   padding-bottom: 0.5em;
 }
 
-
 /* Good CSS Example*/
 
 .goodTable thead th{
@@ -94,7 +96,6 @@ table.badCSS thead tr th{
   font-size: 1em;
   padding: .5em 0;
 }
-
 
 ```
 
@@ -108,16 +109,14 @@ multiple lines, use the comment notation on each line.
 - Have a blank line before each comment.
 
 ```css
+
 /*
   Bad Comment Example
   Do not do this, please.
 */
 
-
 /* Good comment Example */
 /* An example of a good comment */
-
-
 ```
 
 
@@ -140,12 +139,10 @@ multiple lines, use the comment notation on each line.
 
 }
 
-
 /* Good Example */
 .css-btn{
 
 }
-
 
 ```
 
