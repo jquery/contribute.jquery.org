@@ -9,7 +9,7 @@ This page is a collection of tips and tricks for dealing with pull requests and 
 Github stores the refs for each pull request on the main repo. Assuming you have the `jquery` repo set as your `upstream` remote, you can use the following git alias to make life a little easier (it's long, you'll need to scroll to get the whole command):
 
 ```shell
-git config --global --add alias.pru '!f() { git fetch -fu upstream refs/pull/$1/head:pr/$1; git checkout pr/$1 } ; f'
+git config --global --add alias.pru '!f() { git fetch -fu upstream refs/pull/$1/head:pr/$1; git checkout pr/$1; } ; f'
 ```
 
 Gnarf has put together a few variants of this alias in [gnarf/.dotfiles](https://github.com/gnarf/.dotfiles/blob/c9aa77a83f381ce138350442613d4a14cb549671/.gitconfig#L24-L27).
