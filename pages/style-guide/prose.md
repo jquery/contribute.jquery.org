@@ -25,7 +25,7 @@ The `source` and `attribution` properties are optional, and should be used prima
 
 ### Code Blocks
 
-Code blocks should be set off with triple backticks and should **not** be indented. (That is to say, the site prefers the use of "fenced blocks"notation supported by [gfm](http://github.github.com/github-flavored-markdown/).)
+Code blocks should be set off with triple backticks and should **not** be indented. (That is to say, the site prefers the use of "fenced blocks" notation supported by [gfm](http://github.github.com/github-flavored-markdown/).)
 
 ## Writing Style
 
