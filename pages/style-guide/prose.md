@@ -37,7 +37,7 @@ Content should be educational and accessible to a broad audience of developers. 
 	- **Yes:** The `load`, `scroll`, and `error` events (e.g. on an `<img>` element) do not bubble.
 	- **No:** The `load`, `scroll` and `error` events (e.g. on an `<img>` element) do not bubble.
 - Numbers:
-	- Spell out numbers below 10 (e.g. one, two, three)
+	- Spell out numbers below 10 (e.g. one, two, three). 
 	- Use numerals for numbers 10 and above (e.g. 10, 20, 100).
 - Abbreviations:
 	- Spell out abbreviated words on first reference, followed by the abbreviation in parentheses. Use abbreviations on second reference.
