@@ -47,7 +47,7 @@ Content should be educational and accessible to a broad audience of developers. 
 - Always use a `code` tag to denote code from prose.
 - Properties: use a dot, followed by the property name, e.g. `.length`.
 - Functions: use the function name, followed by parentheses, e.g. `myfunction()`.
-- Methods: use a dot, followed by the method name, followed by parentheses, e.g. The `.focus()` method is a shortcut for the `.bind( "focus", handler )` in the first and second variations, and `.trigger( "focus" )` in the third.
+- Methods: use a dot, followed by the method name, followed by parentheses, e.g. The `.focus()` method is a shortcut for  `.bind( "focus", handler )` in the first and second variations, and `.trigger( "focus" )` in the third.
 
 #### Article & Sentence Structure
 
