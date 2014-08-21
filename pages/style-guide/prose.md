@@ -1,5 +1,5 @@
 ---
-title: General Style Guide
+title: Prose Style Guide
 ---
 
 ## Formatting Conventions
