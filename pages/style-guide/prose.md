@@ -79,8 +79,7 @@ Content should be educational and accessible to a broad audience of developers. 
 
 #### Voice & Tone
 
-- Do write in clear, easy-to-understand statements.
-- Do write in active voice.
+- Do write in clear, easy-to-understand statements and in active voice. 
 - Do keep the audience in mind while writing.
 - Do write conversationally.
 - Do write in the second person to address the reader.
