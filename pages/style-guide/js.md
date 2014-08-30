@@ -302,6 +302,20 @@ var a, b, c,
 	};
 ```
 
+Exception: When a declaration has a single multiline assignment, the subsequent lines are not indented.
+
+```js
+// Good
+var fn = function() {
+	body();
+};
+
+// Bad
+var fn = function() {
+		body();
+	};
+```
+
 ## Equality
 
 Strict equality checks (`===`) must be used in favor of abstract equality checks (`==`). The _only_ exception is when checking for `undefined` and `null` by way of `null`.
