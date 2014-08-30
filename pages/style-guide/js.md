@@ -274,7 +274,7 @@ For UMD, the factory is indented to visually differentiate it from the body.
 
 ## Assignments
 
-Assignments in a declaration must be on their own line. Declarations that don't have an assignment must be listed together at the start of the declaration. For example:
+Assignments in a declaration must be on their own line. Declarations that don't have an assignment must be listed together at the start of the declaration. Each line after the initial line must be indented once. For example:
 
 ```js
 // Bad
@@ -287,7 +287,19 @@ var c;
 // Good
 var a, b, c,
 	foo = true,
-	bar = false;
+	bar = false,
+	obj = {
+		a: b,
+		c: d,
+	},
+	arr = [
+		a,
+		b,
+		c
+	],
+	fn = function() {
+		body();
+	};
 ```
 
 ## Equality
