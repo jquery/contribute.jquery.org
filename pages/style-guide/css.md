@@ -6,7 +6,7 @@ This page outlines the style guide for CSS across all jQuery projects.
 
 ## Linting
 Use `csslint` to detect errors and potential problems. Most jQuery projects have a
-Grunt task for linting all css files: grunt `csslint`. The options for `csslint`
+Grunt task for linting all css files: `grunt csslint`. The options for `csslint`
 are stored in a `.csslintrc` file.
 
 Each `.csslintrc` file follows a specific format. All options must be alphabetized
