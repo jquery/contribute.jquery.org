@@ -16,6 +16,7 @@ and grouped:
 {
 	"adjoining-classes": false,
 	"box-model": false,
+  "box-sizing": false
 	"compatible-vendor-prefixes": false,
 	"duplicate-background-images": false,
 	"import": false,
