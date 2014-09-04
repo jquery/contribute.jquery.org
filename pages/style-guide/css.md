@@ -4,6 +4,27 @@ title: CSS Style Guide
 
 This page outlines the style guide for CSS across all jQuery projects.
 
+## Linting
+Use `csslint` to detect errors and potential problems. Most jQuery projects have a
+Grunt task for linting all css files: grunt `csslint`. The options for `csslint`
+are stored in a `.csslintrc` file.
+
+Each `.csslintrc` file follows a specific format. All options must be alphabetized
+and grouped:
+
+```json
+{
+	"adjoining-classes": false,
+	"box-model": false,
+	"compatible-vendor-prefixes": false,
+	"duplicate-background-images": false,
+	"import": false,
+	"important": false,
+	"outline-none": false,
+	"overqualified-elements": false,
+	"text-indent": false
+}
+```
 
 ## Spacing
 
