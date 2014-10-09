@@ -39,42 +39,33 @@ right venue for their issue.
 
 Here's how to accomplish Step 1 above for each of our projects:
 
-### jQuery Core and jQuery UI
+### GitHub Issues
 
-jQuery Core and UI both use [Trac](http://trac.edgewall.org/), an open source standalone bug tracking system.
-
-* jQuery Core Trac - [bugs.jquery.com](http://bugs.jquery.com)
-* jQuery UI Trac - [bugs.jqueryui.com](http://bugs.jqueryui.com)
-
-Trac does not require you to have an account to report bugs, but you'll
-definitely want to register an account and log in with it.
-(Separate registrations are required for the two bug trackers.)
-Having an account helps everyone in the discussion keep track
-of who else is participating, and it's very difficult to keep in touch with
-"anonymous."
-
-You can keep up to date with new bugs as they are reported by visiting the
-[timeline](http://bugs.jquery.com/timeline) on each site, but we recommend
-signing up to receive e-mail notifications when new bugs are reported and
-receive new comments.  Most of the regular triagers use e-mail notifications
-to stay on top of things as they happen, as it tends to make it easier to
-digest activity on the tracker since the last time you checked.  You can set up
-your e-mail preferences on the [subscriptions
-tab](http://bugs.jquery.com/prefs/subscriptions) of your Trac preferences. We
-also reccomend setting up a rule in your e-mail client to keep bug e-mails
-relatively self-contained.
-
-### jQuery Mobile, API Documentation, and Web Sites
-
-For the most part, the rest of our projects keep track of bugs using [GitHub
+For the most part, jQuery Foundation projects keep track of bugs using [GitHub
 issues](https://github.com/features/projects/issues). All you have to do is
 [sign up for a GitHub account](https://github.com/signup/free) if you don't already have one. From there on
 out, it's as simple as "watching" the repositories you want to help triage. New
 issues and comments will make their way to your notification center and inbox,
 depending on your [notification settings](https://github.com/settings/notifications).
 
+### jQuery UI
+
+jQuery UI uses [Trac](http://trac.edgewall.org/), an open source standalone bug tracking system, and is hosted at [bugs.jqueryui.com](http://bugs.jqueryui.com).
+
+You can keep up to date with new bugs as they are reported by visiting the
+[timeline](http://bugs.jqueryui.com/timeline), but we recommend
+signing up to receive email notifications when new bugs are reported and
+receive new comments.  Most of the regular triagers use email notifications
+to stay on top of things as they happen, as it tends to make it easier to
+digest activity on the tracker since the last time you checked.  You can set up
+your email preferences on the [subscriptions
+tab](http://bugs.jqueryui.com/prefs/subscriptions) of your Trac preferences. We
+also reccomend setting up a rule in your email client to keep bug emails
+relatively self-contained.
+
 #### Projects
 
+* [jQuery Core issues](http://github.com/jquery/jquery/issues)
 * [jQuery Mobile issues](http://github.com/jquery/jquery-mobile/issues)
 * [Sizzle issues](http://github.com/jquery/sizzle/issues)
 * [QUnit issues](http://github.com/jquery/qunit/issues)
@@ -101,5 +92,4 @@ depending on your [notification settings](https://github.com/settings/notificati
 * [contribute.jquery.org issues](http://github.com/jquery/contribute.jquery.org/issues) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
 * [events.jquery.org issues](http://github.com/jquery/jquery.org/issues) - The content of our [Events and Conferences](http://events.jquery.org) site
 * [irc.jquery.org issues](http://github.com/jquery/irc.jquery.org/issues) - The content of our [IRC log and information](http://irc.jquery.org) site
-* [bugs.jquery.com issues](http://github.com/jquery/bugs.jquery.com/issues) - Issues with jQuery Core's Trac itself
 * [bugs.jqueryui.com issues](http://github.com/jquery/bugs.jqueryui.com/issues) - Issues with jQuery UI's Trac itself

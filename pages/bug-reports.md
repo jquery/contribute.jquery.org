@@ -61,7 +61,7 @@ Please do not submit multiple bugs in one bug report. When you do this, they nee
 
 ## Where to Report
 
-* jQuery Core: [http://bugs.jquery.com/](http://bugs.jquery.com/)
+* jQuery Core: [https://github.com/jquery/jquery/issues](https://github.com/jquery/jquery/issues)
 * jQuery Migrate: [https://github.com/jquery/jquery-migrate/issues](https://github.com/jquery/jquery-migrate/issues)
 * jQuery UI: [http://bugs.jqueryui.com/](http://bugs.jqueryui.com/)
 * jQuery Mobile: [https://github.com/jquery/jquery-mobile/issues](https://github.com/jquery/jquery-mobile/issues)

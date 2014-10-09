@@ -133,10 +133,7 @@ Afterwards, make sure to push both version change commit and the tag:
  When you notice something wrong with one of our sites, or you have an idea for
  how something could be improved, don't keep it to yourself. Filing a [Github
  issue](https://github.com/features/projects/issues) on the appropriate
- repository is the best way to let us know what's up. We even have repositories
- just for tracking issues with sites that aren't managed through
- [jquery-wp-content](http://github.com/jquery/jquery-wp-content), such as
- [http://bugs.jquery.com](http://github.com/jquery/bugs.jquery.com).
+ repository is the best way to let us know what's up.
 
  When you're looking at a live site, it may sometimes be a bit unclear whether
  your issue should be filed on a content repository or directly on
@@ -289,7 +286,6 @@ still in progress, and others that can't be integrated or have been deprecated.
 #### Will Not Be Transitioned To Content Repository, Still Needs New Theming
 
 * [forum.jquery.com](http://forum.jquery.com)
-* [bugs.jquery.com](http://bugs.jquery.com)
 * [bugs.jqueryui.com](http://bugs.jqueryui.com)
 
 #### Deprecated, Shutdown Imminent
