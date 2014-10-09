@@ -265,7 +265,7 @@ If IRC is not your thing, but you still want or need to get in touch, please use
 
 * [jquery.org](http://github.com/jquery/jquery.org/) - The content of [jquery.org](http://jquery.org) itself
 * [contribute.jquery.org ](http://github.com/jquery/contribute.jquery.org/) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
-* [events.jquery.org](http://github.com/jquery/jquery.org/) - The content of our [Events and Conferences](http://events.jquery.org) site
+* [events.jquery.org](http://github.com/jquery/events.jquery.org/) - The content of our [Events and Conferences](http://events.jquery.org) site
 * [irc.jquery.org ](http://github.com/jquery/irc.jquery.org/) - The content of our [IRC log and information](http://irc.jquery.org) site
 
 <a name="exceptions"></a>
@@ -279,7 +279,6 @@ still in progress, and others that can't be integrated or have been deprecated.
 
 * [blog.jquery.com](http://blog.jquery.com)
 * [blog.jqueryui.com](http://blog.jqueryui.com)
-* [jquerymobile.com](http://jquerymobile.com)
 * [blog.jquerymobile.com](http://blog.jquerymobile.com)
 * [sizzlejs.com](http://sizzlejs.com)
 
@@ -287,9 +286,3 @@ still in progress, and others that can't be integrated or have been deprecated.
 
 * [forum.jquery.com](http://forum.jquery.com)
 * [bugs.jqueryui.com](http://bugs.jqueryui.com)
-
-#### Deprecated, Shutdown Imminent
-
-* [docs.jquery.com](http://docs.jquery.com)
-* [meetups.jquery.com](http://meetups.jquery.com)
-
