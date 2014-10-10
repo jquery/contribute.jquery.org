@@ -47,7 +47,7 @@ $ git checkout -b 151-remove-build-artifact
 
 ## Preparing To Commit
 
-When you're ready to commit your changes, there are a few things you should do first. The first step is reviewing your changes by running `git diff`. GUI tools for git like [Tower](http://www.git-tower.com/) and GitHub's desktop apps ([Mac](https://mac.github.com/), [Windows](https://mac.github.com/)) provide especially nice interfaces for those who don't like viewing diffs in their terminal. If you're comfortable working in a terminal, but want more visual diffs, you may want to check out [pretty-diff](https://www.npmjs.org/package/pretty-diff).
+When you're ready to commit your changes, there are a few things you should do first. The first step is reviewing your changes by running `git diff`. GUI tools for git like [Tower](http://www.git-tower.com/) and GitHub's desktop apps ([Mac](https://mac.github.com/), [Windows](https://windows.github.com/)) provide especially nice interfaces for those who don't like viewing diffs in their terminal. If you're comfortable working in a terminal, but want more visual diffs, you may want to check out [pretty-diff](https://www.npmjs.org/package/pretty-diff).
 
 When viewing the diff, check for problems like unrelated whitespace changes, improper indentation, trailing spaces, left over debug code, etc. If the project you're working on has unit tests or build steps, you must run them before committing to ensure that you haven't introduced any failures. Be sure to include new tests when fixing bugs or adding features.
 
