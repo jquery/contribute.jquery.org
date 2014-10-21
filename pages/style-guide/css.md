@@ -12,9 +12,20 @@ Each `.csslintrc` file follows a specific format. All options must be alphabetiz
 
 ```json
 {
+	"common1": true,
+	"common2": true,
+
+	"repo-specific1": true,
+	"repo-specific2": true
+}
+```
+
+The following common options must be used in all projects with css:
+
+```json
+{
 	"adjoining-classes": false,
 	"box-model": false,
-	"box-sizing": false,
 	"compatible-vendor-prefixes": false,
 	"duplicate-background-images": false,
 	"import": false,
