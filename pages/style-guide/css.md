@@ -166,5 +166,3 @@ refrain from doing this
 
 }
 ```
-
-Above all, use valid CSS when possible
