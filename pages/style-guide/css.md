@@ -6,7 +6,7 @@ This page outlines the style guide for CSS across all jQuery projects.
 
 ## Linting
 
-Use `CSSLint` to detect errors and potential problems. Most jQuery projects have a Grunt task for linting all css files: `grunt CSSLint`. The options for `CSSLint` are stored in a `.csslintrc` file.
+Use `CSSLint` to detect errors and potential problems. Most jQuery projects have a Grunt task for linting all CSS files: `grunt CSSLint`. The options for `CSSLint` are stored in a `.csslintrc` file.
 
 Each `.csslintrc` file follows a specific format. All options must be alphabetized and grouped:
 
@@ -119,7 +119,7 @@ table.badCSS thead tr th.selected {
 ## Imports
 
 - Don't use `@import` in distribution files. It is slower, adds extra page requests, and can cause other unforeseen problems.
-- Do not use more than 31 `@imports` in a single css file, it will break IE.
+- Do not use more than 31 `@imports` in a single CSS file, it will break IE.
 - Do not nest `@imports`.  You will no longer be able to guarantee their order.
 
 ## Comments
@@ -146,7 +146,7 @@ refrain from doing this
 ## Class Names
 
 - Class names should be all lowercase letters.
-- Seperate out css classes with dashes (`-`)
+- Seperate out CSS classes with dashes (`-`)
 - Avoid excessive and arbitrary shorthand notation for classes. `.ui-button` is useful for button, but `.b` doesn't mean anything.
 - Use classes to identify selectors instead of ids.
 
