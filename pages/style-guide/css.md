@@ -141,8 +141,6 @@ refrain from doing this
 * Good example of a multi-line comment
 * If your comment takes up multiple lines, please do this.
 */
-
-
 ```
 
 ## Class Names
