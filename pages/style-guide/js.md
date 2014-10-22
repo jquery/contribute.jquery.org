@@ -5,13 +5,9 @@ toc: true
 
 ## Linting
 
-Use JSHint to detect errors and potential problems. Every jQuery project has a
-Grunt task for linting all JavaScript files: `grunt jshint`. The options for
-JSHint are stored in a `.jshintrc` file; many repositories will have multiple
-`.jshintrc` files based on the type of code in each directory.
+Use JSHint to detect errors and potential problems. Every jQuery project has a Grunt task for linting all JavaScript files: `grunt jshint`. The options for JSHint are stored in a `.jshintrc` file; many repositories will have multiple `.jshintrc` files based on the type of code in each directory.
 
-Each `.jshintrc` file follows a specific format. All options must be alphabetized
-and grouped:
+Each `.jshintrc` file follows a specific format. All options must be alphabetized and grouped:
 
 ```json
 {
