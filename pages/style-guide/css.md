@@ -93,7 +93,7 @@ font-weight:strong;
  - Avoid cascading selectors that are more than 3 selectors long.
  - Avoid unnecessary cascading selectors.
  - Use shorthand properties when possible. 
- 	-Instead of writing out `padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 5px;`, shorten it to one rule: `padding: 20px 10px 5px 10px;`. However, if you're only changing the left padding, then it is appropriate to use `padding-left`. 
+  - Instead of writing out `padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 5px;`, shorten it to one rule: `padding: 20px 10px 5px 10px;`. However, if you're only changing the left padding, then it is appropriate to use `padding-left`. 
  - Omit leading zeros in decimal values.
  - Use double quotes instead of single quotes.
  - Always have a semicolon at the end of each ruleset.
