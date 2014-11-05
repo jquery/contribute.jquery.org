@@ -137,7 +137,7 @@ Use `/* */` for comments. When comments take up multiple lines, use a `*` at the
 ## Class Names
 
 - Class names should be all lowercase letters.
-- Seperate out CSS classes with dashes (`-`)
+- Separate out CSS classes with dashes (`-`)
 - Avoid excessive and arbitrary shorthand notation for classes. `.ui-button` is useful for button, but `.b` doesn't mean anything.
 - Use classes to identify selectors instead of ids.
 
