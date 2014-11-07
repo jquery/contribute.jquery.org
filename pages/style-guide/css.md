@@ -26,6 +26,7 @@ The following common options must be used in all projects with css:
 {
 	"adjoining-classes": false,
 	"box-model": false,
+	"box-sizing": false,
 	"compatible-vendor-prefixes": false,
 	"duplicate-background-images": false,
 	"import": false,
@@ -117,7 +118,7 @@ font-weight:strong;
 
 - Don't use `@import` in distribution files. It is slower, adds extra page requests, and can cause other unforeseen problems.
 - Do not use more than 31 `@imports` in a single CSS file, it will break IE.
-- Do not nest `@imports`. You will no longer be able to guarantee their order.
+- Do not nest `@imports`, you will not be able to guarantee their order.
 
 ## Comments
 
@@ -151,7 +152,7 @@ Use `/* */` for comments. When comments take up multiple lines, use a `*` at the
 }
 
 /* Good Example */
-.ui-button{
+.ui-button {
 
 }
 ```
