@@ -46,7 +46,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 - Use a space after a property name’s colon, do not use a space before the colon.
 - Put a space before `{` in rule declaration.
 - Place the closing brace of a rule declaration on a new line.
-- Put a blank line between rule declarations to make the CSS readable.
+- Have each property declaration within a rule declaration begin on a new line.
 - When listing multiple selectors associated with the same CSS rule, add a new line after each `,`.
 - The only time you should indent selectors is within nested rule declarations, like media queries.
 - CSS rules' properties should be indented by one tab.
@@ -90,14 +90,14 @@ font-weight:strong;
  - When possible, use shorthand hex values.
  - Use lower case letters when declaring hex codes.
  - Use `em` over `px`, unless unavoidable.
- - Don't specify units for 0 values.
+ - Don't specify units for 0 values in length properties.
  - Avoid cascading selectors that are more than 3 selectors long.
  - Avoid unnecessary cascading selectors.
  - Use shorthand properties when possible. 
   - Instead of writing out `padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 5px;`, shorten it to one rule: `padding: 20px 10px 5px 10px;`. However, if you're only changing the left padding, then it is appropriate to use `padding-left`. 
  - Omit leading zeros in decimal values.
  - Use double quotes instead of single quotes.
- - Always have a semicolon at the end of each declaration.
+ - Always have a semicolon at the end of each property declaration.
 
 
 ```css
