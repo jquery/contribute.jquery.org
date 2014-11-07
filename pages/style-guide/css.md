@@ -43,7 +43,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 
 - Indentation with tabs.
 - No whitespace at the end of line or on blank lines.
-- Use a space after a property name’s colon, do not use a space before the colon.
+- Use a space after a property name's colon, do not use a space before the colon.
 - Put a space before `{` in rule declaration.
 - Place the closing brace of a rule declaration on a new line.
 - Have each property declaration within a rule declaration begin on a new line.
