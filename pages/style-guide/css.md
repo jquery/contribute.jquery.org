@@ -42,13 +42,13 @@ The following common options must be used in all projects with css:
 In general, the jQuery style guide encourages liberal spacing for improved human readability. The minification process creates a file that is optimized for browsers to read and process.
 
 - Indentation with tabs.
-- No whitespace at the end of line or line breaks.
-- Use a space after a property name’s colon.
+- No whitespace at the end of line or on blank lines.
+- Use a space after a property name’s colon, do not use a space before the colon.
 - Put a space before `{` in rule declaration.
-- Place closing braces of declaration blocks on a new line.
-- Put line breaks between rulesets to make the CSS readable.
-- When listing multiple selectors associated with the same CSS rule, place each selector on its own line.
-- The only time you should indent selectors is within a media query.
+- Place closing braces of a rule declaration on a new line.
+- Put a blank line between rule declarations to make the CSS readable.
+- When listing multiple selectors associated with the same CSS rule, add a new line after each `,`.
+- The only time you should indent selectors is within nested rule declarations, like media queries.
 - CSS rules' properties should be indented by one tab.
 - No spaces within `()` for urls.
 
@@ -74,7 +74,7 @@ font-weight:strong;
 }
 
 .good-spacing {
-	font-style:italic;
+	font-style: italic;
 }
 
 @media only all {
@@ -90,14 +90,14 @@ font-weight:strong;
  - When possible, use shorthand hex values.
  - Use lower case letters when declaring hex codes.
  - Use `em` over `px`, unless unavoidable.
- - Don't specifying units for 0 values.
+ - Don't specify units for 0 values.
  - Avoid cascading selectors that are more than 3 selectors long.
  - Avoid unnecessary cascading selectors.
  - Use shorthand properties when possible. 
   - Instead of writing out `padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 5px;`, shorten it to one rule: `padding: 20px 10px 5px 10px;`. However, if you're only changing the left padding, then it is appropriate to use `padding-left`. 
  - Omit leading zeros in decimal values.
  - Use double quotes instead of single quotes.
- - Always have a semicolon at the end of each ruleset.
+ - Always have a semicolon at the end of each declaration.
 
 
 ```css
@@ -117,20 +117,20 @@ font-weight:strong;
 ## Imports
 
 - Don't use `@import` in distribution files. It is slower, adds extra page requests, and can cause other unforeseen problems.
-- Do not use more than 31 `@imports` in a single CSS file, it will break IE.
-- Do not nest `@imports`, you will not be able to guarantee their order.
+- Do not use more than 31 `@import`s in a single CSS file, it will break IE.
+- Do not nest `@import`s, you will not be able to guarantee their order.
 
 ## Comments
 
 Comments are always preceded by a blank line. Comments start with a capital first letter, but don't require a period at the end, unless you're writing full sentences. There must be a single space between the comment token and the comment text.
 
-Use `/* */` for comments. When comments take up multiple lines, use a `*` at the beginning of each line. There must be a space between the first word and the `*` on each line.
+When comments take up multiple lines, use a `*` at the beginning of each line. There must be a space between the first word and the `*` on each line.
 
 ```css
 /* Good single line comment */
 
 /*
-* Good example of a multi-line comment
+* Good example of a multi-line comment.
 * If your comment takes up multiple lines, please do this.
 */
 ```
@@ -138,7 +138,7 @@ Use `/* */` for comments. When comments take up multiple lines, use a `*` at the
 ## Class Names
 
 - Class names should be all lowercase letters.
-- Separate out CSS classes with dashes (`-`)
+- Build class names with hyphens (`-`).
 - Avoid excessive and arbitrary shorthand notation for classes. `.ui-button` is useful for button, but `.b` doesn't mean anything.
 - Use classes to identify selectors instead of ids.
 
