@@ -45,7 +45,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 - No whitespace at the end of line or on blank lines.
 - Use a space after a property name’s colon, do not use a space before the colon.
 - Put a space before `{` in rule declaration.
-- Place closing braces of a rule declaration on a new line.
+- Place the closing brace of a rule declaration on a new line.
 - Put a blank line between rule declarations to make the CSS readable.
 - When listing multiple selectors associated with the same CSS rule, add a new line after each `,`.
 - The only time you should indent selectors is within nested rule declarations, like media queries.
