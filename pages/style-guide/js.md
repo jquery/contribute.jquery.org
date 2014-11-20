@@ -105,28 +105,74 @@ try {
 ```
 
 
-### Objects
+### Object and Array Expressions
 
-Object declarations can be made on a single line if they are short (remember the line length limits). When an object declaration is too long to fit on one line, there must be one property per line. Property names only need to be quoted if they are reserved words or contain special characters:
+Object and array expressions can be one line if they are short (remember the line length limits). When an expression is too long to fit on one line, there must be one property or element per line, with the opening and closing brace on its own line. Property names only need to be quoted if they are reserved words or contain special characters:
 
 ```js
 // Bad
-var map = { ready: 9,
+map = { ready: 9,
 	when: 4, "you are": 15 };
 
+array = [ 9,
+	4,
+	15 ];
+
+array = [ {
+	key: val
+} ];
+
+array = [ {
+	key: val
+}, {
+	key2: val2
+} ];
+
 // Good
-var map = { ready: 9, when: 4, "you are": 15 };
+map = { ready: 9, when: 4, "you are": 15 };
+
+array = [ 9, 4, 15 ];
+
+array = [ { key: val } ];
+
+array = [ { key: val }, { key2: val2 } ];
+
+array = [
+	{ key: val },
+	{ key2: val2 }
+];
 
 // Good as well
-var map = {
+map = {
 	ready: 9,
 	when: 4,
 	"you are": 15
 };
+
+array = [
+	9,
+	4,
+	15
+];
+
+array = [
+	{
+		key: val
+	}
+];
+
+array = [
+	{
+		key: val
+	},
+	{
+		key2: val2
+	}
+];
 ```
 
 
-### Arrays and Function Calls
+### Array and Function Call Spacing
 
 Always include extra spaces around elements and arguments:
 
@@ -182,11 +228,11 @@ When a statement is too long to fit on one line, line breaks must occur after an
 ```js
 // Bad
 var html = "<p>The sum of " + a + " and " + b + " plus " + c
-	+ " is " + (a + b + c);
+	+ " is " + ( a + b + c );
 
 // Good
 var html = "<p>The sum of " + a + " and " + b + " plus " + c +
-	" is " + (a + b + c);
+	" is " + ( a + b + c );
 ```
 
 Lines should be broken into logical groups if it improves readability, such as splitting each expression of a ternary operator onto its own line even if both will fit on a single line.
