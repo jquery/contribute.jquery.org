@@ -182,11 +182,11 @@ When a statement is too long to fit on one line, line breaks must occur after an
 ```js
 // Bad
 var html = "<p>The sum of " + a + " and " + b + " plus " + c
-	+ " is " + (a + b + c);
+	+ " is " + ( a + b + c );
 
 // Good
 var html = "<p>The sum of " + a + " and " + b + " plus " + c +
-	" is " + (a + b + c);
+	" is " + ( a + b + c );
 ```
 
 Lines should be broken into logical groups if it improves readability, such as splitting each expression of a ternary operator onto its own line even if both will fit on a single line.
