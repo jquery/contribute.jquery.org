@@ -1,6 +1,6 @@
----
-title: HTML Style Guide
----
+<script>{
+	"title": "HTML Style Guide"
+}</script>
 
 This page outlines the style guide for HTML pages in all jQuery projects. These rules apply to web sites, demo pages, inline examples, test pages, etc. Exceptions are allowed for pages that must violate the rules by their very nature, e.g., a page that tests XHTML.
 

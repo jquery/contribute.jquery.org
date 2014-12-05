@@ -1,6 +1,6 @@
----
-title: Bug Triage
----
+<script>{
+	"title": "Bug Triage"
+}</script>
 
 Triage, the process of reviewing incoming bug tickets, gathering more
 information about the situation, and verifying whether or not the report is

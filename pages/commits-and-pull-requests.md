@@ -1,7 +1,7 @@
----
-title: Commits and Pull Requests
-toc: true
----
+<script>{
+	"title": "Commits and Pull Requests",
+	"toc": true
+}</script>
 
 We use git and GitHub's [Pull Request](https://help.github.com/articles/using-pull-requests) system to review and accept all contributions of code, content and design to all of our projects. Your experience can be as pleasant as possible (for everyone) if you follow these guidelines as you work on putting together the commits and pull requests that comprise your contributions.
 

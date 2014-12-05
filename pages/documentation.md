@@ -1,6 +1,6 @@
----
-title: Contributing to jQuery Foundation Documentation
----
+<script>{
+	"title": "Contributing to jQuery Foundation Documentation"
+}</script>
 
 For almost as long as jQuery has been around, its documentation has been an integral part of the project, from helping new users get up to speed to offering detailed explanations of features for seasoned developers. Currently, the jQuery Foundation manages API documentation and demos for its projects and provides a growing set of tutorials on its learning site.
 

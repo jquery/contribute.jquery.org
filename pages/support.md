@@ -1,6 +1,6 @@
----
-title: Supporting Other Users
----
+<script>{
+	"title": "Supporting Other Users"
+}</script>
 
 With millions of jQuery users all over the world, there's always someone out
 there who needs a helping hand.  Like many open source projects, the jQuery

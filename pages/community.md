@@ -1,6 +1,6 @@
----
-title: Contributing to the jQuery Community
----
+<script>{
+	"title": "Contributing to the jQuery Community"
+}</script>
 
 In a sense, each of the different ways of getting involved that we detail on
 this site are all ways of contributing to the jQuery community, which we define

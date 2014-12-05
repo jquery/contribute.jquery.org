@@ -1,6 +1,6 @@
----
-title: jQuery Foundation Copyright Assignment Agreement
----
+<script>{
+	"title": "jQuery Foundation Copyright Assignment Agreement"
+}</script>
 
 For good and valuable consideration, receipt of which I acknowledge, I hereby
 transfer to jQuery Foundation, Inc. (the "Foundation") my entire right, title,

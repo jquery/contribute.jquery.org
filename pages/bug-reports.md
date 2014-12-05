@@ -1,6 +1,6 @@
----
-title: How to Report Bugs
----
+<script>{
+	"title": "How to Report Bugs"
+}</script>
 
 ## Before You Report
 

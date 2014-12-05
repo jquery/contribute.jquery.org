@@ -1,6 +1,6 @@
----
-title: jQuery's Style Guides
----
+<script>{
+	"title": "jQuery's Style Guides"
+}</script>
 
 jQuery projects strive to use a common set of styles for code and documentation. This facilitates a team of developers working on the same code base. If each developer were to use their own style, there would be jarring changes in the code as someone read through it. This slows comprehension and can also cause spurious differences in changesets as developers alter style in frivolous ways on the code they touch.
 

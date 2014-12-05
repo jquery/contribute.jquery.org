@@ -1,6 +1,6 @@
----
-title: Contributing to jQuery Foundation Web Sites
----
+<script>{
+	"title": "Contributing to jQuery Foundation Web Sites"
+}</script>
 
 Just like our JavaScript libraries, we maintain the design and content of all our websites in the open, with everything available on GitHub. We do this for several reasons:
 

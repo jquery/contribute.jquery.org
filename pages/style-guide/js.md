@@ -1,7 +1,7 @@
----
-title: JavaScript Style Guide
-toc: true
----
+<script>{
+	"title": "JavaScript Style Guide",
+	"toc": true
+}</script>
 
 ## Linting
 

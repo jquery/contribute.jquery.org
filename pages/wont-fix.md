@@ -1,6 +1,6 @@
----
-title: Won't Fix
----
+<script>{
+	"title": "Won't Fix"
+}</script>
 
 ## Object.prototype Issues
 

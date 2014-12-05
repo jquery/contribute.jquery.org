@@ -1,6 +1,6 @@
----
-title: Getting Started Contributing to Open Source
----
+<script>{
+	"title": "Getting Started Contributing to Open Source"
+}</script>
 
 Contributing to the jQuery project, and to any
 [FOSS](http://en.wikipedia.org/wiki/Free_and_open_source_software) project for

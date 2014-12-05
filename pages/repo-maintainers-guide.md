@@ -1,6 +1,6 @@
----
-title: jQuery Repository Maintainers Guide
----
+<script>{
+	"title": "jQuery Repository Maintainers Guide"
+}</script>
 
 This page is a collection of tips and tricks for dealing with pull requests and managing the jQuery git repositories on GitHub.
 

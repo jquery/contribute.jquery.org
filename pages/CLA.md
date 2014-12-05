@@ -1,6 +1,6 @@
----
-title: Individual Contributor License Agreement v2.0
----
+<script>{
+	"title": "Individual Contributor License Agreement v2.0"
+}</script>
 
 Thank you for Your interest in the jQuery Foundation. This document clarifies the terms under which You, the person listed below, may make Contributions — which may include without limitation, software, bug fixes, configuration changes, documentation, or any other materials — to any of the projects owned or managed by the jQuery Foundation.
 

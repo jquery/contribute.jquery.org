@@ -1,6 +1,6 @@
----
-title: Writing Code for jQuery Foundation Projects
----
+<script>{
+	"title": "Writing Code for jQuery Foundation Projects"
+}</script>
 
 Like many Open Source projects, the majority of jQuery contributors are volunteers; their ability to contribute ebbs and flows with the demands of their professional and personal lives. As a result, jQuery projects are always looking for talented people who are motivated to contribute.
 

@@ -1,6 +1,6 @@
----
-title: CSS Style Guide
----
+<script>{
+	"title": "CSS Style Guide"
+}</script>
 
 This page outlines the style guide for CSS across all jQuery projects.
 
