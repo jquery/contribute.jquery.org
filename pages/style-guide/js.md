@@ -358,6 +358,22 @@ var fn = function() {
 	};
 ```
 
+## Constructors
+
+Constructors should always be invoked as functions (e.g., with argument lists), even when _not_ supplying arguments.
+
+```js
+throw new Error();
+when = time || new Date();
+```
+
+When property access or method invocation is immediately performed on the result, clarify precedence with wrapping parentheses.
+
+```js
+detachedMode = (new TemplateFactory( settings )).nodeType === 11;
+match = (new RegExp( pattern )).exec( input );
+```
+
 ## Equality
 
 Strict equality checks (`===`) must be used in favor of abstract equality checks (`==`). The _only_ exception is when checking for `undefined` and `null` by way of `null`.
