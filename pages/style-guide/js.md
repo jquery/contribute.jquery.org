@@ -360,18 +360,18 @@ var fn = function() {
 
 ## Constructors
 
-Constructors should always be invoked as functions (e.g., with argument lists), even when _not_ supplying arguments.
+Constructor functions should always be invoked with argument lists, even when such lists are empty.
 
 ```js
 throw new Error();
 when = time || new Date();
 ```
 
-When property access or method invocation is immediately performed on the result, clarify precedence with wrapping parentheses.
+When property access or method invocation is immediately performed on the result of a constructor function, clarify precedence with wrapping parentheses.
 
 ```js
-detachedMode = (new TemplateFactory( settings )).nodeType === 11;
-match = (new RegExp( pattern )).exec( input );
+detachedMode = ( new TemplateFactory( settings ) ).nodeType === 11;
+match = ( new RegExp( pattern ) ).exec( input );
 ```
 
 ## Equality
