@@ -92,4 +92,3 @@ relatively self-contained.
 * [contribute.jquery.org issues](http://github.com/jquery/contribute.jquery.org/issues) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
 * [events.jquery.org issues](http://github.com/jquery/jquery.org/issues) - The content of our [Events and Conferences](http://events.jquery.org) site
 * [irc.jquery.org issues](http://github.com/jquery/irc.jquery.org/issues) - The content of our [IRC log and information](http://irc.jquery.org) site
-* [bugs.jqueryui.com issues](http://github.com/jquery/bugs.jqueryui.com/issues) - Issues with jQuery UI's Trac itself
