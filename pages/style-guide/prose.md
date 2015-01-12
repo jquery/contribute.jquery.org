@@ -87,7 +87,7 @@ Content should be educational and accessible to a broad audience of developers. 
 
 #### Linking & Referencing Content
 
-- Link to relevant content within the learn.jquery.com site to refer readers to previously covered topics or concepts.
+- Link to relevant content within the `learn.jquery.com` site to refer readers to previously covered topics or concepts.
 - Link to the jQuery blog or API documentation when necessary.
 - Use inline hyperlinks to reference relevant content.
 - Acceptable external resources:
