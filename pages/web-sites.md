@@ -51,8 +51,7 @@ reading](https://github.com/jquery/contribute.jquery.org), has a corresponding
 repository in [our GitHub organization](http://github.com/jquery) that serves
 as the canonical source of the content. Most of these repositories have a
 combination of HTML and [Markdown](http://en.wikipedia.org/wiki/Markdown)
-(typically in the `pages` directory), each with bits of leading metadata (JSON
-or [YAML](http://www.yaml.org/), respectively).  The API documentation for
+(typically in the `pages` directory), each with bits of leading metadata (formatted as JSON). The API documentation for
 [jQuery](http://github.com/jquery/api.jquery.com), [jQuery
 UI](http://github.com/jquery/api.jqueryui.com), [jQuery
 Mobile](http://github.com/jquery/api.jquerymobile.com), and
