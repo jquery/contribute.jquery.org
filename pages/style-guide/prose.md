@@ -1,6 +1,6 @@
----
-title: Prose Style Guide
----
+<script>{
+    "title": "Prose Style Guide"
+}</script>
 
 ## Formatting Conventions
 
