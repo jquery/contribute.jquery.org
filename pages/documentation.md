@@ -60,7 +60,6 @@ If you have any questions about getting things set up or if you're not sure abou
 The best place to get help is on [IRC](http://en.wikipedia.org/wiki/Internet_Relay_Chat) in the #jquery-content
 channel on [Freenode](http://freenode.net). If you're unfamiliar with IRC, you can use the [webchat gateway](http://webchat.freenode.net/).
 
-In addition, the jQuery Content Team holds a [public, weekly
-meeting](http://jquery.org/meeting) on Freenode at 1PM Eastern time in the #jquery-meeting channel.
+In addition, the jQuery Content Team holds a [public meeting](http://jquery.org/meeting/) every two weeks on Freenode, at 1PM Eastern time in the `#jquery-meeting` channel.
 
 If IRC is not your thing, but you still want to get in touch, please use the site's GitHub repo or send us an e-mail to `content at jquery dot org`.

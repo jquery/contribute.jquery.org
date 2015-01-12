@@ -228,8 +228,7 @@ The best place to get help is on [IRC](http://irc.jquery.org/), in the
 [webchat gateway](http://webchat.freenode.net/) or [learn
 more](http://irc.jquery.org/irc-help/).
 
-In addition, the jQuery Content Team holds a [public, weekly
-meeting](http://jquery.org/meeting) on Freenode, at 1PM Eastern time in the #jquery-meeting channel.
+In addition, the jQuery Content Team holds a [public meeting](http://jquery.org/meeting/) every two weeks on Freenode, at 1PM Eastern time in the `#jquery-meeting` channel.
 
 If IRC is not your thing, but you still want or need to get in touch, please use the site's GitHub repo or send us an e-mail to `content at jquery dot org`.
 
