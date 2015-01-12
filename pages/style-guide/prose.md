@@ -98,6 +98,7 @@ Content should be educational and accessible to a broad audience of developers. 
 	- [Mozilla Developer Network](https://developer.mozilla.org/)
 	- [Webplatform.org](http://www.webplatform.org/)
 	- [htmldog.com](http://www.htmldog.com/)
+	- [html5doctor.com](http://www.html5doctor.com/)
 
 ### Code Examples
 
