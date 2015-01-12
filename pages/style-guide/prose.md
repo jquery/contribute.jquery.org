@@ -1,5 +1,5 @@
 <script>{
-  "title": "Prose Style Guide"
+    "title": "Prose Style Guide"
 }</script>
 
 ## Formatting Conventions
