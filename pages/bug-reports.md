@@ -70,4 +70,4 @@ Please do not submit multiple bugs in one bug report. When you do this, they nee
 * QUnit: [https://github.com/jquery/qunit/issues](https://github.com/jquery/qunit/issues)
 * Globalize: [https://github.com/jquery/globalize/issues](https://github.com/jquery/globalize/issues)
 
-All jQuery web sites have a repository named the same as the domain name. For example, the repository for jquery.com is located at https://github.com/jquery/jquery.com. For a list of web site issue trackers, see the [bug triage page](http://dev.contribute.jquery.org/triage/#web-sites).
+All jQuery web sites have a repository named the same as the domain name. For example, the repository for jquery.com is located at https://github.com/jquery/jquery.com. For a list of web site issue trackers, see the [bug triage page](/triage/#web-sites).
