@@ -21,8 +21,6 @@ attribution:
 ---
 ```
 
-The `source` and `attribution` properties are optional, and should be used primarily if you are importing an article from an outside source where it was published before being donated for inclusion. You should **not** include these properties if you are adding a new article or editing an existing one, as your contribution will be acknowledged via the git commit logs.
-
 ### Code Blocks
 
 Code blocks should be set off with triple backticks and should **not** be indented. That is to say, the site prefers the use of "fenced blocks" notation supported by [gfm](http://github.github.com/github-flavored-markdown/).
