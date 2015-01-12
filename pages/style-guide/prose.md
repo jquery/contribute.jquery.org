@@ -4,7 +4,7 @@
 
 ## Formatting Conventions
 
-Articles about all content (sites, README, docs, etc) are authored with [GitHub Flavored Markdown](http://github.github.com/github-flavored-markdown/), and the beginning of each article contains some [YAML](http://www.yaml.org/) "front matter" that contains metadata used when the article is published.
+Articles about all content (sites, README, docs, etc) are authored with [GitHub Flavored Markdown](http://github.github.com/github-flavored-markdown/).
 
 ### Article Header Metadata
 
