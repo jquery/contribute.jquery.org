@@ -8,7 +8,7 @@ Articles about all content (sites, README, docs, etc) are authored with [GitHub 
 
 ### Article Header Metadata
 
-Each article should have the following header (see below as some metatags are optional):
+Each article should have the following header:
 
 ```
 ---
