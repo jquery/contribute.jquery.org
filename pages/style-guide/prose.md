@@ -14,10 +14,6 @@ Each article should have the following header (see below as some metatags are op
 ---
 title:  <article title>
 level:  [beginner|intermediate|advance]
-source:  <url of source of the material derived>
-attribution:
-  - Ralph Whitbeck <ralph@email.com>
-  - John Paul <john@email.com>
 ---
 ```
 
