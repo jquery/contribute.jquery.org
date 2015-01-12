@@ -108,4 +108,3 @@ Content should be educational and accessible to a broad audience of developers. 
 - Use good comments so that explanation within prose isn't necessary.
 - Test your code examples before submitting.
 - Follow all [style guides](http://contribute.jquery.org/style-guide/) for your code examples.
-
