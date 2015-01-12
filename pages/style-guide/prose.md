@@ -72,7 +72,7 @@ Content should be educational and accessible to a broad audience of developers. 
 
 #### Pronoun Usage
 
-- Don't use "I," "me," "us," "our," "we," and gender-specific pronouns such as "him" or "she."
+- Don't use "I," "me," "us," "our," "we," or gender-specific pronouns such as "him" or "she."
 - Use the second-person pronoun "you" when addressing the reader, and the definite article "the" when addressing code or content:
 	- *"You will be able to foo bar after you bar the foo."*
 	- *"Insert the paragraph after the unordered list."*
