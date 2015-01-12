@@ -29,7 +29,7 @@ Code blocks should be set off with triple backticks and should **not** be indent
 
 Content should be educational and accessible to a broad audience of developers. The primary target audience is beginning to intermediate jQuery users, with advanced jQuery users as a secondary audience. When creating content, please keep one of these audiences in mind as well as the following style guidelines:
 
-### Prose & Grammar
+### Grammar
 
 - Use the Oxford comma in a list of three or more items:
 	- **Yes:** The `load`, `scroll`, and `error` events (e.g. on an `<img>` element) do not bubble.
