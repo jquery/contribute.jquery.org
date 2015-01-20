@@ -30,7 +30,7 @@ The following common options must be used in all projects with css:
 	"compatible-vendor-prefixes": false,
 	"duplicate-background-images": false,
 	"import": false,
-	"important": false,
+	"important": true,
 	"outline-none": false,
 	"overqualified-elements": false,
 	"text-indent": false
@@ -98,6 +98,7 @@ font-weight:strong;
  - Omit leading zeros in decimal values.
  - Use double quotes instead of single quotes.
  - Always have a semicolon at the end of each declaration.
+ - Avoid the use `!important`.
 
 
 ```css
