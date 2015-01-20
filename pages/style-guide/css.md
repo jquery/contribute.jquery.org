@@ -98,7 +98,7 @@ font-weight:strong;
  - Omit leading zeros in decimal values.
  - Use double quotes instead of single quotes.
  - Always have a semicolon at the end of each declaration.
- - Avoid the use `!important`.
+ - Avoid the use of `!important`.
 
 
 ```css
