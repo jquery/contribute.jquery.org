@@ -102,6 +102,33 @@ try {
 } catch ( e ) {
 	// Expressions
 }
+
+array = [ "*" ];
+
+array = [ a, b ];
+
+foo( arg );
+
+foo( options, object[ property ] );
+
+foo( [ a, b ], "property", { c: d } );
+
+foo( { a: "alpha", b: "beta" } );
+
+foo( [ a, b ] );
+
+foo( {
+	a: "alpha",
+	b: "beta"
+} );
+
+foo( function() {
+	// Do stuff
+}, options );
+
+foo( data, function() {
+	// Do stuff
+} );
 ```
 
 
@@ -169,55 +196,6 @@ array = [
 		key2: val2
 	}
 ];
-```
-
-
-### Array and Function Call Spacing
-
-Always include extra spaces around elements and arguments:
-
-```js
-array = [ "*" ];
-
-array = [ a, b ];
-
-foo( arg );
-
-foo( "string", object );
-
-foo( options, object[ property ] );
-
-foo( node, "property", 2 );
-
-foo( [ a, b ], "property", { c: d } );
-```
-
-Exceptions:
-
-```js
-// Function with a single line object or array as the sole argument:
-// No space on either side of the argument
-foo({ a: "alpha", b: "beta" });
-foo([ a, b ]);
-
-// Function with a multiline callback, object, or array as the sole argument:
-// No space on either side of the argument
-foo({
-	a: "alpha",
-	b: "beta"
-});
-
-// Function with a multiline callback, object, or array as the first argument:
-// No space before the first argument
-foo(function() {
-	// Do stuff
-}, options );
-
-// Function with a multiline callback, object, or array as the last argument:
-// No space after after the last argument
-foo( data, function() {
-	// Do stuff
-});
 ```
 
 
