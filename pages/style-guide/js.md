@@ -35,7 +35,6 @@ The following common options must be used in all projects:
 	"expr": true,
 	"immed": true,
 	"noarg": true,
-	"onevar": true,
 	"quotmark": "double",
 	"smarttabs": true,
 	"trailing": true,
@@ -68,12 +67,10 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 ### Bad Examples
 
 ```js
-
 // Bad
 if(condition) doSomething();
 while(!condition) iterating++;
 for(var i=0;i<100;i++) object[array[i]] = someFn(i);
-
 ```
 
 ### Good Examples
@@ -290,50 +287,6 @@ For UMD, the factory is indented to visually differentiate it from the body.
 // this doesn't get indented
 
 }));
-```
-
-## Assignments
-
-Assignments in a declaration must be on their own line. Declarations that don't have an assignment must be listed together at the start of the declaration. Each line after the initial line must be indented once. For example:
-
-```js
-// Bad
-var foo = true;
-var bar = false;
-var a;
-var b;
-var c;
-
-// Good
-var a, b, c,
-	foo = true,
-	bar = false,
-	obj = {
-		a: b,
-		c: d,
-	},
-	arr = [
-		a,
-		b,
-		c
-	],
-	fn = function() {
-		body();
-	};
-```
-
-Exception: When a declaration has a single multiline assignment, the subsequent lines are not indented.
-
-```js
-// Good
-var fn = function() {
-	body();
-};
-
-// Bad
-var fn = function() {
-		body();
-	};
 ```
 
 ## Equality
