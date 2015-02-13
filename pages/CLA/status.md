@@ -5,7 +5,7 @@
 
 <!-- iferror -->
 
-There was an error checking the CLA signatures.
+Unfortunately, there was an error checking the CLA signatures.
 
 <!-- error -->
 
