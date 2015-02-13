@@ -5,6 +5,14 @@
 
 <!-- iferror -->
 
+There was an error checking the CLA signatures.
+
+<!-- error -->
+
+<!-- endiferror -->
+
+<!-- iffailure -->
+
 The following authors don't have appropriate CLA signatures:
 
 <!-- neglected-authors -->
@@ -46,13 +54,19 @@ Pushing the amended commit will update the branch in your fork, which will updat
 
 If you have need to modify multiple commits and you're not sure how, feel free to ask in a comment on the pull request.
 
-<!-- endiferror -->
+----
+
+## Commit Log
+
+The following commits were audited for CLA signatures:
+
+<!-- commit-log -->
+
+<!-- endiffailure -->
 
 <!-- ifsuccess -->
 
 All of the commits have proper CLA signatures. Thanks for contributing!
-
-<!-- endifsuccess -->
 
 ----
 
@@ -61,3 +75,5 @@ All of the commits have proper CLA signatures. Thanks for contributing!
 The following commits were audited for CLA signatures:
 
 <!-- commit-log -->
+
+<!-- endifsuccess -->
