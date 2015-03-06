@@ -1,5 +1,5 @@
 <script>{
-	"title": "Individual Contributor License Agreement v2.0"
+	"title": "Individual Contributor License Agreement v3.0"
 }</script>
 
 Thank you for Your interest in the jQuery Foundation. This document clarifies the terms under which You, the person listed below, may make Contributions — which may include without limitation, software, bug fixes, configuration changes, documentation, or any other materials — to any of the projects owned or managed by the jQuery Foundation.
@@ -10,9 +10,9 @@ You accept and agree to the following terms and conditions for Your present and 
 
 ### Licenses
 
-jQuery Foundation projects (code, documentation, and any other materials) are released under the terms of the [MIT license](http://en.wikipedia.org/wiki/MIT_License), with the following exception:
+jQuery Foundation projects (code, documentation, and any other materials) are each released under the terms of the individual licenses as noted in the project's repository, or, if no separate license is specified, under the terms of the [MIT license](https://tldrlegal.com/license/mit-license), with the following exception:
 
-Copyright and related rights for sample code as defined in the project's LICENSE.txt file are waived via [CC0](http://en.wikipedia.org/wiki/CC0#Zero_.2F_Public_domain). Rights to any change to existing sample code or contribution of new code denoted as sample code as defined in the project's LICENSE.txt file are waived via CC0.
+Copyright and related rights for sample code as defined in the project's LICENSE.txt file are waived via [CC0](https://tldrlegal.com/l/cc0-1.0). Rights to any change to existing sample code or contribution of new code denoted as sample code as defined in the project's LICENSE.txt file are waived via CC0.
 
 ### You certify that:
 
@@ -24,7 +24,7 @@ Copyright and related rights for sample code as defined in the project's LICENSE
 
 (d) You understand and agree that the jQuery Foundation projects and Your Contributions are public and that a record of the Contributions (including all metadata and personal information You submit with them) is maintained indefinitely and may be redistributed consistent with the jQuery Foundation's policies and the requirements of the MIT license where they are relevant.
 
-(e) You are granting Your Contributions to the jQuery Foundation under the terms of either the MIT open source license or the CC0 as applicable.
+(e) You are granting Your Contributions to the jQuery Foundation under the terms of the license as noted in the project's repository or if not specified, either the MIT open source license or the CC0 as applicable.
 Please complete the following information and press Submit below to indicate
 your agreement. All fields are required.
 
