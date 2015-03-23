@@ -256,7 +256,7 @@ When an entire file is wrapped in a closure, the body of the closure is not inde
 } )( jQuery );
 ```
 
-```
+```js
 module.exports = function( grunt ) {
 
 // This doesn't get indented
