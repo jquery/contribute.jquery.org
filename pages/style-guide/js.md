@@ -249,17 +249,17 @@ elements
 When an entire file is wrapped in a closure, the body of the closure is not indented.
 
 ```js
-(function( $ ) {
+( function( $ ) {
 
 // this doesn't get indented
 
-})( jQuery );
+} )( jQuery );
 ```
 
 The same applies to AMD wrappers.
 
 ```js
-define([
+define( [
 	"foo",
 	"bar",
 	"baz"
@@ -267,17 +267,17 @@ define([
 
 // this doesn't get indented
 
-});
+} );
 ```
 
 For UMD, the factory is indented to visually differentiate it from the body.
 
 ```js
-(function( factory ) {
+( function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
 
 		// AMD. Register as an anonymous module.
-		define([
+		define( [
 			"jquery"
 		], factory );
 	} else {
@@ -285,11 +285,11 @@ For UMD, the factory is indented to visually differentiate it from the body.
 		// Browser globals
 		factory( jQuery );
 	}
-}(function( $ ) {
+}( function( $ ) {
 
 // this doesn't get indented
 
-}));
+} ) );
 ```
 
 ## Assignments
