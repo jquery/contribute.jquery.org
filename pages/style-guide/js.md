@@ -251,10 +251,17 @@ When an entire file is wrapped in a closure, the body of the closure is not inde
 ```js
 ( function( $ ) {
 
-// this doesn't get indented
+// This doesn't get indented
 
 } )( jQuery );
 ```
+
+```
+module.exports = function( grunt ) {
+
+// This doesn't get indented
+
+};
 
 The same applies to AMD wrappers.
 
@@ -265,7 +272,7 @@ define( [
 	"baz"
 ], function( foo, bar, baz ) {
 
-// this doesn't get indented
+// This doesn't get indented
 
 } );
 ```
@@ -287,7 +294,7 @@ For UMD, the factory is indented to visually differentiate it from the body.
 	}
 }( function( $ ) {
 
-// this doesn't get indented
+// This doesn't get indented
 
 } ) );
 ```
