@@ -262,6 +262,7 @@ module.exports = function( grunt ) {
 // This doesn't get indented
 
 };
+```
 
 The same applies to AMD wrappers.
 
