@@ -95,8 +95,10 @@ for ( ; i < 100; i++ ) {
 }
 
 try {
+
 	// Expressions
 } catch ( e ) {
+
 	// Expressions
 }
 
@@ -120,10 +122,12 @@ foo( {
 } );
 
 foo( function() {
+
 	// Do stuff
 }, options );
 
 foo( data, function() {
+
 	// Do stuff
 } );
 ```
@@ -345,6 +349,7 @@ Inline comments are allowed as an exception when used to annotate special argume
 
 ```js
 function foo( types, selector, data, fn, /* INTERNAL */ one ) {
+
 	// Do stuff
 }
 ```
