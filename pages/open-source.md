@@ -62,7 +62,7 @@ that method and let them know about it. And better yet, provide the fix too!
 ### Contributing Something New
 
 So you have added a feature to a library or you have created something new
-based on someone elses work or maybe you just have some bit of code that you
+based on someone else's work or maybe you just have some bit of code that you
 use all the time in your projects and now you want to give that to the
 community and let them enjoy the same benefits you have. Great! This is how
 open source projects begin, grow, thrive and reach new users.
@@ -125,7 +125,7 @@ in the opposite direction every time you scan a README. Before delving into a bi
 more detail about each of these and why it's important, here are some important things 
 to keep in mind.
 
-* **It's OK to not already know.** Not be able to use the same tools you know your peers are already adept with can feel embarassing, as can having to say "I don't know." No one springs forth from the womb with a magical ability to collaborate on distributed software projects, and at some point everyone had to invest the time to learn the tools. 
+* **It's OK to not already know.** Not be able to use the same tools you know your peers are already adept with can feel embarrassing, as can having to say "I don't know." No one springs forth from the womb with a magical ability to collaborate on distributed software projects, and at some point everyone had to invest the time to learn the tools. 
 * **You don't have to know *everything* to do *anything.* ** Learning these tools is a process, and you don't have to be a master of any of them to contribute effectively. You just have to be willing to try.
 * **This will make you a better developer.** If you aren't using any of these, they can be a major boon to your productivity and introduce you techniques that can apply in other facets of your career
 * **You're part of a community now.**  There are other people out there that have had the same problems, and are ready, willing and able to share with you how they
