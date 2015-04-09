@@ -87,7 +87,6 @@ relatively self-contained.
 * [download.jqueryui.com issues](https://github.com/jquery/download.jqueryui.com/issues) - The [jQuery UI Download Builder](http://download.jqueryui.com)
 * [jquerymobile.com issues](https://github.com/jquery/jquerymobile.com/issues) - The content of [jquerymobile.com](http://jquerymobile.com) itself
 * [qunitjs.com issues](https://github.com/jquery/qunitjs.com/issues) - The content of [qunitjs.com](http://qunitjs.com) itself
-* [sizzlejs.com issues](https://github.com/jquery/sizzle/issues) - The content of [sizzlejs.com](http://sizzlejs.com) itself
 * [jquery.org issues](https://github.com/jquery/jquery.org/issues) - The content of [jquery.org](http://jquery.org) itself
 * [contribute.jquery.org issues](https://github.com/jquery/contribute.jquery.org/issues) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
 * [events.jquery.org issues](https://github.com/jquery/jquery.org/issues) - The content of our [Events and Conferences](http://events.jquery.org) site
