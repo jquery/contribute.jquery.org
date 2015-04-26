@@ -171,4 +171,4 @@ stuck with your changes awaiting approval. This can lead to all kinds of messes
 like not being able to work on other items or creating branches off of the
 modified master branch and thus including possibly unapproved changes in later
 pull requests. Git is a powerful tool and we could write an entire article on
-it ... oh wait, [we did](../"commits-and-pull-requests/).
+it ... oh wait, [we did](../commits-and-pull-requests/).
