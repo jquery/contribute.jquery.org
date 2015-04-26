@@ -63,7 +63,7 @@ Live, interactive support for all jQuery Foundation projects takes place 24/7
 in the [#jquery](irc://irc.freenode.net/#jquery) IRC channel on
 [Freenode](http://irc.freenode.net), and it's a great place to give and receive
 help with small- to medium-sized problems in all sorts of environments. (If you're unfamiliar
-with Internet Relay Chat, take a look at our [IRC Help](http://irc.jquery.org/irc-help) page for
+with Internet Relay Chat, take a look at our [IRC Help](http://irc.jquery.org/irc-help/) page for
 information about how to get connected and what to expect once you're there.)
 
 ### Forums

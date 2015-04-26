@@ -149,7 +149,7 @@ If you actually want to make commits to make the fixes and improvements, then
 you'll need to [fork](https://help.github.com/articles/fork-a-repo) the content
 repositories you'd like to work on.  When you have changes you'd like to have
 reviewed for integration, submit a [pull
-request](http://help.github.com/send-pull-requests/). However, we recommend
+request](https://help.github.com/send-pull-requests/). However, we recommend
 that you file issues for new "features" and significant changes before actually
 getting to work. For more information on maintaining your fork and strategies on
 commiting, see the [Commits and Pull Requests](/commits-and-pull-requests/)
@@ -158,7 +158,7 @@ guide.
 You'll note that it is possible to make content changes without setting up a
 local WordPress instance. You won't be able to preview your changes as they'll
 appear on the site, and you won't be able to run `grunt deploy`, which means
-you can't be 100% sure that the content will build successfuly. We will accept
+you can't be 100% sure that the content will build successfully. We will accept
 pull requests on content from users who haven't had a chance to test locally, but
 encourage anyone who's planning to contribute regularly to get configured
 for deploying and testing locally.
