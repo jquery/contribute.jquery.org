@@ -14,7 +14,7 @@ If you are new to jQuery, it is usually a much better idea to ask for help first
 
 Make sure you have reproduced the bug with all browser extensions disabled, as these can sometimes cause things to break in interesting and unpredictable ways.
 
-In Firefox, restart in [safe mode](http://kb.mozillazine.org/Safe_mode). In Internet Explorer, follow [these instructions](http://support.microsoft.com/en-us/kb/298931). In Chrome, enter `chrome://extensions` in your address bar and disable all extensions. In Safari, go to Safari -> Preferences -> Extensions and move the slider to "Off".
+In Firefox, restart in [safe mode](http://kb.mozillazine.org/Safe_mode). In Internet Explorer, follow [these instructions](https://support.microsoft.com/en-us/kb/298931). In Chrome, enter `chrome://extensions` in your address bar and disable all extensions. In Safari, go to Safari -> Preferences -> Extensions and move the slider to "Off".
 
 ### Try a Newer Version
 
