@@ -120,8 +120,14 @@ For other sites:
 
 To create a tag, use `npm version [major | minor | patch]`.
 
-Afterwards, make sure to push both version change commit and the tag:
-`git push --tags origin master`
+Afterwards, make sure to push both version change commit and the tag to the main jQuery repo.
+
+<div class="warning">You'll want to check your remote setup using ```git remote -v``` and check which remote is used for the main jQuery repo.</div>
+
+If ```upstream``` is the remote you use for that, type:
+`git push --tags upstream master`
+
+If you use ```origin``` for the main jQuery repo, replace ```upstream``` with ```origin``` in the command above.
 
  ---
 
