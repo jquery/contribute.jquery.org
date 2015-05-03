@@ -121,7 +121,9 @@ For other sites:
 To create a tag, use `npm version [major | minor | patch]`.
 
 Afterwards, make sure to push both version change commit and the tag:
-`git push --tags origin master`
+`git push --tags upstream master`
+
+<div class="warning">The example above uses <code>upstream</code> for the repo in the jQuery organization on GitHub. Use <code>git remote -v</code> to ensure that you're pushing to the correct remote repo. For example, if you use <code>orgin</code> for the repo in the jQuery organization, replace <code>upstream</code> with <code>origin</code>.</div>
 
  ---
 
