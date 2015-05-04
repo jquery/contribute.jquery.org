@@ -65,30 +65,29 @@ relatively self-contained.
 
 #### Projects
 
-* [jQuery Core issues](http://github.com/jquery/jquery/issues)
-* [jQuery Mobile issues](http://github.com/jquery/jquery-mobile/issues)
-* [Sizzle issues](http://github.com/jquery/sizzle/issues)
-* [QUnit issues](http://github.com/jquery/qunit/issues)
+* [jQuery Core issues](https://github.com/jquery/jquery/issues)
+* [jQuery Mobile issues](https://github.com/jquery/jquery-mobile/issues)
+* [Sizzle issues](https://github.com/jquery/sizzle/issues)
+* [QUnit issues](https://github.com/jquery/qunit/issues)
 
 #### Documentation
 
-* [jQuery Core API issues](http://github.com/jquery/api.jquery.com/issues)
-* [jQuery UI API issues](http://github.com/jquery/api.jqueryui.com/issues)
-* [jQuery Mobile API issues](http://github.com/jquery/api.jquerymobile.com/issues)
-* [QUnit API issues](http://github.com/jquery/api.qunitjs.com/issues)
-* [jQuery Learning Site issues](http://github.com/jquery/learn.jquery.com/issues)
+* [jQuery Core API issues](https://github.com/jquery/api.jquery.com/issues)
+* [jQuery UI API issues](https://github.com/jquery/api.jqueryui.com/issues)
+* [jQuery Mobile API issues](https://github.com/jquery/api.jquerymobile.com/issues)
+* [QUnit API issues](https://github.com/jquery/api.qunitjs.com/issues)
+* [jQuery Learning Site issues](https://github.com/jquery/learn.jquery.com/issues)
 
 #### Web Sites
 
-* [jquery-wp-content issues](http://github.com/jquery/jquery-wp-content/issues) - The WordPress configuration and themes that serve all our sites
-* [jquery.com issues](http://github.com/jquery/jquery.com/issues) - The content of [jquery.com](http://jquery.com) itself
-* [plugins.jquery.com issues](http://github.com/jquery/plugins.jquery.com/issues) - The jQuery Plugin Registry
-* [jqueryui.com issues](http://github.com/jquery/jqueryui.com/issues) - The content of [jqueryui.com](http://jqueryui.com) itself
-* [download.jqueryui.com issues](http://github.com/jquery/download.jqueryui.com/issues) - The [jQuery UI Download Builder](http://download.jqueryui.com)
-* [jquerymobile.com issues](http://github.com/jquery/jquerymobile.com/issues) - The content of [jquerymobile.com](http://jquerymobile.com) itself
-* [qunitjs.com issues](http://github.com/jquery/qunitjs.com/issues) - The content of [qunitjs.com](http://qunitjs.com) itself
-* [sizzlejs.com issues](http://github.com/jquery/sizzlejs.com/issues) - The content of [sizzlejs.com](http://sizzlejs.com) itself
-* [jquery.org issues](http://github.com/jquery/jquery.org/issues) - The content of [jquery.org](http://jquery.org) itself
-* [contribute.jquery.org issues](http://github.com/jquery/contribute.jquery.org/issues) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
-* [events.jquery.org issues](http://github.com/jquery/jquery.org/issues) - The content of our [Events and Conferences](http://events.jquery.org) site
-* [irc.jquery.org issues](http://github.com/jquery/irc.jquery.org/issues) - The content of our [IRC log and information](http://irc.jquery.org) site
+* [jquery-wp-content issues](https://github.com/jquery/jquery-wp-content/issues) - The WordPress configuration and themes that serve all our sites
+* [jquery.com issues](https://github.com/jquery/jquery.com/issues) - The content of [jquery.com](http://jquery.com) itself
+* [plugins.jquery.com issues](https://github.com/jquery/plugins.jquery.com/issues) - The jQuery Plugin Registry
+* [jqueryui.com issues](https://github.com/jquery/jqueryui.com/issues) - The content of [jqueryui.com](http://jqueryui.com) itself
+* [download.jqueryui.com issues](https://github.com/jquery/download.jqueryui.com/issues) - The [jQuery UI Download Builder](http://download.jqueryui.com)
+* [jquerymobile.com issues](https://github.com/jquery/jquerymobile.com/issues) - The content of [jquerymobile.com](http://jquerymobile.com) itself
+* [qunitjs.com issues](https://github.com/jquery/qunitjs.com/issues) - The content of [qunitjs.com](http://qunitjs.com) itself
+* [jquery.org issues](https://github.com/jquery/jquery.org/issues) - The content of [jquery.org](http://jquery.org) itself
+* [contribute.jquery.org issues](https://github.com/jquery/contribute.jquery.org/issues) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
+* [events.jquery.org issues](https://github.com/jquery/jquery.org/issues) - The content of our [Events and Conferences](http://events.jquery.org) site
+* [irc.jquery.org issues](https://github.com/jquery/irc.jquery.org/issues) - The content of our [IRC log and information](http://irc.jquery.org) site

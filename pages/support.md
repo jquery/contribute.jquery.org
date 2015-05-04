@@ -73,8 +73,8 @@ Forum](http://forum.jquery.com/), which presently runs on [Zoho
 Discussions](https://discussions.zoho.com/home). There are forums for
 discussion of development issues, but the primary support takes place on the
 [Using jQuery](http://forum.jquery.com/using-jquery), [Using jQuery
-UI](http://forum.jquery.com/using-jquery-ui), and [Using jQuery
-Mobile](http://forum.jquery.com/using-jquery-mobile) forums.
+UI](http://forum.jquery.com/using-jquery-ui), and [jQuery
+Mobile](https://forum.jquery.com/jquery-mobile) forums.
 
 ### StackOverflow
 
