@@ -27,7 +27,7 @@ make your mark.
 The obvious way is to contribute to the code base. Perhaps you have been fixing
 bugs in a particular piece of software that you use in your projects. Maybe you
 have created a new addition to a library that you think will be helpful to
-others as part of the larger project. These and many other types of every day
+others as part of the larger project. These and many other types of everyday
 tasks that programmers do are perfect examples of ways to give back to the open
 source community.
 
@@ -82,7 +82,7 @@ it may not be seen as something beneficial to everyone else.
 addition to a library is more work for the people maintaining that project. So
 what benefit does the project get from your contribution? It could be more
 users or the opportunity to catch up to a competing project or the ability to
-fill a gap in the project's functionality. What ever the reason, it should be a
+fill a gap in the project's functionality. Whatever the reason, it should be a
 compelling one to convince the project team that they should take that code off
 of your hands and merge it with theirs.
 
