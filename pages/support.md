@@ -21,7 +21,7 @@ perfect stranger, or triggering a "Eureka!" moment that helps someone become a
 better developer (and the thanks you'll receive) is pretty fulfilling &mdash; and
 can be addictive!
 
-## Broaden Your Knowledge, Deepen Your Perpsective
+## Broaden Your Knowledge, Deepen Your Perspective
 
 Making yourself available to help with support is an organic way expand your
 exposure to aspects of the API and different techniques you (and your
