@@ -35,7 +35,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 	<script>
 	$( function() {
 		$( "p" ).text( $.fn.jquery );
-	});
+	} );
 	</script>
 </head>
 <body>
