@@ -2,7 +2,7 @@
   "name": "contribute.jquery.com",
   "title": "jQuery Contributing Hub",
   "description": "jQuery Foundation site for developer documentation",
-  "version": "1.2.11",
+  "version": "1.2.12",
   "homepage": "http://contribute.jquery.com",
   "author": {
     "name": "jQuery Foundation and other contributors"
@@ -23,5 +23,6 @@
   "dependencies": {
     "grunt": "0.4.5",
     "grunt-jquery-content": "2.0.0"
-  }
+  },
+  "scripts": {}
 }
