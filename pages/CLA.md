@@ -31,7 +31,7 @@ your agreement. All fields are required.
 ## Sign Electronically
 
 <form method="POST" action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFJucXdGZXlRdVh2SUVUb2hsb0FBYkE6MQ&theme=0AX42CRMsmRFbUy1kN2NjY2Y0Mi1iYWFmLTQxMWMtYjM0NC04NmZmYTIwZDRkMGQ&embedded=true&ifq" class="top-labels">
-	<div class="note">The email address used to sign the CLA must match the email address in your git config. The author information for each commit in your Contributions will be cross-checked with this signature.</div>
+	<div class="note">The name and email address used to sign the CLA must match the name and email address in your git config. The author information for each commit in your Contributions will be cross-checked with this signature.</div>
 
 	<label for="fullname">Full name
 		<input type="text" id="fullname" name="entry.2.single" required>
