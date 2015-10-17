@@ -21,7 +21,7 @@ perfect stranger, or triggering a "Eureka!" moment that helps someone become a
 better developer (and the thanks you'll receive) is pretty fulfilling &mdash; and
 can be addictive!
 
-## Broaden Your Knowledge, Deepen Your Perpsective
+## Broaden Your Knowledge, Deepen Your Perspective
 
 Making yourself available to help with support is an organic way expand your
 exposure to aspects of the API and different techniques you (and your
@@ -63,7 +63,7 @@ Live, interactive support for all jQuery Foundation projects takes place 24/7
 in the [#jquery](irc://irc.freenode.net/#jquery) IRC channel on
 [Freenode](http://irc.freenode.net), and it's a great place to give and receive
 help with small- to medium-sized problems in all sorts of environments. (If you're unfamiliar
-with Internet Relay Chat, take a look at our [IRC Help](http://irc.jquery.org/irc-help) page for
+with Internet Relay Chat, take a look at our [IRC Help](http://irc.jquery.org/irc-help/) page for
 information about how to get connected and what to expect once you're there.)
 
 ### Forums
@@ -73,8 +73,8 @@ Forum](http://forum.jquery.com/), which presently runs on [Zoho
 Discussions](https://discussions.zoho.com/home). There are forums for
 discussion of development issues, but the primary support takes place on the
 [Using jQuery](http://forum.jquery.com/using-jquery), [Using jQuery
-UI](http://forum.jquery.com/using-jquery-ui), and [Using jQuery
-Mobile](http://forum.jquery.com/using-jquery-mobile) forums.
+UI](http://forum.jquery.com/using-jquery-ui), and [jQuery
+Mobile](https://forum.jquery.com/jquery-mobile) forums.
 
 ### StackOverflow
 

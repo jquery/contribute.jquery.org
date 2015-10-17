@@ -28,7 +28,7 @@ If you actually want to make the fixes and improvements, then
 you'll need to [fork](https://help.github.com/articles/fork-a-repo) the
 repositories you'd like to work on. Once you've made changes you'd like
 reviewed for integration, submit a [pull
-request](http://help.github.com/send-pull-requests/). However, we recommend
+request](https://help.github.com/send-pull-requests/). However, we recommend
 that you file issues for new "features" and significant changes before actually
 getting to work. For more information on maintaining your fork and strategies on
 committing, see the [Commits and Pull Requests](/commits-and-pull-requests/)

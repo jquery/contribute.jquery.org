@@ -301,6 +301,22 @@ For UMD, the factory is indented to visually differentiate it from the body.
 } ) );
 ```
 
+## Constructors
+
+Constructor functions should always be invoked with argument lists, even when such lists are empty.
+
+```js
+throw new Error();
+when = time || new Date();
+```
+
+When property access or method invocation is immediately performed on the result of a constructor function, clarify precedence with wrapping parentheses.
+
+```js
+detachedMode = ( new TemplateFactory( settings ) ).nodeType === 11;
+match = ( new RegExp( pattern ) ).exec( input );
+```
+
 ## Equality
 
 Strict equality checks (`===`) must be used in favor of abstract equality checks (`==`). The _only_ exception is when checking for `undefined` and `null` by way of `null`.
