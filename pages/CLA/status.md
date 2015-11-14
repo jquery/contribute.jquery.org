@@ -34,7 +34,7 @@ git config --global user.name "YOUR NAME"
 git config --global user.email "your.email@example.com"
 ```
 
-If you only want to update your git config for a single repositoriy and leave your existing name and email address for the rest of your respositories, remove the `--global` flag and run the command from within the repository that you want to change.
+If you only want to update your git config for a single repository and leave your existing name and email address for the rest of your repositories, remove the `--global` flag and run the command from within the repository that you want to change.
 
 If you only have a single commit in your pull request, you can update the author information by amending the commit:
 
