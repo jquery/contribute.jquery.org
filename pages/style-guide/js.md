@@ -319,7 +319,7 @@ match = ( new RegExp( pattern ) ).exec( input );
 
 ## Equality
 
-Strict equality checks (`===`) must be used in favor of abstract equality checks (`==`). The _only_ exception is when checking for `undefined` and `null` by way of `null`.
+Strict equality checks (`===`) must be used in favor of abstract equality checks (`==`). The _only_ exception is when checking for `undefined` and `null` by way of `null`. The use of `== null` is also acceptable in cases where only one of `null` or `undefined` may be logically encountered, such as uninitialized variables.
 
 ```js
 // Check for both undefined and null values, for some important reason.
