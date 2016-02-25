@@ -73,6 +73,14 @@ out of scope.
 
 **For further reference**: http://www.quirksmode.org/blog/archives/2005/06/three_javascrip_1.html
 
+## Negative margins on Android 4.0-4.3 browser
+
+In Android 4.0-4.3, the DOM `getComputedStyle()` method sometimes returns percents instead of pixel values. The workaround for this bug in jQuery leads to another issue that causes the return of incorrect values when retrieving negative margins.
+
+**For further reference**:
+
+* [#1815]( https://github.com/jquery/jquery/issues/1815 )
+
 ## Quirks Mode
 
 Some browsers provide a "Quirks Mode" that does not conform to the standard W3C
