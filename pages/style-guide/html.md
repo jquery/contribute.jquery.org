@@ -81,7 +81,7 @@ In general, the jQuery style guide encourages liberal spacing for improved human
 </html>
 ```
 
-## HTML Semantics:
+## HTML Semantics
 
 Always use HTML elements for what they are meant to be used for.
 
@@ -92,16 +92,16 @@ Always try to avoid superfluous parent elements.
 ```html
 <!-- Bad HTML -->
 <span class="avatar">
-	<img src="assets/img/img.png" alt="Sample Image">
+	<img src="assets/img/img.png" alt="Jane Doe">
 </span>
 
 <!-- Good HTML -->
-<img class="avatar" src="assets/img/img.png" alt="Sample Image">
+<img class="avatar" src="assets/img/img.png" alt="Jane Doe">
 ```
 
 ## Separation of Concerns
 
-Always keep markup, styling and scripting separate.
+Always keep markup, styling, and scripting separate.
 
 ```html
 <!-- Bad Example -->
@@ -138,7 +138,7 @@ Always keep markup, styling and scripting separate.
 
 ## Forms
 
- - Always use `for` attribute in `label` element. Using `for` attribute in `label` element is more robust, than implicit labelling, across browsers and assistive technology.
+Always include a `for` attribute for `label` elements. This is more robust than implicit labeling across browsers and assistive technologies.
 
 ```html
 <!-- Bad Example -->
@@ -148,14 +148,15 @@ Always keep markup, styling and scripting separate.
 <input type="radio" name="input" id="input-1" value="first">
 <label for="input-1">First</label>
 ```
- - Don't use `placeholder` for labeling.
+Don't use the `placeholder` attribute for labeling; always use a `label` element.
 
 ```html
 <!-- Bad Example -->
-<input type="password" name="password" placeholder="Enter your password">
+<input type="text" id="name" placeholder="Enter your name">
 
 <!-- Good Example -->
-<label for="passwd">Password</label><input type="password" id="passwd" name="password" placeholder="Must have at least 6 characters">
+<label for="name">Name</label>
+<input id="name" type="text" placeholder="Jane Doe">
 ```
 
 ## Comments
