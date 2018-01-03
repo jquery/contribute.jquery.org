@@ -12,6 +12,8 @@ Github stores the refs for each pull request on the main repo. Assuming you have
 git config --global --add alias.pru '!f() { git fetch -fu upstream refs/pull/$1/head:pr/$1; git checkout pr/$1; } ; f'
 ```
 
+If you don't know how to set the repo as `upstream`, you can follow [GitHub's guide on Configuring a remote for a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
+
 Gnarf has put together a few variants of this alias in [gnarf/.dotfiles](https://github.com/gnarf/.dotfiles/blob/c9aa77a83f381ce138350442613d4a14cb549671/.gitconfig#L24-L27).
 
 Once you have installed this alias, you can fetch a pull request based on number like so:
