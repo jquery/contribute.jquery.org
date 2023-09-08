@@ -1,28 +1,26 @@
 {
   "name": "contribute.jquery.com",
-  "title": "jQuery Contributing Hub",
   "description": "jQuery Foundation site for developer documentation",
-  "version": "1.2.23",
-  "homepage": "https://contribute.jquery.com",
+  "version": "1.2.24",
+  "homepage": "https://contribute.jquery.org",
   "author": {
     "name": "jQuery Foundation and other contributors"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jquery/contribute.jquery.com.git"
+    "url": "git://github.com/jquery/contribute.jquery.org.git"
   },
   "bugs": {
-    "url": "https://github.com/jquery/contribute.jquery.com/issues"
+    "url": "https://github.com/jquery/contribute.jquery.org/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jquery/contribute.jquery.org/blob/master/LICENSE.txt"
+      "url": "https://github.com/jquery/contribute.jquery.org/blob/main/LICENSE.txt"
     }
   ],
   "dependencies": {
     "grunt": "1.5.3",
     "grunt-jquery-content": "3.1.0"
-  },
-  "scripts": {}
+  }
 }
