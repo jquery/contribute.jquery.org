@@ -1,6 +1,12 @@
 <script>{
-	"title": "jQuery Foundation Copyright Assignment Agreement"
+	"title": "CLA for corporate contributors"
 }</script>
+
+<h2 id="moved">Moved</h2>
+
+Moved to <https://cla.openjsf.org>.
+
+<h2 id="caa">jQuery Foundation Copyright Assignment Agreement</h2>
 
 For good and valuable consideration, receipt of which I acknowledge, I hereby
 transfer to jQuery Foundation, Inc. (the "Foundation") my entire right, title,
@@ -55,9 +61,3 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE).
 
 Please complete the following information and press Submit below to indicate
 your agreement.
-
-<h2 id="signelectronically">Sign Electronically</h2>
-
-<iframe src="https://docs.google.com/forms/d/1Glak4tfXzuVOe6db1iu2W2XIwEhPdEYLm3fr561hJfw/viewform?embedded=true#start=embed"
-	width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">
-	Loading...</iframe>
