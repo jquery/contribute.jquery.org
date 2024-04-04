@@ -8,7 +8,7 @@
 
 Many bugs reported to our bug trackers are actually bugs in user code, not in jQuery code. Keep in mind that just because your code throws an error and the console points to a line number inside of a jQuery project, this does not mean the bug is a jQuery bug; more often than not, these errors result from providing incorrect arguments when calling a jQuery function.
 
-If you are new to jQuery, it is usually a much better idea to ask for help first in the [Using jQuery Forum](http://forum.jquery.com/using-jquery/) or the [jQuery IRC channel](http://webchat.freenode.net/?channels=%23jquery). You will get much quicker support, and you will help avoid tying up the jQuery team with invalid bug reports. These same resources can also be useful if you want to confirm that your bug is indeed a bug in jQuery before filing any tickets.
+If you are new to jQuery, you may want to first ask for help in the [jQuery Chatroom](https://jquery.com/support/) on IRC or Matrix. This might solve your problem without needing to report a bug, or otherwise may help you confirm that is indeed a bug in jQuery, before reporting it as an issue.
 
 ### Disable Any Browser Extensions
 
@@ -18,11 +18,11 @@ In Firefox, restart in [safe mode](http://kb.mozillazine.org/Safe_mode). In Inte
 
 ### Try a Newer Version
 
-Bugs in old versions of jQuery projects may have already been fixed. In order to avoid this situation, make sure you are always using the latest release version. If it has been a while since the last release, you might also try a WIP build.
+Bugs in old versions of jQuery may have already been fixed in newer versions. Make sure to reproduce the bug with the latest version before creating a bug report. You are also welcome to try the latest unreleased git build from <https://releases.jquery.com/jquery/>.
 
 ### Try an Older Version
 
-Sometimes, bugs are introduced in newer versions of jQuery projects that do not exist in previous versions. When possible, it can be useful to try testing with earlier versions in order to isolate the faulty code. Knowing specifically when a behaviour does not happen can be just as useful as knowing when it does.
+Sometimes, bugs are introduced in newer versions of jQuery that did not exist in previous versions. When possible, it can be useful to try testing with earlier versions in order to isolate when the bug was introduced. Knowing when a behaviour does not happen, can be just as useful as knowing when it does happen.
 
 ### Reduce, Reduce, Reduce!
 
@@ -48,7 +48,7 @@ At minimum, the following information should be provided in any new bug report:
 
 Ideally, you would also include the following:
 
-* A link to a [reduced](http://webkit.org/quality/reduction.html), working demo/test case that will never move ([jsFiddle](http://jsfiddle.net/) is good for this).
+* A link to a [reduced](http://webkit.org/quality/reduction.html), working demo/test case that stay online. We recommend [CodePen](https://codepen.io/), [JS Bin](https://jsbin.com/), and [jsFiddle](http://jsfiddle.net/).
 * Information on other versions tested, including whether or not the issue is reproducible there.
 * Information on other browsers where the issue does not occur.
 * A patch (preferably as a link to a [GitHub commit or pull request](/commits-and-pull-requests/)).
@@ -58,16 +58,15 @@ Ideally, you would also include the following:
 
 Please do not submit multiple bugs in one bug report. When you do this, they need to be separated by a team member, and that takes away from time that could be spent actually fixing the bug.
 
-
 ## Where to Report
 
-* jQuery Core: [https://github.com/jquery/jquery/issues](https://github.com/jquery/jquery/issues)
-* jQuery Migrate: [https://github.com/jquery/jquery-migrate/issues](https://github.com/jquery/jquery-migrate/issues)
-* jQuery UI: [http://bugs.jqueryui.com/](http://bugs.jqueryui.com/)
-* jQuery Mobile: [https://github.com/jquery/jquery-mobile/issues](https://github.com/jquery/jquery-mobile/issues)
-* jQuery Color: [https://github.com/jquery/jquery-color/issues](https://github.com/jquery/jquery-color/issues)
-* Sizzle: [https://github.com/jquery/sizzle/issues](https://github.com/jquery/sizzle/issues)
-* QUnit: [https://github.com/jquery/qunit/issues](https://github.com/jquery/qunit/issues)
-* Globalize: [https://github.com/jquery/globalize/issues](https://github.com/jquery/globalize/issues)
+* jQuery Core: https://github.com/jquery/jquery/issues
+* jQuery Migrate: https://github.com/jquery/jquery-migrate/issues
+* jQuery UI: https://github.com/jquery/jquery-ui/issues
+* jQuery Mobile: https://github.com/jquery/jquery-mobile/issues
+* jQuery Color: https://github.com/jquery/jquery-color/issues
+* Sizzle: https://github.com/jquery/sizzle/issues
+* QUnit: https://github.com/jquery/qunit/issues
+* Globalize: https://github.com/jquery/globalize/issues
 
 All jQuery web sites have a repository named the same as the domain name. For example, the repository for jquery.com is located at https://github.com/jquery/jquery.com. For a list of web site issue trackers, see the [bug triage page](/triage/#web-sites).
