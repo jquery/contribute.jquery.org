@@ -1,5 +1,5 @@
 {
-	"url": "vagrant.contribute.jquery.org",
-	"username": "admin",
-	"password": "sample"
+	"url": "http://local.contribute.jquery.org",
+	"username": "dev",
+	"password": "dev"
 }
