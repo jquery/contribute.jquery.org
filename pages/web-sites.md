@@ -244,12 +244,11 @@ For a current list of jQuery doc sites, refer to [Infrastructure docs](https://g
 
 The following sites are not managed by the system described in this article. They are content sites that used the system in the past and moved to a different system, werre archived to a static site, or are standalone applications.
 
-* [plugins.jquery.com](https://github.com/jquery/jquery.com/)
-
-* [download.jqueryui.com](https://github.com/jquery/download.jqueryui.com/)
-
-* [events.jquery.org](https://github.com/jquery/events.jquery.org/)
-* [irc.jquery.org ](https://github.com/jquery/irc.jquery.org/tree/v1.2.2)
-
-* [qunitjs.com](https://github.com/qunitjs/qunitjs.com/tree/v2.10.2)
-* [api.qunitjs.com](https://github.com/qunitjs/api.qunitjs.com/tree/v2.3.0)
+* [bugs.jquery.com](http://bugs.jquery.com) - Standalone
+* [plugins.jquery.com](https://github.com/jquery/plugins.jquery.com/) - Archived
+* [bugs.jqueryui.com](http://bugs.jqueryui.com) - Standalone
+* [download.jqueryui.com](https://github.com/jquery/download.jqueryui.com/) - Standalone
+* [events.jquery.org](https://github.com/jquery/events.jquery.org/) - Archived
+* [irc.jquery.org ](https://github.com/jquery/irc.jquery.org/tree/v1.2.2) - Archived
+* [qunitjs.com](https://github.com/qunitjs/qunitjs.com/tree/v2.10.2) - Moved to a different system
+* [api.qunitjs.com](https://github.com/qunitjs/api.qunitjs.com/tree/v2.3.0) - Moved to a different system
