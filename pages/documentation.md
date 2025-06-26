@@ -12,15 +12,14 @@ If you'd like to help us improve the documentation of any of jQuery's projects, 
 
 Perhaps the easiest way to help is to report an issue or problem about the current documentation. We use GitHub's issue tracker for all of our documentation sites. Just head on over to one of the following issue lists to see if your issue has already been reported, and if it hasn't, give us a detailed rundown of the issue:
 
-* jquery.com — [View Issues](https://github.com/jquery/jquery.com/issues) | [Report Issue](https://github.com/jquery/jquery.com/issues/new)
-* api.jquery.com — [View Issues](https://github.com/jquery/api.jquery.com/issues) | [Report Issue](https://github.com/jquery/api.jquery.com/issues/new)
-* jqueryui.com — [View Issues](https://github.com/jquery/jqueryui.com/issues) | [Report Issue](https://github.com/jquery/jqueryui.com/issues/new)
-* api.jqueryui.com — [View Issues](https://github.com/jquery/api.jqueryui.com/issues) | [Report Issue](https://github.com/jquery/api.jqueryui.com/issues/new)
-* jquerymobile.com — [View Issues](https://github.com/jquery/jquerymobile.com/issues) | [Report Issue](https://github.com/jquery/jquerymobile.com/issues/new)
-* api.jquerymobile.com — [View Issues](https://github.com/jquery/api.jquerymobile.com/issues) | [Report Issue](https://github.com/jquery/api.jquerymobile.com/issues/new)
-* qunitjs.com — [View Issues](https://github.com/jquery/qunitjs.com/issues) | [Report Issue](https://github.com/jquery/qunitjs.com/issues/new)
-* api.qunitjs.com — [View Issues](https://github.com/jquery/api.qunitjs.com/issues) | [Report Issue](https://github.com/jquery/api.qunitjs.com/issues/new)
-* learn.jquery.com — [View Issues](https://github.com/jquery/learn.jquery.com/issues) | [Report Issue](https://github.com/jquery/learn.jquery.com/issues/new)
+* jquery.com — [View Issues](https://github.com/jquery/jquery.com/issues)
+* api.jquery.com — [View Issues](https://github.com/jquery/api.jquery.com/issues)
+* learn.jquery.com — [View Issues](https://github.com/jquery/learn.jquery.com/issues)
+* jqueryui.com — [View Issues](https://github.com/jquery/jqueryui.com/issues)
+* api.jqueryui.com — [View Issues](https://github.com/jquery/api.jqueryui.com/issues)
+* jquerymobile.com — [View Issues](https://github.com/jquery/jquerymobile.com/issues)
+* api.jquerymobile.com — [View Issues](https://github.com/jquery/api.jquerymobile.com/issues)
+* qunitjs.com — [View Issues](https://github.com/qunitjs/qunit/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Category%3A%20Docs%22)
 
 ### Write or Edit Content
 
@@ -57,6 +56,4 @@ environment for working on jQuery sites, see
 
 If you have any questions about getting things set up or if you're not sure about how to address a problem with the documentation, we're here to help.
 
-The best place to get help is in the [jQuery Chat](https://jquery.com/support/) on IRC or Matrix.
-
-If IRC is not your thing, but you still want to get in touch, please use the site's GitHub repo to report an issue.
+The best place to get help is in the [jQuery Chat](https://jquery.com/support/) on IRC or Matrix. Alternatively, use the specific site's GitHub repo to report an issue.

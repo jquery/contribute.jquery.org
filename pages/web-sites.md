@@ -211,9 +211,7 @@ work.
 
 If you're struggling to get any part of any site working properly, or have any questions, we're here to help.
 
-The best place to get help is in the [jQuery Chat](https://jquery.com/support/) on IRC or Matrix.
-
-If IRC is not your thing, but you still want or need to get in touch, please use the site's GitHub repo to report an issue.
+The best place to get help is in the [jQuery Chat](https://jquery.com/support/) on IRC or Matrix. Alternatively, use the specific site's GitHub repo to report an issue.
 
 ---
 
