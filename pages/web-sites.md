@@ -45,7 +45,7 @@ Here's the short version: _static content is built into HTML and deployed to a
 ### Content Repositories
 
 Inspired by static site generators like [Jekyll](http://jekyllrb.com/), each of
-the sites (with some exceptions[*](#exceptions)), on `jquery.com` and
+the sites (with some [exceptions*](#exceptions)), on `jquery.com` and
 `jquery.org`, including [this very one you're
 reading](https://github.com/jquery/contribute.jquery.org), has a corresponding
 repository in [our GitHub organization](https://github.com/jquery) that serves
@@ -53,28 +53,21 @@ as the canonical source of the content. Most of these repositories have a
 combination of HTML and [Markdown](http://en.wikipedia.org/wiki/Markdown)
 (typically in the `pages` directory), each with bits of leading metadata (formatted as JSON). The API documentation for
 [jQuery](https://github.com/jquery/api.jquery.com), [jQuery
-UI](https://github.com/jquery/api.jqueryui.com), [jQuery
-Mobile](https://github.com/jquery/api.jquerymobile.com), and
-[QUnit](https://github.com/jquery/api.qunitjs.com) is maintained as XML in the
+UI](https://github.com/jquery/api.jqueryui.com), and [jQuery
+Mobile](https://github.com/jquery/api.jquerymobile.com) is maintained as XML in the
 `entries` directory. Assets such as images (the kind you'd put in an `img` tag,
 not in a CSS `background-image`) are kept in the `resources` directory.
 
 ### WordPress and [jquery-wp-content](https://github.com/jquery/jquery-wp-content)
 
-Whether for production, staging, or local development, the sites are served
-from a [WordPress network](http://codex.wordpress.org/Glossary#Network). Using
-a WordPress multisite setup gives us the control we need to share structure and
-style across all of the different sites, and provides us with
-dynamic features like searching and user accounts on top of the static content
-repositories. We've worked together with members of the WordPress Core Team to
+The sites are served using a [WordPress](http://wordpress.org/) install. We've worked together with members of the WordPress Core Team to
 create [jquery-wp-content](https://github.com/jquery/jquery-wp-content), which
-provides a custom install script that sets up all the different subdomains, and
+provides themes and plugins for all domains and subdomains, using
 a [parent/child theme](http://codex.wordpress.org/Child_Themes) setup that
-applies across the entire network, and handles other aspects of the
-configuration.
+also handles aspects of site configuration automatically.
 
 We do not make **any** modifications to content, layout, or
-configuration through the WordPress Administration panels.
+configuration through the WordPress Admin panels.
 
 ### [grunt](http://gruntjs.com): Getting Static Content into WordPress
 
@@ -90,62 +83,57 @@ credentials in the `config.json` file in the repository, creating and editing
 posts and pages mirroring the directory structure of the original source
 content.
 
-
 ### Deploying to Staging and Production Environments
 
 In addition to our production environment, we also have a staging environment
 for all of the sites. The URLs for the staging sites are the same as the
 production URLs, except they are preceded with a `stage.` prefix, e.g.,
-[stage.contribute.jquery.org](http://stage.contribute.jquery.org). We use [git
+[stage.contribute.jquery.org](https://stage.contribute.jquery.org). We use [git
 post-receive hooks](https://help.github.com/articles/post-receive-hooks) to
 automate deployment to both environments. Whenever there is a commit to the
-`master` branch of any content repository, or
+`main` branch of any content repository, or
 [jquery-wp-content](https://github.com/jquery/jquery-wp-content) itself, the
 changes are pulled onto the staging site, and the `grunt deploy` runs, making
-them available for immediate preview. When we are ready to deploy changes to
-production, we need only [tag](http://git-scm.com/book/en/Git-Basics-Tagging) the
-repo with a valid [semver](http://semver.org/), and the same process takes
-place in production.
+them available for immediate preview.
 
+Most sites deploy to both staging and production directly from the `main` branch (or e.g. the `x-y` branches for jQuery UI API and jQuery Mobile API versioned content).
 
-For api.jqueryui.com and api.jquerymobile.com, the major and minor versions
-have to match the code version the site documents. Use `patch` to update the
-documentation for a given major/minor release.
+Some sites only deploy to production when a commit is [tagged](http://git-scm.com/book/en/Git-Basics-Tagging) in the Git
+repo with a valid [semver](https://semver.org/). Refer to [Infrastructure docs](https://github.com/jquery/infrastructure-puppet/blob/staging/doc/wordpress.md#doc-sites) and look for "semver-tags" to identify these. This includes:
 
-For other sites:
+* `jquery.com`
+* `api.jquery.com`
+* `jqueryui.com`
 
-* `patch` for trivial changes, like typos
-* `minor` for bigger changes, like new pages
-* `major` for redesigns.
+On api.jqueryui.com and api.jquerymobile.com, the major and minor versions
+of the semver tag should match the code version that the site documents. Use `patch` freely for any updates to documentation within given major/minor release cycle.
 
 To create a tag, use `npm version [major | minor | patch]`.
 
 Afterwards, make sure to push both version change commit and the tag:
-`git push --tags upstream master`
+`git push --tags origin main`
 
-<div class="warning">The example above uses <code>upstream</code> for the repo in the jQuery organization on GitHub. Use <code>git remote -v</code> to ensure that you're pushing to the correct remote repo. For example, if you use <code>orgin</code> for the repo in the jQuery organization, replace <code>upstream</code> with <code>origin</code>.</div>
+---
 
- ---
+## How Can I Help?
 
- ## How Can I Help?
+### Just File Issues!
 
- ### Just File Issues!
+When you notice something wrong with one of our sites, or you have an idea for
+how something could be improved, don't keep it to yourself. Filing a [Github
+issue](https://github.com/features/projects/issues) on the appropriate
+repository is the best way to let us know what's up.
 
- When you notice something wrong with one of our sites, or you have an idea for
- how something could be improved, don't keep it to yourself. Filing a [Github
- issue](https://github.com/features/projects/issues) on the appropriate
- repository is the best way to let us know what's up.
+When you're looking at a live site, it may sometimes be a bit unclear whether
+your issue should be filed on a content repository or directly on
+[jquery-wp-content](https://github.com/jquery/jquery-wp-content). Typically, if
+the problem has anything to do with markup or CSS, it's a `jquery-wp-content`
+problem. If the problem lies with the actual content of the words and code
+you're reading, you probably should file the issue on the content repository.
+If you happen to make the "wrong" choice, however, we still appreciate the report, and
+will make sure it finds its way to the right place if necessary.
 
- When you're looking at a live site, it may sometimes be a bit unclear whether
- your issue should be filed on a content repository or directly on
- [jquery-wp-content](https://github.com/jquery/jquery-wp-content). Typically, if
- the problem has anything to do with markup or CSS, it's a `jquery-wp-content`
- problem. If the problem lies with the actual content of the words and code
- you're reading, you probably should file the issue on the content repository.
- If you happen to make the "wrong" choice, however, we still appreciate the report, and
- will make sure it finds its way to the right place if necessary.
-
- ### Editing and Authoring Content
+### Editing and Authoring Content
 
 If you actually want to make commits to make the fixes and improvements, then
 you'll need to [fork](https://help.github.com/articles/fork-a-repo) the content
@@ -194,18 +182,17 @@ you want to work on the content and style of
 of whichever site you are actually working on, as appropriate._
 
 Once you get [jquery-wp-content](https://github.com/jquery/jquery-wp-content) working, you should be able navigate to
-a site in your browser that looks exactly like the live site, only without any content. If you setup
-[jquery-wp-content](https://github.com/jquery/jquery-wp-content) using Vagrant, then the URL would be [http://vagrant.contribute.jquery.org](http://vagrant.contribute.jquery.org).
+a site in your browser that looks exactly like the live site, only without any content.
 
 Now we need to populate your local WordPress with the content from the [`contribute.jquery.org`](https://github.com/jquery/contribute.jquery.org) repo.
 
 1. Fork the [`contribute.jquery.org`](https://github.com/jquery/contribute.jquery.org) repository on GitHub by clicking the "Fork" button.
-1. Clone your forked repository to wherever you'd like, but *not* inside of your WordPress and `jquery-wp-content` directories. -- `git clone https://github.com/YourUsername/contribute.jquery.org.git`
-1. Enter the directory where you cloned the repo -- `cd contribute.jquery.org`
-1. Install grunt-cli (if you haven't already) -- `npm install -g grunt-cli`
-1. Install local build dependencies -- `npm install`
-1. Copy the `config-sample.json` file to `config.json` in the same directory -- `cp config-sample.json config.json`
-1. Edit `config.json` to use the URL, username, and password for your local WordPress network. If you're using the Vagrant setup, then the URL is `http://vagrant.contribute.jquery.org`.
+1. Clone your forked repository on your machine wherever you'd like (just *not* inside of your WordPress or `jquery-wp-content` directories).<br> `git clone https://github.com/YourUsername/contribute.jquery.org.git`
+1. Enter the directory where you cloned the repo <br>`cd contribute.jquery.org`
+1. Install grunt-cli (if you haven't already) <br>`npm install -g grunt-cli`
+1. Install local build dependencies <br>`npm install`
+1. Copy the `config-sample.json` file to `config.json` in the same directory <br>`cp config-sample.json config.json`
+1. Edit `config.json` to use the URL, username, and password for your local WordPress.
 1. Build and deploy the files to your local WordPress -- `grunt deploy`
 
 At this point your local WordPress should be populated with the [`contribute.jquery.org`](https://github.com/jquery/contribute.jquery.org) content.
@@ -224,62 +211,45 @@ work.
 
 If you're struggling to get any part of any site working properly, or have any questions, we're here to help.
 
-The best place to get help is on [IRC](http://irc.jquery.org/), in the
-[#jquery-content](irc://irc.freenode.net/#jquery-content) channel on
-[Freenode](http://freenode.net). If you're unfamiliar with IRC, you can use the
-[webchat gateway](http://webchat.freenode.net/) or [learn
-more](http://irc.jquery.org/irc-help/).
+The best place to get help is in the [jQuery Chat](https://jquery.com/support/) on IRC or Matrix.
 
-In addition, the jQuery Content Team holds a [public meeting](http://jquery.org/meeting/) every two weeks on Freenode, at 1PM Eastern time in the `#jquery-meeting` channel.
-
-If IRC is not your thing, but you still want or need to get in touch, please use the site's GitHub repo or send us an e-mail to `content at jquery dot org`.
+If IRC is not your thing, but you still want or need to get in touch, please use the site's GitHub repo to report an issue.
 
 ---
 
 ## Site & Repository Guide
 
-* [jquery-wp-content](https://github.com/jquery/jquery-wp-content/) - The WordPress configuration and themes that serve all our sites
+* [jquery-wp-content](https://github.com/jquery/jquery-wp-content/) - The WordPress configuration and themes that serve all our documentation sites
 
+For a current list of jQuery doc sites, refer to [Infrastructure docs](https://github.com/jquery/infrastructure-puppet/blob/staging/doc/wordpress.md#doc-sites):
 
 * [jquery.com](https://github.com/jquery/jquery.com/) - The content of [jquery.com](http://jquery.com) itself
-* [api.jquery.com](https://github.com/jquery/api.jquery.com/) - jQuery Core API documentation
-* [plugins.jquery.com](https://github.com/jquery/jquery.com/) - The jQuery Plugin Registry
-* [learn.jquery.com](https://github.com/jquery/learn.jquery.com/) - The jQuery Learning Center
-
+* [api.jquery.com](https://github.com/jquery/api.jquery.com/) - jQuery API Documentation
+* [learn.jquery.com](https://github.com/jquery/learn.jquery.com/) - jQuery Learning Center
+* [releases.jquery.com](https://github.com/jquery/releases.jquery.com/) - jQuery CDN file browser
 
 * [jqueryui.com](https://github.com/jquery/jqueryui.com/) - The content of [jqueryui.com](http://jqueryui.com) itself
-* [api.jqueryui.com](https://github.com/jquery/api.jqueryui.com/) - jQuery UI API documentation
-* [download.jqueryui.com](https://github.com/jquery/download.jqueryui.com/) - The [jQuery UI Download Builder](http://download.jqueryui.com)
-
+* [api.jqueryui.com](https://github.com/jquery/api.jqueryui.com/) - jQuery UI API Documentation
 
 * [jquerymobile.com](https://github.com/jquery/jquerymobile.com/) - The content of [jquerymobile.com](http://jquerymobile.com) itself
-* [api.jquerymobile.com](https://github.com/jquery/api.jquerymobile.com/) - jQuery Mobile API documentation
-
-
-* [qunitjs.com](https://github.com/jquery/qunitjs.com/) - The content of [qunitjs.com](http://qunitjs.com) itself
-* [api.qunitjs.com](https://github.com/jquery/api.qunitjs.com/) - QUnit API documentation
-
+* [api.jquerymobile.com](https://github.com/jquery/api.jquerymobile.com/) - jQuery Mobile API Documentation
 
 * [jquery.org](https://github.com/jquery/jquery.org/) - The content of [jquery.org](http://jquery.org) itself
-* [contribute.jquery.org ](https://github.com/jquery/contribute.jquery.org/) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
-* [events.jquery.org](https://github.com/jquery/events.jquery.org/) - The content of our [Events and Conferences](http://events.jquery.org) site
-* [irc.jquery.org ](https://github.com/jquery/irc.jquery.org/) - The content of our [IRC log and information](http://irc.jquery.org) site
+* [brand.jquery.org](https://github.com/jquery/brand.jquery.org/)
+* [contribute.jquery.org](https://github.com/jquery/contribute.jquery.org/) - The content of the [jQuery Contribution Hub](http://contribute.jquery.org) site
+* [meetings.jquery.org](https://github.com/jquery/meetings.jquery.org/)
 
 <a name="exceptions"></a>
-### Non-conforming Sites
+### Other sites
 
-Some of our sites are not part of the system described in this article. Some
-because they are simply not yet live, others still have some transitional work
-still in progress, and others that can't be integrated or have been deprecated.
+The following sites are not managed by the system described in this article. They are content sites that used the system in the past and moved to a different system, werre archived to a static site, or are standalone applications.
 
-#### Not Live, Content Migration In Progress/Planned
+* [plugins.jquery.com](https://github.com/jquery/jquery.com/)
 
-* [blog.jquery.com](http://blog.jquery.com)
-* [blog.jqueryui.com](http://blog.jqueryui.com)
-* [blog.jquerymobile.com](http://blog.jquerymobile.com)
-* [sizzlejs.com](http://sizzlejs.com)
+* [download.jqueryui.com](https://github.com/jquery/download.jqueryui.com/)
 
-#### Will Not Be Transitioned To Content Repository, Still Needs New Theming
+* [events.jquery.org](https://github.com/jquery/events.jquery.org/)
+* [irc.jquery.org ](https://github.com/jquery/irc.jquery.org/tree/v1.2.2)
 
-* [forum.jquery.com](http://forum.jquery.com)
-* [bugs.jqueryui.com](http://bugs.jqueryui.com)
+* [qunitjs.com](https://github.com/qunitjs/qunitjs.com/tree/v2.10.2)
+* [api.qunitjs.com](https://github.com/qunitjs/api.qunitjs.com/tree/v2.3.0)
